@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "5fcdbbe3-2841-0418-8d77-600be8b86ca1",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "GIF",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

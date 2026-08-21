@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "52531ec2-f4e9-405f-6895-6c58142185b2",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "button_jump",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\buttons\\button_jump.png",
+    "references": []
+  }
+]

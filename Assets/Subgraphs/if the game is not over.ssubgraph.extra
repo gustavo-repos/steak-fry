@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "ad266d44-a612-b83c-a961-b3695fe874df",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "if the game is not over",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": [],
+    "combinedWithNodeLibary": false,
+    "initGraphIdentity": ""
+  }
+]

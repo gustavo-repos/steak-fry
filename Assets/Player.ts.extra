@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "59b3a572-43b1-e047-9c7a-128349f39bb6",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "Player",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]

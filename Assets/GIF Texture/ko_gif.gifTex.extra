@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "0f0c7fae-619f-fc02-1fbc-027fe8269032",
+      "b": ""
+    },
+    "extraType": "ResItemGifTexture",
+    "name": "ko_gif",
+    "version": "0.1.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Plugins\\Gif@2.0.30\\resources\\builtinJSAssets\\default.gifTex",
+    "references": [
+      {
+        "guid": "8509795b-173c-f7c7-1965-74c6e06d22b3",
+        "propertyName": "gifAsset"
+      }
+    ]
+  }
+]

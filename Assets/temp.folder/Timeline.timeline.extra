@@ -1,0 +1,24 @@
+[
+  {
+    "guid": {
+      "a": "28de3e91-8597-3470-3984-6e8487b3c7c7",
+      "b": ""
+    },
+    "extraType": "ResItemTimelineTT",
+    "name": "Timeline",
+    "trackHeaderWidth": 500,
+    "tracksExpandedArr": [],
+    "kFrameTrackHeaderLabels": [],
+    "version": "0.1.0",
+    "rttiType": "TimelineAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\InternalPlugins\\TimelineTT\\PluginResource\\timeline.timeline",
+    "references": []
+  }
+]

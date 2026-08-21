@@ -1,0 +1,25 @@
+[
+  {
+    "guid": {
+      "a": "916c2577-5849-69aa-e249-3a04c36117fe",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "bife_walk",
+    "version": "0.2.0",
+    "rttiType": "TextureSequence",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\bife.otextureseq",
+    "references": []
+  }
+]

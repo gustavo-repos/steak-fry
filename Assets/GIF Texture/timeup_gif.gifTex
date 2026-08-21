@@ -1,0 +1,48 @@
+%YAML 1.1
+--- !TextureDelegate &1
+name: !<str> timeup_gif
+guid: {a: 5181332584076164561, b: 12920382929429253786}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 4799470177593448753, b: 16130194746306492559}
+  properties:
+    __class: Map
+    JSClassName: !<str> GifTextureProvider
+    fps: 2.5
+    gifAsset: {localId: 1, path: b902a628-6dba-7090-8a70-8f11e321ec9b--b902a628-6dba-7090-8a70-8f11e321ec9b.gifasset}
+    loopCount: -1
+width: 0
+height: 0
+depth: 0
+internalFormat:
+  __class: InternalFormat
+  value: RGBA8
+dataType:
+  __class: DataType
+  value: U8norm
+builtinType:
+  __class: BuiltInTextureType
+  value: NORAML
+enableMipmap: true
+filterMin:
+  __class: FilterMode
+  value: LINEAR
+filterMag:
+  __class: FilterMode
+  value: LINEAR
+filterMipmap:
+  __class: FilterMipmapMode
+  value: NONE
+wrapModeS:
+  __class: WrapMode
+  value: CLAMP
+wrapModeT:
+  __class: WrapMode
+  value: CLAMP
+wrapModeR:
+  __class: WrapMode
+  value: CLAMP
+maxAnisotropy: 1
+delegateData:
+  __class: Map

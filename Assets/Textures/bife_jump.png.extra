@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "ffe3228e-23d6-9509-aacb-5eb03282231a",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "bife_jump",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\bife_jump.png",
+    "references": []
+  }
+]

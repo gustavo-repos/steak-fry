@@ -1,0 +1,19 @@
+%YAML 1.1
+--- !ScriptCustomExternalObject &1
+name: !<str> Timeline
+guid: {a: 5275443920232872517, b: 16198736240448690860}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5404948299886646353, b: 2963864551502745260}
+  properties:
+    __class: Map
+    __scriptClassName: !<str> TimelineAsset
+    durationMode: 0
+    fixedDuration: 0
+    frameRate: 30
+    m_enablePlayRange: false
+    m_playRangeBegin: 0
+    m_playRangeEnd: 0
+    muted: false
+    volume: 100

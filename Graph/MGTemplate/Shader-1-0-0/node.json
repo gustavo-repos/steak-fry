@@ -1,0 +1,129 @@
+{
+	"name": "Shader",
+	"id": "fb597b24-0b7c-4d5d-952d-8c011cdd48a6",
+	"category": "Context",
+	"inputs": [
+		{
+			"name": "Color",
+			"description": "The fragment shader final output color",
+			"type": "Color",
+			"displayType": "Color",
+			"displayTypeKey": "graph_type_color",
+			"nameKey": "mg_shader_input_color",
+			"descriptionKey": "mg_shader_input_color_description"
+		},
+		{
+			"name": "World Position",
+			"description": "The vertex position in world space, which will be output to fragment shader",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3",
+			"nameKey": "mg_shader_input_world_position",
+			"descriptionKey": "mg_shader_input_world_position_description"
+		},
+		{
+			"name": "World Normal",
+			"description": "The vertex normal in world space, which will be output to fragment shader",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3",
+			"nameKey": "mg_shader_input_world_normal",
+			"descriptionKey": "mg_shader_input_world_normal_description"
+		},
+		{
+			"name": "World Tangent",
+			"description": "The vertex tangent in world space, which will be output to fragment shader",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3",
+			"nameKey": "mg_shader_input_world_tangent",
+			"descriptionKey": "mg_shader_input_world_tangent_description"
+		}
+	],
+	"outputs": [],
+	"supportedInputs": [
+		{
+			"in": [
+				"genType",
+				"Vector3f",
+				"Vector3f",
+				"Vector3f"
+			],
+			"out": []
+		}
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"version": "1.0.0",
+	"description": "Outputs final color to fragment shader, and world position, normal, and tangent vector to vertex shader",
+	"nameKey": "mg_shader_name",
+	"categoryKey": "mg_category_context",
+	"descriptionKey": "mg_shader_description",
+	"nodeSettingConfig": {
+		"sections": [
+			{
+				"section": "General",
+				"sectionKey": "mgparam_section_general",
+				"properties": [
+					{
+						"property": "Color Space",
+						"propertyType": "StringList",
+						"propertyKey": "mg_shader_setting_general_color_space",
+						"defaultValue": "GAMMA_COLOR",
+						"propertyAttribute": {
+							"option": [
+								{
+									"key": "mg_shader_setting_general_color_space_stringlist_gamma",
+									"value": "GAMMA_COLOR"
+								},
+								{
+									"key": "mg_shader_setting_general_color_space_stringlist_linear",
+									"value": "LINEAR_COLOR"
+								}
+							]
+						}
+					},
+					{
+						"property": "Vertex Precision",
+						"propertyType": "StringList",
+						"propertyKey": "mg_shader_setting_general_vertex_precision",
+						"defaultValue": "highp",
+						"propertyAttribute": {
+							"option": [
+								{
+									"key": "mg_shader_setting_general_vertex_precision_stringlist_high",
+									"value": "highp"
+								},
+								{
+									"key": "mg_shader_setting_general_vertex_precision_stringlist_medium",
+									"value": "mediump"
+								}
+							]
+						}
+					},
+					{
+						"property": "Calculation Precision",
+						"propertyType": "StringList",
+						"propertyKey": "mg_shader_setting_general_calculation_precision",
+						"defaultValue": "highp",
+						"propertyAttribute": {
+							"option": [
+								{
+									"key": "mg_shader_setting_general_calculation_precision_stringlist_high",
+									"value": "highp"
+								},
+								{
+									"key": "mg_shader_setting_general_calculation_precision_stringlist_medium",
+									"value": "mediump"
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}

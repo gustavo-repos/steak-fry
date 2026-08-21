@@ -1,0 +1,48 @@
+%YAML 1.1
+--- !TextureDelegate &1
+name: !<str> dizzy
+guid: {a: 4914194554935057966, b: 16091357364488554156}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5470920138961991047, b: 18247177122460242841}
+  properties:
+    __class: Map
+    JSClassName: !<str> GifTextureProvider
+    fps: 7.142857142857142
+    gifAsset: {localId: 1, path: 0267a565-d28b-896f-8f0b-e8669f8edeaf--0267a565-d28b-896f-8f0b-e8669f8edeaf.gifasset}
+    loopCount: -1
+width: 0
+height: 0
+depth: 0
+internalFormat:
+  __class: InternalFormat
+  value: RGBA8
+dataType:
+  __class: DataType
+  value: U8norm
+builtinType:
+  __class: BuiltInTextureType
+  value: NORAML
+enableMipmap: true
+filterMin:
+  __class: FilterMode
+  value: LINEAR
+filterMag:
+  __class: FilterMode
+  value: LINEAR
+filterMipmap:
+  __class: FilterMipmapMode
+  value: NONE
+wrapModeS:
+  __class: WrapMode
+  value: CLAMP
+wrapModeT:
+  __class: WrapMode
+  value: CLAMP
+wrapModeR:
+  __class: WrapMode
+  value: CLAMP
+maxAnisotropy: 1
+delegateData:
+  __class: Map

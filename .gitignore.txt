@@ -1,0 +1,18 @@
+# Effect House cache / build
+Library/
+Temp/
+Logs/
+obj/
+Build/
+DerivedData/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backup automático
+*.bak

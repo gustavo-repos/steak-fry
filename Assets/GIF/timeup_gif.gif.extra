@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "b902a628-6dba-7090-8a70-8f11e321ec9b",
+      "b": ""
+    },
+    "extraType": "ResItemGif",
+    "name": "timeup_gif",
+    "version": "0.1.0",
+    "rttiType": "GifAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\projeto tokusatso\\images\\enemy\\timeup_gif.gif",
+    "references": []
+  }
+]

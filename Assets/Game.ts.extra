@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "4240fc4c-3dea-9000-1d7a-c2fa951a8aa2",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "Game",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]

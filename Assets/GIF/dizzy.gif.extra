@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "0267a565-d28b-896f-8f0b-e8669f8edeaf",
+      "b": ""
+    },
+    "extraType": "ResItemGif",
+    "name": "dizzy",
+    "version": "0.1.0",
+    "rttiType": "GifAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\projeto tokusatso\\images\\enemy\\dizzy\\dizzy.gif",
+    "references": []
+  }
+]

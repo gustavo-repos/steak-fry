@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "56f49f93-d4f8-c9e3-d2b5-5c317cacde86",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "pan",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\pan.png",
+    "references": []
+  }
+]

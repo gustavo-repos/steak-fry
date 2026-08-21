@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "0fd32552-3fb8-aea0-a432-bea5d8ce1333",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "hit_enemy2",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\projeto tokusatso\\images\\enemy\\portal\\hit_enemy2.png",
+    "references": []
+  }
+]

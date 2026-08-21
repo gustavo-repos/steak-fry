@@ -1,0 +1,25 @@
+[
+  {
+    "guid": {
+      "a": "c86f2ffb-bce0-3928-df27-347784e61449",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "bife_idle",
+    "version": "0.2.0",
+    "rttiType": "TextureSequence",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\bife.otextureseq",
+    "references": []
+  }
+]

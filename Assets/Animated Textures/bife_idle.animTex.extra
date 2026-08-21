@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "3994b9f0-84a6-d21c-3b6c-62f3966b0d5f",
+      "b": ""
+    },
+    "extraType": "ResItemAnimatedTexture",
+    "name": "bife_idle",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",
+    "references": [
+      {
+        "guid": "c86f2ffb-bce0-3928-df27-347784e61449",
+        "propertyName": "textureSequence"
+      }
+    ]
+  }
+]

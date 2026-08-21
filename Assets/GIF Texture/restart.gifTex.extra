@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "a68540f5-914d-d82f-cf75-e244335faea7",
+      "b": ""
+    },
+    "extraType": "ResItemGifTexture",
+    "name": "restart",
+    "version": "0.1.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Plugins\\Gif@2.0.30\\resources\\builtinJSAssets\\default.gifTex",
+    "references": [
+      {
+        "guid": "3a1ba8ae-94b0-7a50-feb4-bb5ee5ee4e5d",
+        "propertyName": "gifAsset"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "7a3a5ebf-afa7-03b0-d8b0-46094fe8a767",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "game over check",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": [],
+    "combinedWithNodeLibary": false,
+    "initGraphIdentity": ""
+  }
+]

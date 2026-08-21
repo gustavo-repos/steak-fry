@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "aa503c18-1d65-72db-7090-5222e3d8c55b",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "jump",
+    "version": "0.1.0",
+    "rttiType": "AudioAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "mccState": "SUCCESS",
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\template plataforma javascript\\audio\\jump.mp3",
+    "references": []
+  }
+]
