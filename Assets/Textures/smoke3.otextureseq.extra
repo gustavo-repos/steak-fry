@@ -1,0 +1,25 @@
+[
+  {
+    "guid": {
+      "a": "790b3cd3-0edd-6b86-7e40-2a267347f2f3",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "smoke3",
+    "version": "0.2.0",
+    "rttiType": "TextureSequence",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\smoke.otextureseq",
+    "references": []
+  }
+]

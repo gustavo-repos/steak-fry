@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "4165b12f-49e2-9531-9ca9-b92a1cb42920",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "bife3",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\bife3.png",
+    "references": []
+  }
+]

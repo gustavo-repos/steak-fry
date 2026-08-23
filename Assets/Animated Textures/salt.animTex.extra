@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "603f2a6d-3361-53dd-5ad1-cfeb425cc0fa",
+      "b": ""
+    },
+    "extraType": "ResItemAnimatedTexture",
+    "name": "salt",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",
+    "references": [
+      {
+        "guid": "6384f156-ad4a-3a52-a04a-8488c28db4b1",
+        "propertyName": "textureSequence"
+      }
+    ]
+  }
+]

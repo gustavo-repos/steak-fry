@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Fri, 21 Aug 2026 15:00:09 GMT",
+  "lastModified": "Sun, 23 Aug 2026 01:58:03 GMT",
   "version": "5.14.0",
   "renderNames": {
     "0": "Default Layer",
@@ -68,9 +68,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 17005532629,
-  "durationCreation": 1224633183,
-  "durationBackground": 974998479,
+  "durationToCreate": 17131406518,
+  "durationCreation": 1254495346,
+  "durationBackground": 997165584,
   "effectHint": "",
   "templateID": "templateID_none",
   "overwriteBuiltinGAN": 1,
@@ -87,7 +87,7 @@
   },
   "projectID": "bf0db16c-bcce-f288-c129-1e671384f83f",
   "isNewCreatedProject": true,
-  "preUpgradeVersion": "5.13.0",
+  "preUpgradeVersion": "5.14.0",
   "LastVideoInput": {
     "type": "preview_face",
     "name": "preview_face_idle||3",
@@ -97,16 +97,16 @@
   "fromNewUserGuide": false,
   "soundStartTime": 0,
   "selectedIdList": [
-    "amz:Guid(5333929487787472848, 2380109874741613743)"
+    "amz:Guid(5224867712697151724, 15220995987035487620)"
   ],
   "lastSceneView": 0,
   "autoResetEffect": true,
-  "effectSize": 1948495,
-  "effectPackagePath": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\Submit\\package\\effect.zip",
+  "effectSize": 2063767,
+  "effectPackagePath": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\submit\\package\\effect.zip",
   "perfTested": true,
   "effectUploadResult": {
-    "uri": "/obj/tiktok-effect-public-us/effects/effect/nUkAMFvHpULf3AFuSULmQf_5ec1530528b9590b630120a97eefb9c8",
-    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/nUkAMFvHpULf3AFuSULmQf_5ec1530528b9590b630120a97eefb9c8"
+    "uri": "/obj/tiktok-effect-public-us/effects/effect/NoMkd9XLFjRfQs2EtAUkcj_32220a71121f882f89d8ed008984dbed",
+    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/NoMkd9XLFjRfQs2EtAUkcj_32220a71121f882f89d8ed008984dbed"
   },
   "soundSelectedDuration": 0,
   "exportPerformance": {

@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "82b65685-9a4a-f3af-989f-ee0c4c863fd2",
+      "b": ""
+    },
+    "extraType": "ResItemAnimatedTexture",
+    "name": "smoke1",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",
+    "references": [
+      {
+        "guid": "8a65c8a5-1c37-f108-78c0-7116442db708",
+        "propertyName": "textureSequence"
+      }
+    ]
+  }
+]

@@ -121,6 +121,7 @@ export class Game extends APJS.BasicScriptComponent {
   // sofaSeat: any
   platform1: any
   platform2: any
+  pan: any
 
   screenTouchToUnits (touchPoint: any) {
     var x = (touchPoint.x - 0.5) * 22.5
@@ -274,8 +275,9 @@ export class Game extends APJS.BasicScriptComponent {
     this.leftWall = this.getSceneObject().scene.findSceneObject('leftWall')
     this.platform1 = this.getSceneObject().scene.findSceneObject('platform1')
     this.platform2 = this.getSceneObject().scene.findSceneObject('platform2')
-    platforms = [this.ground1, this.platform1, this.platform2]
-    solids = [this.ground1, this.platform1, this.platform2, this.rightWall, this.leftWall]
+    this.pan = this.getSceneObject().scene.findSceneObject('pan')
+    platforms = [this.ground1, this.platform1, this.platform2, this.pan]
+    solids = [this.ground1, this.platform1, this.platform2, this.rightWall, this.leftWall, this.pan]
     // platforms = [this.ground1]
     // solids = [this.ground1, this.rightWall, this.leftWall]
     grounds = [this.ground1]

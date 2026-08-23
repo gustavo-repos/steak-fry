@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "9d2ed353-ad4c-ec7f-f6c0-d047a0c146b2",
+      "b": ""
+    },
+    "extraType": "ResItemAnimatedTexture",
+    "name": "bife_lying_walk",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",
+    "references": [
+      {
+        "guid": "a09aa54a-ec6e-0607-7138-25be846f6b02",
+        "propertyName": "textureSequence"
+      }
+    ]
+  }
+]

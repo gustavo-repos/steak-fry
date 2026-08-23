@@ -1,0 +1,25 @@
+[
+  {
+    "guid": {
+      "a": "6384f156-ad4a-3a52-a04a-8488c28db4b1",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "salt",
+    "version": "0.2.0",
+    "rttiType": "TextureSequence",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\salt.otextureseq",
+    "references": []
+  }
+]

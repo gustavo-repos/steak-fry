@@ -153,8 +153,8 @@ let Player = class Player extends APJS.BasicScriptComponent {
                 this.jumpSound.name = 'jumpSoundOn';
             }
             if (!Game_1.jumpPressed && this.jumpCycle) {
-                if (this.velocityY > 0)
-                    this.velocityY = 0;
+                // cancelador de pulo durante o salto
+                // if (this.velocityY > 0) this.velocityY = 0
                 if (this.state == 0)
                     this.jumpCycle = false;
                 this.jumpSound.name = 'jumpSoundOff';
