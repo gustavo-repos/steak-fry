@@ -123,6 +123,15 @@ export class Game extends APJS.BasicScriptComponent {
   platform2: any
   pan: any
 
+
+  onRecordStart = (_event: APJS.IEvent) => {
+      gameState = 0
+      substate = 3
+      this.accumulator = 0
+      conect.name = 'conect'
+      this.gameRunning.name = 'gameRunning'
+  }
+
   screenTouchToUnits (touchPoint: any) {
     var x = (touchPoint.x - 0.5) * 22.5
     var y = (touchPoint.y - 0.5) * -40
@@ -140,37 +149,6 @@ export class Game extends APJS.BasicScriptComponent {
     const outputTouchPhase = touchInfo.phase
     const outputTouchId = touchInfo.touchId
     this.lastTouchPos = touchInfo.position
-
-    // const isInsideReset = this.checkPointInRect(this.screenTouchToUnits(this.lastTouchPos), this.buttonResetRect)
-    // if (isInsideReset && 
-    // outputTouchPhase == 0) {
-    //   resetPressed = true
-    //   this.resetButtonId = outputTouchId
-    // }
-    // if (isInsideReset && 
-    // outputTouchPhase == 1) {
-    //   resetPressed = true
-    //   this.resetButtonId = outputTouchId
-    // }
-    // if (!isInsideReset && 
-    // resetPressed && 
-    // outputTouchPhase == 1 && 
-    // outputTouchId == this.resetButtonId) {
-    //   resetPressed = false
-    // }
-    // if (resetPressed && 
-    //   outputTouchPhase == 2 && 
-    //   outputTouchId == this.resetButtonId) {
-    //   resetPressed = false
-    //   this.resetButtonId = -1
-    // }
-    // if (
-    // outputTouchPhase == 3 && 
-    // resetPressed && 
-    // outputTouchId == this.resetButtonId) {
-    //   resetPressed = false
-    //   this.resetButtonId = -1
-    // }
 
     const isInsideAction = this.checkPointInRect(this.screenTouchToUnits(this.lastTouchPos), this.buttonActionRect)
     if (isInsideAction && 
@@ -283,6 +261,12 @@ export class Game extends APJS.BasicScriptComponent {
     grounds = [this.ground1]
     APJS.EventManager.getGlobalEmitter().on(APJS.EventType.Touch, this.touchCallback)
     conect = this.getSceneObject().scene.findSceneObject('conect')
+
+    APJS.EventManager.getGlobalEmitter().on(
+        APJS.EventType.RecordStart,
+        this.onRecordStart
+    )
+
   }
   
   onDisable() {
@@ -310,28 +294,10 @@ export class Game extends APJS.BasicScriptComponent {
       rightPressed = false
     }
 
-    while (this.accumulator >= fixedTime) {
+    // while (this.accumulator >= fixedTime) {
 
-      if (isTimeRunning && gameState == 0) {
-        time -= fixedTime
-        if (time <= 0) {
-          setGameState(1) 
-          this.gameRunning.name = 'gameover'
-        }
-        if (time >= 27) {
-          conect.name = 'time0'
-        } else if (time >= 19) {
-          conect.name = 'time1'
-        } else if (time >= 11) {
-          conect.name = 'time2'
-        } else if (time >= 1) {
-          conect.name = 'time3'
-        } else {
-          conect.name = 'time4'
-        }
-      }
-      this.accumulator -= fixedTime
-    }
+    //   this.accumulator -= fixedTime
+    // }
 
   }
 }

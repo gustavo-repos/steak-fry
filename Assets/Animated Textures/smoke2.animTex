@@ -1,6 +1,6 @@
 %YAML 1.1
 --- !TextureDelegate &1
-name: !<str> smoke
+name: !<str> smoke2
 guid: {a: 5337019733917363896, b: 6087188013845623968}
 serializedProperty:
   __class: ScriptSerializedProperty

@@ -11,6 +11,11 @@ export class Level extends APJS.BasicScriptComponent {
   accumulator = 0
   playerObj: any
 
+  onRecordStart = (_event: APJS.IEvent) => {
+      this.frameCounter = 0
+      this.accumulator = 0
+  }
+
   getPlayerBodyRect () {
     var center = this.playerObj.getTransform().getWorldPosition()
     if (center) {
@@ -23,6 +28,12 @@ export class Level extends APJS.BasicScriptComponent {
     this.transform = this.playerObj.getComponent('ScreenTransform') as APJS.ScreenTransform
     this.playerWidth = this.transform.sizeDelta.x / PPU
     this.playerHeight = this.transform.sizeDelta.y / PPU
+
+    APJS.EventManager.getGlobalEmitter().on(
+      APJS.EventType.RecordStart,
+      this.onRecordStart
+    )
+
   }
 
   onUpdate(deltaTime: number) {

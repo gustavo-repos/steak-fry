@@ -1,7 +1,6 @@
 import { gravity, move, jumpPressed, checkRectOverlap, getElementRect, snapY, PPU, platforms, 
 leftPressed, rightPressed, fixedTime, conect, time, substate, setSubstate, 
-resetPressed,
-gameState} from "Game"
+resetPressed, gameState, setGameState} from "Game"
 
 /* 
 state:
@@ -44,6 +43,26 @@ export class Player extends APJS.BasicScriptComponent {
   halfPlayerSize: any
   halfPlatSize: any
   horizontalArea: any
+  saltArea: any
+  fryTimer = 0
+  // fryInterval = 2
+  smokeScene: any
+  isFrying = false
+  flagPole: any
+  gameRunning: any
+
+  onRecordStart = (_event: APJS.IEvent) => {
+    this.state = 1
+    this.lastSubstate = 3
+    this.previousState = 1
+    this.jumpCycle = false
+    this.jumpPower = 30
+    this.velocityY = 0
+    this.frameCounter = 0
+    this.accumulator = 0
+    this.smokeScene.name = 'smoke'
+    fryTimer = 0
+  }
 
   getPlayerRect() {
     var center = this.playerObj.getTransform().getWorldPosition()
@@ -113,6 +132,16 @@ export class Player extends APJS.BasicScriptComponent {
     this.playerX = this.getSceneObject().getTransform().getWorldPosition().x
     this.jumpSound = this.getSceneObject().scene.findSceneObject('jumpSoundOff')
     this.horizontalArea = this.getSceneObject().scene.findSceneObject('horizontalArea')
+    this.saltArea = this.getSceneObject().scene.findSceneObject('saltArea')
+    this.smokeScene = this.getSceneObject().scene.findSceneObject('smoke')
+    this.flagPole = this.getSceneObject().scene.findSceneObject('flagPole')
+    this.gameRunning = this.getSceneObject().scene.findSceneObject('gameRunning')
+
+    APJS.EventManager.getGlobalEmitter().on(
+      APJS.EventType.RecordStart,
+      this.onRecordStart
+    )
+
   }
 
   onUpdate(deltaTime: number) {
@@ -136,6 +165,8 @@ export class Player extends APJS.BasicScriptComponent {
       this.substateHandle()
 
       this.setPlayerSprite()
+
+      if (this.isFrying) this.fryTimer += fixedTime
 
       if (this.state == 1) this.velocityY += gravity * fixedTime
 
@@ -186,14 +217,36 @@ export class Player extends APJS.BasicScriptComponent {
         move(this.getSceneObject(), 0, this.velocityY * fixedTime)
       } 
 
+      if (gameState == 0 && this.isFrying) {
+        if (this.fryTimer >= 8) {
+          this.smokeScene.name = 'welldone'
+        } else if (this.fryTimer >= 5) {
+          this.smokeScene.name = 'medium'
+        } else if (this.fryTimer >= 2) {
+          this.smokeScene.name = 'rare'
+        }
+      }
+      
       if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.horizontalArea, 0))) {
-
-
         this.horizontalArea.name = 'horizontal'
-
+        this.isFrying = true
       } else {
         this.horizontalArea.name = 'fora'
+        this.isFrying = false
+        this.smokeScene.name = 'smoke'
       }
+
+      if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.saltArea, 0))) {
+        console.log("entrou na salt area")
+        this.saltArea.name = "salted"
+      }
+
+      if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.flagPole, 0))) {
+        console.log("terminou")
+        setGameState(1)
+        this.gameRunning.name = 'gameover'
+      }
+
 
       this.accumulator -= fixedTime
     }

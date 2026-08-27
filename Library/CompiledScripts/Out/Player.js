@@ -48,6 +48,20 @@ let Player = class Player extends APJS.BasicScriptComponent {
         this.frameCounter = 0;
         this.landedIn = null;
         this.accumulator = 0;
+        this.fryTimer = 0;
+        this.isFrying = false;
+        this.onRecordStart = (_event) => {
+            this.state = 1;
+            this.lastSubstate = 3;
+            this.previousState = 1;
+            this.jumpCycle = false;
+            this.jumpPower = 30;
+            this.velocityY = 0;
+            this.frameCounter = 0;
+            this.accumulator = 0;
+            this.smokeScene.name = 'smoke';
+            fryTimer = 0;
+        };
     }
     getPlayerRect() {
         var center = this.playerObj.getTransform().getWorldPosition();
@@ -119,6 +133,11 @@ let Player = class Player extends APJS.BasicScriptComponent {
         this.playerX = this.getSceneObject().getTransform().getWorldPosition().x;
         this.jumpSound = this.getSceneObject().scene.findSceneObject('jumpSoundOff');
         this.horizontalArea = this.getSceneObject().scene.findSceneObject('horizontalArea');
+        this.saltArea = this.getSceneObject().scene.findSceneObject('saltArea');
+        this.smokeScene = this.getSceneObject().scene.findSceneObject('smoke');
+        this.flagPole = this.getSceneObject().scene.findSceneObject('flagPole');
+        this.gameRunning = this.getSceneObject().scene.findSceneObject('gameRunning');
+        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
     }
     onUpdate(deltaTime) {
         if (this.frameCounter < 30) {
@@ -140,6 +159,8 @@ let Player = class Player extends APJS.BasicScriptComponent {
         while (this.accumulator >= Game_1.fixedTime) {
             this.substateHandle();
             this.setPlayerSprite();
+            if (this.isFrying)
+                this.fryTimer += Game_1.fixedTime;
             if (this.state == 1)
                 this.velocityY += Game_1.gravity * Game_1.fixedTime;
             if (this.velocityY < -30)
@@ -186,11 +207,34 @@ let Player = class Player extends APJS.BasicScriptComponent {
                 }
                 (0, Game_1.move)(this.getSceneObject(), 0, this.velocityY * Game_1.fixedTime);
             }
+            if (Game_1.gameState == 0 && this.isFrying) {
+                if (this.fryTimer >= 8) {
+                    this.smokeScene.name = 'welldone';
+                }
+                else if (this.fryTimer >= 5) {
+                    this.smokeScene.name = 'medium';
+                }
+                else if (this.fryTimer >= 2) {
+                    this.smokeScene.name = 'rare';
+                }
+            }
             if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.horizontalArea, 0))) {
                 this.horizontalArea.name = 'horizontal';
+                this.isFrying = true;
             }
             else {
                 this.horizontalArea.name = 'fora';
+                this.isFrying = false;
+                this.smokeScene.name = 'smoke';
+            }
+            if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.saltArea, 0))) {
+                console.log("entrou na salt area");
+                this.saltArea.name = "salted";
+            }
+            if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.flagPole, 0))) {
+                console.log("terminou");
+                (0, Game_1.setGameState)(1);
+                this.gameRunning.name = 'gameover';
             }
             this.accumulator -= Game_1.fixedTime;
         }

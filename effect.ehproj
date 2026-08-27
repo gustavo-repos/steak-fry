@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Sun, 23 Aug 2026 01:58:03 GMT",
+  "lastModified": "Thu, 27 Aug 2026 21:28:39 GMT",
   "version": "5.14.0",
   "renderNames": {
     "0": "Default Layer",
@@ -68,9 +68,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 17131406518,
-  "durationCreation": 1254495346,
-  "durationBackground": 997165584,
+  "durationToCreate": 17547242562,
+  "durationCreation": 1286745908,
+  "durationBackground": 1023486110,
   "effectHint": "",
   "templateID": "templateID_none",
   "overwriteBuiltinGAN": 1,

@@ -121,41 +121,18 @@ let Game = class Game extends APJS.BasicScriptComponent {
     constructor() {
         super(...arguments);
         this.accumulator = 0;
+        this.onRecordStart = (_event) => {
+            exports.gameState = 0;
+            exports.substate = 3;
+            this.accumulator = 0;
+            exports.conect.name = 'conect';
+            this.gameRunning.name = 'gameRunning';
+        };
         this.touchCallback = (event) => {
             const touchInfo = event.args[0];
             const outputTouchPhase = touchInfo.phase;
             const outputTouchId = touchInfo.touchId;
             this.lastTouchPos = touchInfo.position;
-            // const isInsideReset = this.checkPointInRect(this.screenTouchToUnits(this.lastTouchPos), this.buttonResetRect)
-            // if (isInsideReset && 
-            // outputTouchPhase == 0) {
-            //   resetPressed = true
-            //   this.resetButtonId = outputTouchId
-            // }
-            // if (isInsideReset && 
-            // outputTouchPhase == 1) {
-            //   resetPressed = true
-            //   this.resetButtonId = outputTouchId
-            // }
-            // if (!isInsideReset && 
-            // resetPressed && 
-            // outputTouchPhase == 1 && 
-            // outputTouchId == this.resetButtonId) {
-            //   resetPressed = false
-            // }
-            // if (resetPressed && 
-            //   outputTouchPhase == 2 && 
-            //   outputTouchId == this.resetButtonId) {
-            //   resetPressed = false
-            //   this.resetButtonId = -1
-            // }
-            // if (
-            // outputTouchPhase == 3 && 
-            // resetPressed && 
-            // outputTouchId == this.resetButtonId) {
-            //   resetPressed = false
-            //   this.resetButtonId = -1
-            // }
             const isInsideAction = this.checkPointInRect(this.screenTouchToUnits(this.lastTouchPos), this.buttonActionRect);
             if (isInsideAction &&
                 outputTouchPhase == 0) {
@@ -272,6 +249,7 @@ let Game = class Game extends APJS.BasicScriptComponent {
         exports.grounds = [this.ground1];
         APJS.EventManager.getGlobalEmitter().on(APJS.EventType.Touch, this.touchCallback);
         exports.conect = this.getSceneObject().scene.findSceneObject('conect');
+        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
     }
     onDisable() {
         APJS.EventManager.getGlobalEmitter().off(APJS.EventType.Touch, this.touchCallback);
@@ -293,31 +271,9 @@ let Game = class Game extends APJS.BasicScriptComponent {
             exports.leftPressed = false;
             exports.rightPressed = false;
         }
-        while (this.accumulator >= exports.fixedTime) {
-            if (isTimeRunning && exports.gameState == 0) {
-                exports.time -= exports.fixedTime;
-                if (exports.time <= 0) {
-                    setGameState(1);
-                    this.gameRunning.name = 'gameover';
-                }
-                if (exports.time >= 27) {
-                    exports.conect.name = 'time0';
-                }
-                else if (exports.time >= 19) {
-                    exports.conect.name = 'time1';
-                }
-                else if (exports.time >= 11) {
-                    exports.conect.name = 'time2';
-                }
-                else if (exports.time >= 1) {
-                    exports.conect.name = 'time3';
-                }
-                else {
-                    exports.conect.name = 'time4';
-                }
-            }
-            this.accumulator -= exports.fixedTime;
-        }
+        // while (this.accumulator >= fixedTime) {
+        //   this.accumulator -= fixedTime
+        // }
     }
 };
 Game = __decorate([
