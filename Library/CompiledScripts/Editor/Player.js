@@ -52,6 +52,10 @@ let Player = class Player extends APJS.BasicScriptComponent {
         this.accumulator = 0;
         this.fryTimer = 0;
         this.isFrying = false;
+        this.ponto = 'raw';
+        this.pepper = 'no pepper';
+        this.tiposPonto = ['0', '1', '2'];
+        this.tiposPimenta = ['0', '1'];
         this.onRecordStart = (_event) => {
             this.state = 1;
             this.lastSubstate = 3;
@@ -62,8 +66,21 @@ let Player = class Player extends APJS.BasicScriptComponent {
             this.frameCounter = 0;
             this.accumulator = 0;
             this.smokeScene.name = 'smoke';
-            fryTimer = 0;
+            this.fryTimer = 0;
+            this.pepper = 'no pepper';
+            this.ponto = 'raw';
+            this.flagPole.name = 'flagPole';
+            this.saltArea.name = 'saltArea';
+            this.comanda.name = this.getRandomIntInclusive(100, 400) + this.getRandomItem(this.tiposPonto) + this.getRandomItem(this.tiposPimenta);
         };
+    }
+    getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1)) + minCeiled;
+    }
+    getRandomItem(el) {
+        return el[Math.floor(Math.random() * el.length)];
     }
     getPlayerRect() {
         var center = this.playerObj.getTransform().getWorldPosition();
@@ -128,6 +145,7 @@ let Player = class Player extends APJS.BasicScriptComponent {
         this.lastSubstate = Game_1.substate;
     }
     onStart() {
+        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
         this.playerSprite = this.getSceneObject().scene.findSceneObject('playerSprite');
         this.transform = this.getSceneObject().getComponent('ScreenTransform');
         this.width = this.transform.sizeDelta.x / Game_1.PPU;
@@ -139,7 +157,8 @@ let Player = class Player extends APJS.BasicScriptComponent {
         this.smokeScene = this.getSceneObject().scene.findSceneObject('smoke');
         this.flagPole = this.getSceneObject().scene.findSceneObject('flagPole');
         this.gameRunning = this.getSceneObject().scene.findSceneObject('gameRunning');
-        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
+        this.comanda = this.getSceneObject().scene.findSceneObject('comanda');
+        this.comanda.name = this.getRandomIntInclusive(100, 400) + this.getRandomItem(this.tiposPonto) + this.getRandomItem(this.tiposPimenta);
     }
     onUpdate(deltaTime) {
         if (this.frameCounter < 30) {
@@ -148,16 +167,16 @@ let Player = class Player extends APJS.BasicScriptComponent {
         }
         deltaTime = Math.min(deltaTime, 0.25);
         this.accumulator += deltaTime;
-        if (Game_1.resetPressed) {
-            this.state = 1;
-            this.lastSubstate = 3;
-            this.previousState = 1;
-            this.jumpCycle = false;
-            this.jumpPower = 30;
-            this.velocityY = 0;
-            this.frameCounter = 0;
-            this.accumulator = 0;
-        }
+        // if (resetPressed) {
+        //   this.state = 1
+        //   this.lastSubstate = 3
+        //   this.previousState = 1
+        //   this.jumpCycle = false
+        //   this.jumpPower = 30
+        //   this.velocityY = 0
+        //   this.frameCounter = 0
+        //   this.accumulator = 0
+        // }
         while (this.accumulator >= Game_1.fixedTime) {
             this.substateHandle();
             this.setPlayerSprite();
@@ -210,19 +229,27 @@ let Player = class Player extends APJS.BasicScriptComponent {
                 (0, Game_1.move)(this.getSceneObject(), 0, this.velocityY * Game_1.fixedTime);
             }
             if (Game_1.gameState == 0 && this.isFrying) {
-                if (this.fryTimer >= 8) {
+                if (this.fryTimer >= 11) {
+                    this.smokeScene.name = 'burnt';
+                    this.ponto = 'burnt';
+                }
+                else if (this.fryTimer >= 8) {
                     this.smokeScene.name = 'welldone';
+                    this.ponto = 'welldone';
                 }
                 else if (this.fryTimer >= 5) {
                     this.smokeScene.name = 'medium';
+                    this.ponto = 'medium';
                 }
                 else if (this.fryTimer >= 2) {
                     this.smokeScene.name = 'rare';
+                    this.ponto = 'rare';
                 }
             }
             if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.horizontalArea, 0))) {
                 this.horizontalArea.name = 'horizontal';
-                this.isFrying = true;
+                if (this.state == 0)
+                    this.isFrying = true;
             }
             else {
                 this.horizontalArea.name = 'fora';
@@ -230,13 +257,14 @@ let Player = class Player extends APJS.BasicScriptComponent {
                 this.smokeScene.name = 'smoke';
             }
             if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.saltArea, 0))) {
-                console.log("entrou na salt area");
-                this.saltArea.name = "salted";
+                this.saltArea.name = 'salted';
+                this.pepper = 'pepper';
             }
             if ((0, Game_1.checkRectOverlap)(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), (0, Game_1.getElementRect)(this.flagPole, 0))) {
                 console.log("terminou");
                 (0, Game_1.setGameState)(1);
                 this.gameRunning.name = 'gameover';
+                this.flagPole.name = this.ponto + "," + this.pepper;
             }
             this.accumulator -= Game_1.fixedTime;
         }

@@ -1,4 +1,5 @@
-import { leftPressed, rightPressed, move, PPU, checkRectOverlap, solids, getElementRect, snapX, fixedTime, time, resetPressed, gameState } from "Game"
+import { leftPressed, rightPressed, move, PPU, checkRectOverlap, solids, getElementRect, 
+snapX, fixedTime, time, gameState } from "Game"
 
 @component()
 export class Level extends APJS.BasicScriptComponent {
@@ -12,8 +13,9 @@ export class Level extends APJS.BasicScriptComponent {
   playerObj: any
 
   onRecordStart = (_event: APJS.IEvent) => {
-      this.frameCounter = 0
-      this.accumulator = 0
+    this.frameCounter = 0
+    this.accumulator = 0
+    console.log('reset level')
   }
 
   getPlayerBodyRect () {
@@ -43,10 +45,10 @@ export class Level extends APJS.BasicScriptComponent {
     deltaTime = Math.min(deltaTime, 0.25)
     this.accumulator += deltaTime
 
-    if (resetPressed) {
-      this.frameCounter = 0
-      this.accumulator = 0
-    }
+    // if (resetPressed) {
+    //   this.frameCounter = 0
+    //   this.accumulator = 0
+    // }
     
 
     while (this.accumulator >= fixedTime) {

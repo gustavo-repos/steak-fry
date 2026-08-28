@@ -3,10 +3,10 @@
   "context": {
     "snapshot": {
       "start": {
-        "startTime": 1787833878667
+        "startTime": 1787944549342
       },
       "end": {
-        "endTime": 1787866119730
+        "endTime": 1787958422855
       }
     }
   },
@@ -336,7 +336,7 @@
                                     },
                                     "visible": {
                                       "type": "Boolean",
-                                      "data": false
+                                      "data": true
                                     },
                                     "children": [],
                                     "components": [
@@ -397,7 +397,7 @@
                                           "type": "Vector4f",
                                           "data": {
                                             "x": -547.281,
-                                            "y": 1355.505,
+                                            "y": 1736.735,
                                             "z": -120.824,
                                             "w": 640
                                           }
@@ -405,14 +405,14 @@
                                         "anchoredPosition": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 404.112,
+                                            "x": 594.727,
                                             "y": 259.588
                                           }
                                         },
                                         "sizeDelta": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 1902.786,
+                                            "x": 2284.016,
                                             "y": 760.824
                                           }
                                         },
@@ -734,7 +734,7 @@
                                       "type": "Vector4f",
                                       "data": {
                                         "x": -564.19,
-                                        "y": 1539.363,
+                                        "y": 1846.681,
                                         "z": -652.5,
                                         "w": 652.5
                                       }
@@ -742,14 +742,14 @@
                                     "anchoredPosition": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 487.586,
+                                        "x": 641.245,
                                         "y": 0
                                       }
                                     },
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 2103.553,
+                                        "x": 2410.871,
                                         "y": 1305
                                       }
                                     },
@@ -2092,7 +2092,7 @@
                                     },
                                     "visible": {
                                       "type": "Boolean",
-                                      "data": false
+                                      "data": true
                                     },
                                     "children": [],
                                     "components": [
@@ -3835,7 +3835,359 @@
                                   "type": "Boolean",
                                   "data": true
                                 },
-                                "children": [],
+                                "children": [
+                                  {
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "93f9f0da-91aa-2826-6e81-4128b2c8ad4f",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "flagPole"
+                                    },
+                                    "visible": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "children": [],
+                                    "components": [
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "ScreenTransform",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "c4759f41-a25d-e86c-1814-9d7ac62be16b",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Screen Transform",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "0.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "horizontalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "LEFT",
+                                            "RIGHT",
+                                            "LEFT_AND_FIXED",
+                                            "RIGHT_AND_FIXED",
+                                            "LEFT_AND_RIGHT",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "verticalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "BOTTOM",
+                                            "TOP",
+                                            "BOTTOM_AND_FIXED",
+                                            "TOP_AND_FIXED",
+                                            "BOTTOM_AND_TOP",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "offsets": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": 16.687,
+                                            "y": 38.372,
+                                            "z": -186.5,
+                                            "w": 42.844
+                                          }
+                                        },
+                                        "anchoredPosition": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 27.529,
+                                            "y": -71.828
+                                          }
+                                        },
+                                        "sizeDelta": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 21.685,
+                                            "y": 229.344
+                                          }
+                                        },
+                                        "pivot": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5
+                                          }
+                                        },
+                                        "rotation": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "scale": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 1,
+                                            "y": 1
+                                          }
+                                        },
+                                        "pixelsPerUnit": {
+                                          "type": "Number",
+                                          "data": 32
+                                        },
+                                        "anchors": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5,
+                                            "z": 0.5,
+                                            "w": 0.5
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "Image",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "743962e7-defd-4d4f-a519-c9bf721c0435",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Image",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "0.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "sharedMaterial": {
+                                          "type": "Material",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-000000000132"
+                                          }
+                                        },
+                                        "texture": {
+                                          "type": "Texture",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-000000001543"
+                                          }
+                                        },
+                                        "segTex": {
+                                          "type": "Texture",
+                                          "data": {
+                                            "guid": "undefined"
+                                          }
+                                        },
+                                        "segBlendMode": {
+                                          "type": "Enum",
+                                          "data": "NORMAL",
+                                          "options": [
+                                            "DISABLED",
+                                            "NORMAL",
+                                            "MULTIPLY",
+                                            "SCREEN",
+                                            "AVERAGE",
+                                            "LINEAR_DODGE_HARD",
+                                            "ALPHA_PREMULTIPLY",
+                                            "GLASS",
+                                            "TRANSMISSION",
+                                            "COLOR_BURN",
+                                            "LINEAR_BURN",
+                                            "COLOR_DODGE",
+                                            "OVERLAY",
+                                            "SOFT_LIGHT",
+                                            "HARD_LIGHT",
+                                            "VIVID_LIGHT",
+                                            "LINEAR_LIGHT",
+                                            "PIN_LIGHT",
+                                            "HARD_MIX",
+                                            "DIFFERENCE",
+                                            "EXCLUSION",
+                                            "DISSOLVE",
+                                            "DARKER_COLOR",
+                                            "LIGHTER_COLOR",
+                                            "SUBTRACT",
+                                            "DIVIDE",
+                                            "HUE",
+                                            "SATURATION",
+                                            "COLOR",
+                                            "LUMINOSITY",
+                                            "COLORED_GLASS",
+                                            "ALPHA_TEST",
+                                            "LINEAR_DODGE",
+                                            "DARKEN",
+                                            "LIGHTEN",
+                                            "MULTIPLY_SOFT",
+                                            "SCREEN_SOFT",
+                                            "AVERAGE_SOFT",
+                                            "FROM_SHADER",
+                                            "NORMAL_LEGACY",
+                                            "TRANSPARENT_LEGACY",
+                                            "COLORED_GLASS_LEGACY",
+                                            "GLASS_LEGACY",
+                                            "DARKEN_LEGACY",
+                                            "MULTIPLY_LEGACY",
+                                            "COLOR_BURN_LEGACY",
+                                            "LIGHTEN_LEGACY",
+                                            "SCREEN_LEGACY",
+                                            "COLOR_DODGE_LEGACY",
+                                            "LINEAR_DODGE_LEGACY",
+                                            "OVERLAY_LEGACY",
+                                            "SOFT_LIGHT_LEGACY",
+                                            "DIFFERENCE_LEGACY",
+                                            "EXCLUSION_LEGACY",
+                                            "PARTICLE_ADD_LEGACY",
+                                            "PARTICLE_NORMAL_LEGACY",
+                                            "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                            "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                            "GAN_TRANSPARENT_LEGACY",
+                                            "PREMULTIPLY_ALPHA_LEGACY",
+                                            "FACEMASK_ADD"
+                                          ]
+                                        },
+                                        "segRadius": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "segSoftness": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "blendMode": {
+                                          "type": "Enum",
+                                          "data": "Normal",
+                                          "options": [
+                                            "Normal",
+                                            "Darken",
+                                            "Multiply",
+                                            "ColorBurn",
+                                            "LinearBurn",
+                                            "Lighten",
+                                            "Screen",
+                                            "ColorDodge",
+                                            "LinearDodge",
+                                            "Overlay",
+                                            "SoftLight",
+                                            "HardLight",
+                                            "VividLight",
+                                            "LinearLight",
+                                            "PinLight",
+                                            "HardMix",
+                                            "Difference",
+                                            "Exclusion"
+                                          ]
+                                        },
+                                        "opacity": {
+                                          "type": "Number",
+                                          "data": 0.4
+                                        },
+                                        "color": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "size": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 10,
+                                            "y": 10
+                                          }
+                                        },
+                                        "pivot": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5
+                                          }
+                                        },
+                                        "flipX": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "flipY": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "drawMode": {
+                                          "type": "Enum",
+                                          "data": "Normal",
+                                          "options": [
+                                            "Normal",
+                                            "Tiled",
+                                            "Filled",
+                                            "Ellipse"
+                                          ]
+                                        },
+                                        "stretchMode": {
+                                          "type": "Enum",
+                                          "data": "Stretch",
+                                          "options": [
+                                            "Fit",
+                                            "FitWidth",
+                                            "FitHeight",
+                                            "Stretch",
+                                            "Fill",
+                                            "FillAndCut"
+                                          ]
+                                        },
+                                        "filledType": {
+                                          "type": "Enum",
+                                          "data": "Horizontal",
+                                          "options": [
+                                            "Horizontal",
+                                            "Vertical",
+                                            "Radial"
+                                          ]
+                                        },
+                                        "startPoint": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "filledRange": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "ellipseX": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "ellipseY": {
+                                          "type": "Number",
+                                          "data": 1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
                                 "components": [
                                   {
                                     "type": {
@@ -4186,7 +4538,359 @@
                                   "type": "Boolean",
                                   "data": true
                                 },
-                                "children": [],
+                                "children": [
+                                  {
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "8507807f-5094-baae-177f-130422b8d931",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "saltArea"
+                                    },
+                                    "visible": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "children": [],
+                                    "components": [
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "ScreenTransform",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "d8186565-01d6-f594-4ce0-e4e026609222",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Screen Transform",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "0.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "horizontalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "LEFT",
+                                            "RIGHT",
+                                            "LEFT_AND_FIXED",
+                                            "RIGHT_AND_FIXED",
+                                            "LEFT_AND_RIGHT",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "verticalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "BOTTOM",
+                                            "TOP",
+                                            "BOTTOM_AND_FIXED",
+                                            "TOP_AND_FIXED",
+                                            "BOTTOM_AND_TOP",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "offsets": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": -82.665,
+                                            "y": 91.554,
+                                            "z": -126.37,
+                                            "w": 193.926
+                                          }
+                                        },
+                                        "anchoredPosition": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 4.444,
+                                            "y": 33.778
+                                          }
+                                        },
+                                        "sizeDelta": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 174.219,
+                                            "y": 320.296
+                                          }
+                                        },
+                                        "pivot": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5
+                                          }
+                                        },
+                                        "rotation": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "scale": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 1,
+                                            "y": 1
+                                          }
+                                        },
+                                        "pixelsPerUnit": {
+                                          "type": "Number",
+                                          "data": 32
+                                        },
+                                        "anchors": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5,
+                                            "z": 0.5,
+                                            "w": 0.5
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "Image",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "d67a9293-0b52-7972-0450-162df182a6db",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Image",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "0.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "sharedMaterial": {
+                                          "type": "Material",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-000000000132"
+                                          }
+                                        },
+                                        "texture": {
+                                          "type": "Texture",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-0000000000c0"
+                                          }
+                                        },
+                                        "segTex": {
+                                          "type": "Texture",
+                                          "data": {
+                                            "guid": "undefined"
+                                          }
+                                        },
+                                        "segBlendMode": {
+                                          "type": "Enum",
+                                          "data": "NORMAL",
+                                          "options": [
+                                            "DISABLED",
+                                            "NORMAL",
+                                            "MULTIPLY",
+                                            "SCREEN",
+                                            "AVERAGE",
+                                            "LINEAR_DODGE_HARD",
+                                            "ALPHA_PREMULTIPLY",
+                                            "GLASS",
+                                            "TRANSMISSION",
+                                            "COLOR_BURN",
+                                            "LINEAR_BURN",
+                                            "COLOR_DODGE",
+                                            "OVERLAY",
+                                            "SOFT_LIGHT",
+                                            "HARD_LIGHT",
+                                            "VIVID_LIGHT",
+                                            "LINEAR_LIGHT",
+                                            "PIN_LIGHT",
+                                            "HARD_MIX",
+                                            "DIFFERENCE",
+                                            "EXCLUSION",
+                                            "DISSOLVE",
+                                            "DARKER_COLOR",
+                                            "LIGHTER_COLOR",
+                                            "SUBTRACT",
+                                            "DIVIDE",
+                                            "HUE",
+                                            "SATURATION",
+                                            "COLOR",
+                                            "LUMINOSITY",
+                                            "COLORED_GLASS",
+                                            "ALPHA_TEST",
+                                            "LINEAR_DODGE",
+                                            "DARKEN",
+                                            "LIGHTEN",
+                                            "MULTIPLY_SOFT",
+                                            "SCREEN_SOFT",
+                                            "AVERAGE_SOFT",
+                                            "FROM_SHADER",
+                                            "NORMAL_LEGACY",
+                                            "TRANSPARENT_LEGACY",
+                                            "COLORED_GLASS_LEGACY",
+                                            "GLASS_LEGACY",
+                                            "DARKEN_LEGACY",
+                                            "MULTIPLY_LEGACY",
+                                            "COLOR_BURN_LEGACY",
+                                            "LIGHTEN_LEGACY",
+                                            "SCREEN_LEGACY",
+                                            "COLOR_DODGE_LEGACY",
+                                            "LINEAR_DODGE_LEGACY",
+                                            "OVERLAY_LEGACY",
+                                            "SOFT_LIGHT_LEGACY",
+                                            "DIFFERENCE_LEGACY",
+                                            "EXCLUSION_LEGACY",
+                                            "PARTICLE_ADD_LEGACY",
+                                            "PARTICLE_NORMAL_LEGACY",
+                                            "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                            "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                            "GAN_TRANSPARENT_LEGACY",
+                                            "PREMULTIPLY_ALPHA_LEGACY",
+                                            "FACEMASK_ADD"
+                                          ]
+                                        },
+                                        "segRadius": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "segSoftness": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "blendMode": {
+                                          "type": "Enum",
+                                          "data": "Normal",
+                                          "options": [
+                                            "Normal",
+                                            "Darken",
+                                            "Multiply",
+                                            "ColorBurn",
+                                            "LinearBurn",
+                                            "Lighten",
+                                            "Screen",
+                                            "ColorDodge",
+                                            "LinearDodge",
+                                            "Overlay",
+                                            "SoftLight",
+                                            "HardLight",
+                                            "VividLight",
+                                            "LinearLight",
+                                            "PinLight",
+                                            "HardMix",
+                                            "Difference",
+                                            "Exclusion"
+                                          ]
+                                        },
+                                        "opacity": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "color": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "size": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 10,
+                                            "y": 10
+                                          }
+                                        },
+                                        "pivot": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5
+                                          }
+                                        },
+                                        "flipX": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "flipY": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "drawMode": {
+                                          "type": "Enum",
+                                          "data": "Normal",
+                                          "options": [
+                                            "Normal",
+                                            "Tiled",
+                                            "Filled",
+                                            "Ellipse"
+                                          ]
+                                        },
+                                        "stretchMode": {
+                                          "type": "Enum",
+                                          "data": "Stretch",
+                                          "options": [
+                                            "Fit",
+                                            "FitWidth",
+                                            "FitHeight",
+                                            "Stretch",
+                                            "Fill",
+                                            "FillAndCut"
+                                          ]
+                                        },
+                                        "filledType": {
+                                          "type": "Enum",
+                                          "data": "Horizontal",
+                                          "options": [
+                                            "Horizontal",
+                                            "Vertical",
+                                            "Radial"
+                                          ]
+                                        },
+                                        "startPoint": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "filledRange": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "ellipseX": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "ellipseY": {
+                                          "type": "Number",
+                                          "data": 1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
                                 "components": [
                                   {
                                     "type": {
@@ -4837,6 +5541,1099 @@
                                     "stretchMode": {
                                       "type": "Enum",
                                       "data": "Fit",
+                                      "options": [
+                                        "Fit",
+                                        "FitWidth",
+                                        "FitHeight",
+                                        "Stretch",
+                                        "Fill",
+                                        "FillAndCut"
+                                      ]
+                                    },
+                                    "filledType": {
+                                      "type": "Enum",
+                                      "data": "Horizontal",
+                                      "options": [
+                                        "Horizontal",
+                                        "Vertical",
+                                        "Radial"
+                                      ]
+                                    },
+                                    "startPoint": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "filledRange": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseX": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseY": {
+                                      "type": "Number",
+                                      "data": 1
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "66fd8aeb-0011-56ba-c40f-bf5792e01aa4",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "comanda"
+                                },
+                                "visible": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "children": [
+                                  {
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "8727dc04-af7f-51bc-2385-3184c4f98dec",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "texto"
+                                    },
+                                    "visible": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "children": [],
+                                    "components": [
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "ScreenTransform",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "9b98bbde-5b08-6d8f-8f74-e841b7474070",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Screen Transform",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "0.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "horizontalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "LEFT",
+                                            "RIGHT",
+                                            "LEFT_AND_FIXED",
+                                            "RIGHT_AND_FIXED",
+                                            "LEFT_AND_RIGHT",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "verticalConstraint": {
+                                          "type": "Enum",
+                                          "data": "FIXED",
+                                          "options": [
+                                            "STRETCH",
+                                            "FIXED",
+                                            "BOTTOM",
+                                            "TOP",
+                                            "BOTTOM_AND_FIXED",
+                                            "TOP_AND_FIXED",
+                                            "BOTTOM_AND_TOP",
+                                            "INVALID"
+                                          ]
+                                        },
+                                        "offsets": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": -140,
+                                            "y": 160,
+                                            "z": -81.5,
+                                            "w": 51.5
+                                          }
+                                        },
+                                        "anchoredPosition": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 10,
+                                            "y": -15
+                                          }
+                                        },
+                                        "sizeDelta": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 300,
+                                            "y": 133
+                                          }
+                                        },
+                                        "pivot": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5
+                                          }
+                                        },
+                                        "rotation": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "scale": {
+                                          "type": "Vector2f",
+                                          "data": {
+                                            "x": 1,
+                                            "y": 1
+                                          }
+                                        },
+                                        "pixelsPerUnit": {
+                                          "type": "Number",
+                                          "data": 32
+                                        },
+                                        "anchors": {
+                                          "type": "Vector4f",
+                                          "data": {
+                                            "x": 0.5,
+                                            "y": 0.5,
+                                            "z": 0.5,
+                                            "w": 0.5
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": {
+                                          "type": "String",
+                                          "data": "Text2D",
+                                          "readonly": true
+                                        },
+                                        "guid": {
+                                          "type": "Guid",
+                                          "data": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+                                          "readonly": true
+                                        },
+                                        "name": {
+                                          "type": "String",
+                                          "data": "Text",
+                                          "readonly": true
+                                        },
+                                        "version": {
+                                          "type": "Version",
+                                          "data": "1.1.0",
+                                          "readonly": true
+                                        },
+                                        "enabled": {
+                                          "type": "Boolean",
+                                          "data": true
+                                        },
+                                        "input": {
+                                          "type": "String",
+                                          "data": "Pedido #354\n✓ Mal passado\n✓ Pimenta"
+                                        },
+                                        "textAdaptiveCanvasEnabled": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "fontSize": {
+                                          "type": "Number",
+                                          "data": 28
+                                        },
+                                        "fontType": {
+                                          "type": "String",
+                                          "data": "Script.ttf"
+                                        },
+                                        "bold": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "italic": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "underline": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "writingDirection": {
+                                          "type": "Enum",
+                                          "data": "HORIZONTAL",
+                                          "options": [
+                                            "HORIZONTAL",
+                                            "VERTICAL"
+                                          ]
+                                        },
+                                        "lineBreakType": {
+                                          "type": "Enum",
+                                          "data": "AutoLineBreak",
+                                          "options": [
+                                            "AutoLineBreak",
+                                            "CutOff",
+                                            "Clamp",
+                                            "Shrink"
+                                          ]
+                                        },
+                                        "autoFontSizeMin": {
+                                          "type": "Number",
+                                          "data": 24
+                                        },
+                                        "autoFontSizeMax": {
+                                          "type": "Number",
+                                          "data": 96
+                                        },
+                                        "verticalAlignment": {
+                                          "type": "Enum",
+                                          "data": "TOP",
+                                          "options": [
+                                            "TOP",
+                                            "CENTER",
+                                            "BOTTOM"
+                                          ]
+                                        },
+                                        "horizontalAlignment": {
+                                          "type": "Enum",
+                                          "data": "LEFT",
+                                          "options": [
+                                            "LEFT",
+                                            "CENTER",
+                                            "RIGHT",
+                                            "JUSTIFY"
+                                          ]
+                                        },
+                                        "letterSpacing": {
+                                          "type": "Number",
+                                          "data": 0.1
+                                        },
+                                        "lineSpacing": {
+                                          "type": "Number",
+                                          "data": 0.3
+                                        },
+                                        "artText": {
+                                          "type": "ArtTextAsset",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-000000008000"
+                                          }
+                                        },
+                                        "letterFillMode": {
+                                          "type": "Enum",
+                                          "data": "SOLID",
+                                          "options": [
+                                            "SOLID",
+                                            "GRADIENT",
+                                            "TEXTURE"
+                                          ]
+                                        },
+                                        "color": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterAlpha": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterGradientQuality": {
+                                          "type": "Enum",
+                                          "data": "TwoColor",
+                                          "options": [
+                                            "TwoColor",
+                                            "ThreeColor"
+                                          ]
+                                        },
+                                        "letterGradientColor1": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterGradientColor2": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterGradientColor3": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterGradientColorPos1": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterGradientColorPos2": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterGradientColorPos3": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "letterGradientAngle": {
+                                          "type": "Number",
+                                          "data": 90
+                                        },
+                                        "letterGradientRangeMode": {
+                                          "type": "Enum",
+                                          "data": "ALL",
+                                          "options": [
+                                            "CHARACTER",
+                                            "ALL"
+                                          ]
+                                        },
+                                        "letterTexture": {
+                                          "type": "Texture2D",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-00000000001c"
+                                          }
+                                        },
+                                        "letterTextureScale": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterTextureOffsetX": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterTextureOffsetY": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "textFillArea": {
+                                          "type": "Enum",
+                                          "data": "Rect",
+                                          "options": [
+                                            "Rect",
+                                            "Character"
+                                          ]
+                                        },
+                                        "letterTextureFlipX": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "letterTextureFlipY": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "letterTextureAlpha": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterTextureAngle": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterTextureRange": {
+                                          "type": "Number",
+                                          "data": -1
+                                        },
+                                        "backgroundEnable": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "letterBgAlpha": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterBgFillMode": {
+                                          "type": "Enum",
+                                          "data": "SOLID",
+                                          "options": [
+                                            "SOLID",
+                                            "TEXTURE",
+                                            "GRADIENT"
+                                          ]
+                                        },
+                                        "letterBgGradientQuality": {
+                                          "type": "Enum",
+                                          "data": "TwoColor",
+                                          "options": [
+                                            "TwoColor",
+                                            "ThreeColor"
+                                          ]
+                                        },
+                                        "letterBgColor": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterBgGradientColor1": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterBgGradientColor2": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterBgGradientColor3": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "letterBgGradientColorPos1": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgGradientColorPos2": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterBgGradientColorPos3": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgGradientAngle": {
+                                          "type": "Number",
+                                          "data": 90
+                                        },
+                                        "letterBgTexture": {
+                                          "type": "Texture2D",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-00000000001d"
+                                          }
+                                        },
+                                        "letterBgTextureScale": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "letterBgTextureOffsetX": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgTextureOffsetY": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgWidthCustomized": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgHeightCustomized": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "letterBgRoundRadiusScale": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "innerShadowEnable": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "innerShadowFillMode": {
+                                          "type": "Enum",
+                                          "data": "SOLID",
+                                          "options": [
+                                            "SOLID",
+                                            "GRADIENT",
+                                            "TEXTURE"
+                                          ]
+                                        },
+                                        "innerShadowGradientQuality": {
+                                          "type": "Enum",
+                                          "data": "TwoColor",
+                                          "options": [
+                                            "TwoColor",
+                                            "ThreeColor"
+                                          ]
+                                        },
+                                        "innerShadowColorRGBA": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "innerShadowGradientColor1": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "innerShadowGradientColor2": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "innerShadowGradientColor3": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 0,
+                                            "g": 0,
+                                            "b": 0,
+                                            "a": 1
+                                          }
+                                        },
+                                        "innerShadowGradientColorPos1": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "innerShadowGradientColorPos2": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "innerShadowGradientColorPos3": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "innerShadowGradientAngle": {
+                                          "type": "Number",
+                                          "data": 90
+                                        },
+                                        "innerShadowGradientRangeMode": {
+                                          "type": "Enum",
+                                          "data": "ALL",
+                                          "options": [
+                                            "CHARACTER",
+                                            "ALL"
+                                          ]
+                                        },
+                                        "innerShadowTexture": {
+                                          "type": "Texture2D",
+                                          "data": {
+                                            "guid": "00000000-0000-0000-0000-00000000001d"
+                                          }
+                                        },
+                                        "innerShadowTextureScale": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "innerShadowTextureOffsetX": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "innerShadowTextureOffsetY": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "innerShadowAlpha": {
+                                          "type": "Number",
+                                          "data": 0.9
+                                        },
+                                        "innerShdadowTextFillArea": {
+                                          "type": "Enum",
+                                          "data": "Rect",
+                                          "options": [
+                                            "Rect",
+                                            "Character"
+                                          ]
+                                        },
+                                        "innerShadowTextureFlipX": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "innerShadowTextureFlipY": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "innerShadowTextureAlpha": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "innerShadowTextureAngle": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "innerShadowTextureRange": {
+                                          "type": "Number",
+                                          "data": -1
+                                        },
+                                        "innerShadowDistance": {
+                                          "type": "Number",
+                                          "data": 5
+                                        },
+                                        "innerShadowAngle": {
+                                          "type": "Number",
+                                          "data": -30
+                                        },
+                                        "innerShadowSmooth": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "glow": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "bloomEnable": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "bloomOption": {
+                                          "type": "Enum",
+                                          "data": "OutWard",
+                                          "options": [
+                                            "OutWard",
+                                            "Stroke"
+                                          ]
+                                        },
+                                        "bloomColor": {
+                                          "type": "Color",
+                                          "data": {
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
+                                            "a": 1
+                                          }
+                                        },
+                                        "bloomRtSizeCoeff": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "glowIntensity": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "glowRange": {
+                                          "type": "Number",
+                                          "data": 0.5
+                                        },
+                                        "glowHorizontalAngle": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "glowVerticalAngle": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "strokes": {
+                                          "type": "Vector",
+                                          "data": []
+                                        },
+                                        "shadows": {
+                                          "type": "Vector",
+                                          "data": []
+                                        },
+                                        "boxDimension": {
+                                          "type": "Enum",
+                                          "data": "FixedSize",
+                                          "options": [
+                                            "Dynamic",
+                                            "FixedWidth",
+                                            "FixedSize"
+                                          ]
+                                        },
+                                        "bendType": {
+                                          "type": "Enum",
+                                          "data": "None",
+                                          "options": [
+                                            "None",
+                                            "OnPath",
+                                            "OnArc"
+                                          ]
+                                        },
+                                        "arcAngle": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "layoutMode": {
+                                          "type": "Enum",
+                                          "data": "FixedSize",
+                                          "options": [
+                                            "AutoSize",
+                                            "AutoHeight",
+                                            "AutoWidth",
+                                            "FixedSize"
+                                          ]
+                                        },
+                                        "inAnimationAssetID": {
+                                          "type": "String",
+                                          "data": ""
+                                        },
+                                        "loopAnimationAssetID": {
+                                          "type": "String",
+                                          "data": ""
+                                        },
+                                        "outAnimationAssetID": {
+                                          "type": "String",
+                                          "data": ""
+                                        },
+                                        "inAnimationDuration": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "loopAnimationDuration": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "outAnimationDuration": {
+                                          "type": "Number",
+                                          "data": 1
+                                        },
+                                        "userEditable": {
+                                          "type": "Boolean",
+                                          "data": false
+                                        },
+                                        "maxInputWords": {
+                                          "type": "Number",
+                                          "data": 0
+                                        },
+                                        "richStr": {
+                                          "type": "String",
+                                          "data": "Pedido #354\n✓ Mal passado\n✓ Pimenta"
+                                        },
+                                        "templateId": {
+                                          "type": "String",
+                                          "data": ""
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "components": [
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "ScreenTransform",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "2651255e-bb1f-f957-1d76-8bf1f1c1bdc1",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Screen Transform",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "horizontalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "LEFT",
+                                        "RIGHT",
+                                        "LEFT_AND_FIXED",
+                                        "RIGHT_AND_FIXED",
+                                        "LEFT_AND_RIGHT",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "verticalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "BOTTOM",
+                                        "TOP",
+                                        "BOTTOM_AND_FIXED",
+                                        "TOP_AND_FIXED",
+                                        "BOTTOM_AND_TOP",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "offsets": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": -325.944,
+                                        "y": -25.944,
+                                        "z": -39.073,
+                                        "w": 93.927
+                                      }
+                                    },
+                                    "anchoredPosition": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": -175.944,
+                                        "y": 27.427
+                                      }
+                                    },
+                                    "sizeDelta": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 300,
+                                        "y": 133
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "rotation": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "scale": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 1,
+                                        "y": 1
+                                      }
+                                    },
+                                    "pixelsPerUnit": {
+                                      "type": "Number",
+                                      "data": 32
+                                    },
+                                    "anchors": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5,
+                                        "z": 0.5,
+                                        "w": 0.5
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "5b8dd673-e213-d9d9-018c-bdb53d861a31",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "sharedMaterial": {
+                                      "type": "Material",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000000132"
+                                      }
+                                    },
+                                    "texture": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                      }
+                                    },
+                                    "segTex": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "undefined"
+                                      }
+                                    },
+                                    "segBlendMode": {
+                                      "type": "Enum",
+                                      "data": "NORMAL",
+                                      "options": [
+                                        "DISABLED",
+                                        "NORMAL",
+                                        "MULTIPLY",
+                                        "SCREEN",
+                                        "AVERAGE",
+                                        "LINEAR_DODGE_HARD",
+                                        "ALPHA_PREMULTIPLY",
+                                        "GLASS",
+                                        "TRANSMISSION",
+                                        "COLOR_BURN",
+                                        "LINEAR_BURN",
+                                        "COLOR_DODGE",
+                                        "OVERLAY",
+                                        "SOFT_LIGHT",
+                                        "HARD_LIGHT",
+                                        "VIVID_LIGHT",
+                                        "LINEAR_LIGHT",
+                                        "PIN_LIGHT",
+                                        "HARD_MIX",
+                                        "DIFFERENCE",
+                                        "EXCLUSION",
+                                        "DISSOLVE",
+                                        "DARKER_COLOR",
+                                        "LIGHTER_COLOR",
+                                        "SUBTRACT",
+                                        "DIVIDE",
+                                        "HUE",
+                                        "SATURATION",
+                                        "COLOR",
+                                        "LUMINOSITY",
+                                        "COLORED_GLASS",
+                                        "ALPHA_TEST",
+                                        "LINEAR_DODGE",
+                                        "DARKEN",
+                                        "LIGHTEN",
+                                        "MULTIPLY_SOFT",
+                                        "SCREEN_SOFT",
+                                        "AVERAGE_SOFT",
+                                        "FROM_SHADER",
+                                        "NORMAL_LEGACY",
+                                        "TRANSPARENT_LEGACY",
+                                        "COLORED_GLASS_LEGACY",
+                                        "GLASS_LEGACY",
+                                        "DARKEN_LEGACY",
+                                        "MULTIPLY_LEGACY",
+                                        "COLOR_BURN_LEGACY",
+                                        "LIGHTEN_LEGACY",
+                                        "SCREEN_LEGACY",
+                                        "COLOR_DODGE_LEGACY",
+                                        "LINEAR_DODGE_LEGACY",
+                                        "OVERLAY_LEGACY",
+                                        "SOFT_LIGHT_LEGACY",
+                                        "DIFFERENCE_LEGACY",
+                                        "EXCLUSION_LEGACY",
+                                        "PARTICLE_ADD_LEGACY",
+                                        "PARTICLE_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                        "GAN_TRANSPARENT_LEGACY",
+                                        "PREMULTIPLY_ALPHA_LEGACY",
+                                        "FACEMASK_ADD"
+                                      ]
+                                    },
+                                    "segRadius": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "segSoftness": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "blendMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Darken",
+                                        "Multiply",
+                                        "ColorBurn",
+                                        "LinearBurn",
+                                        "Lighten",
+                                        "Screen",
+                                        "ColorDodge",
+                                        "LinearDodge",
+                                        "Overlay",
+                                        "SoftLight",
+                                        "HardLight",
+                                        "VividLight",
+                                        "LinearLight",
+                                        "PinLight",
+                                        "HardMix",
+                                        "Difference",
+                                        "Exclusion"
+                                      ]
+                                    },
+                                    "opacity": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "color": {
+                                      "type": "Color",
+                                      "data": {
+                                        "r": 0.792,
+                                        "g": 0.792,
+                                        "b": 0.792,
+                                        "a": 1
+                                      }
+                                    },
+                                    "size": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 10,
+                                        "y": 10
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "flipX": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "flipY": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "drawMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Tiled",
+                                        "Filled",
+                                        "Ellipse"
+                                      ]
+                                    },
+                                    "stretchMode": {
+                                      "type": "Enum",
+                                      "data": "Stretch",
                                       "options": [
                                         "Fit",
                                         "FitWidth",
@@ -7422,7 +9219,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "be34204a-d1bc-d87d-d0f2-e1b4447a45e1"
+                                        "guid": "00000000-0000-0000-0000-00000000006b"
                                       }
                                     },
                                     "segTex": {
@@ -7806,6 +9603,357 @@
                                     "isMobilePreview": {
                                       "type": "Boolean",
                                       "data": false
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "40db5573-aff2-52cb-5d0d-223cc39da99f",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "pepper"
+                                },
+                                "visible": {
+                                  "type": "Boolean",
+                                  "data": false
+                                },
+                                "children": [],
+                                "components": [
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "ScreenTransform",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "3cc79b3f-336a-e6fa-085c-eab12b4c82ad",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Screen Transform",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "horizontalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "LEFT",
+                                        "RIGHT",
+                                        "LEFT_AND_FIXED",
+                                        "RIGHT_AND_FIXED",
+                                        "LEFT_AND_RIGHT",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "verticalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "BOTTOM",
+                                        "TOP",
+                                        "BOTTOM_AND_FIXED",
+                                        "TOP_AND_FIXED",
+                                        "BOTTOM_AND_TOP",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "offsets": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 46.247,
+                                        "y": 99.813,
+                                        "z": 54.998,
+                                        "w": 111.126
+                                      }
+                                    },
+                                    "anchoredPosition": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 73.03,
+                                        "y": 83.062
+                                      }
+                                    },
+                                    "sizeDelta": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 53.566,
+                                        "y": 56.128
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "rotation": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "scale": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 1,
+                                        "y": 1
+                                      }
+                                    },
+                                    "pixelsPerUnit": {
+                                      "type": "Number",
+                                      "data": 32
+                                    },
+                                    "anchors": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5,
+                                        "z": 0.5,
+                                        "w": 0.5
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "f56fb708-7e66-902b-907c-6f79f47e105a",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "sharedMaterial": {
+                                      "type": "Material",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000000132"
+                                      }
+                                    },
+                                    "texture": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                      }
+                                    },
+                                    "segTex": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "undefined"
+                                      }
+                                    },
+                                    "segBlendMode": {
+                                      "type": "Enum",
+                                      "data": "NORMAL",
+                                      "options": [
+                                        "DISABLED",
+                                        "NORMAL",
+                                        "MULTIPLY",
+                                        "SCREEN",
+                                        "AVERAGE",
+                                        "LINEAR_DODGE_HARD",
+                                        "ALPHA_PREMULTIPLY",
+                                        "GLASS",
+                                        "TRANSMISSION",
+                                        "COLOR_BURN",
+                                        "LINEAR_BURN",
+                                        "COLOR_DODGE",
+                                        "OVERLAY",
+                                        "SOFT_LIGHT",
+                                        "HARD_LIGHT",
+                                        "VIVID_LIGHT",
+                                        "LINEAR_LIGHT",
+                                        "PIN_LIGHT",
+                                        "HARD_MIX",
+                                        "DIFFERENCE",
+                                        "EXCLUSION",
+                                        "DISSOLVE",
+                                        "DARKER_COLOR",
+                                        "LIGHTER_COLOR",
+                                        "SUBTRACT",
+                                        "DIVIDE",
+                                        "HUE",
+                                        "SATURATION",
+                                        "COLOR",
+                                        "LUMINOSITY",
+                                        "COLORED_GLASS",
+                                        "ALPHA_TEST",
+                                        "LINEAR_DODGE",
+                                        "DARKEN",
+                                        "LIGHTEN",
+                                        "MULTIPLY_SOFT",
+                                        "SCREEN_SOFT",
+                                        "AVERAGE_SOFT",
+                                        "FROM_SHADER",
+                                        "NORMAL_LEGACY",
+                                        "TRANSPARENT_LEGACY",
+                                        "COLORED_GLASS_LEGACY",
+                                        "GLASS_LEGACY",
+                                        "DARKEN_LEGACY",
+                                        "MULTIPLY_LEGACY",
+                                        "COLOR_BURN_LEGACY",
+                                        "LIGHTEN_LEGACY",
+                                        "SCREEN_LEGACY",
+                                        "COLOR_DODGE_LEGACY",
+                                        "LINEAR_DODGE_LEGACY",
+                                        "OVERLAY_LEGACY",
+                                        "SOFT_LIGHT_LEGACY",
+                                        "DIFFERENCE_LEGACY",
+                                        "EXCLUSION_LEGACY",
+                                        "PARTICLE_ADD_LEGACY",
+                                        "PARTICLE_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                        "GAN_TRANSPARENT_LEGACY",
+                                        "PREMULTIPLY_ALPHA_LEGACY",
+                                        "FACEMASK_ADD"
+                                      ]
+                                    },
+                                    "segRadius": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "segSoftness": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "blendMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Darken",
+                                        "Multiply",
+                                        "ColorBurn",
+                                        "LinearBurn",
+                                        "Lighten",
+                                        "Screen",
+                                        "ColorDodge",
+                                        "LinearDodge",
+                                        "Overlay",
+                                        "SoftLight",
+                                        "HardLight",
+                                        "VividLight",
+                                        "LinearLight",
+                                        "PinLight",
+                                        "HardMix",
+                                        "Difference",
+                                        "Exclusion"
+                                      ]
+                                    },
+                                    "opacity": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "color": {
+                                      "type": "Color",
+                                      "data": {
+                                        "r": 1,
+                                        "g": 1,
+                                        "b": 1,
+                                        "a": 1
+                                      }
+                                    },
+                                    "size": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 10,
+                                        "y": 10
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "flipX": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "flipY": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "drawMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Tiled",
+                                        "Filled",
+                                        "Ellipse"
+                                      ]
+                                    },
+                                    "stretchMode": {
+                                      "type": "Enum",
+                                      "data": "FillAndCut",
+                                      "options": [
+                                        "Fit",
+                                        "FitWidth",
+                                        "FitHeight",
+                                        "Stretch",
+                                        "Fill",
+                                        "FillAndCut"
+                                      ]
+                                    },
+                                    "filledType": {
+                                      "type": "Enum",
+                                      "data": "Horizontal",
+                                      "options": [
+                                        "Horizontal",
+                                        "Vertical",
+                                        "Radial"
+                                      ]
+                                    },
+                                    "startPoint": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "filledRange": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseX": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseY": {
+                                      "type": "Number",
+                                      "data": 1
                                     }
                                   }
                                 ]
@@ -13407,6 +15555,137 @@
             {
               "guid": {
                 "type": "Guid",
+                "data": "2dd1c155-f3c6-d363-3b60-9f4f42a8e0da",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "plate_with_steak"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\plate_with_steak.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 477
+              },
+              "height": {
+                "type": "Number",
+                "data": 373
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 23558
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
                 "data": "af8085af-6f4c-1f65-7470-ef9e4a7ae62a",
                 "readonly": true
               },
@@ -14513,38 +16792,32 @@
       }
     },
     {
-      "actionId": "541932f7-274e-a874-f028-ea9e9d3bef60",
+      "actionId": "7a77b16b-a8bb-cc93-49df-77c340dc88bf",
       "actionType": "do",
       "source": "API",
       "commands": {
         "name": "SetComponent",
         "data": {
           "input": {
-            "guid": "73ee0e24-fa2d-ee58-3f17-ee62bab1b240",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
             "properties": [
               {
-                "property": "texture",
+                "property": "input",
                 "value": {
-                  "type": "Texture",
-                  "data": {
-                    "guid": "00000000-0000-0000-0000-00000000006b"
-                  }
+                  "type": "String",
+                  "data": "Pedido #35\n✓ Mal passado\n✓ Pimenta"
                 }
               }
             ]
           },
           "output": {
-            "componentType": "Image",
-            "guid": "73ee0e24-fa2d-ee58-3f17-ee62bab1b240",
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
             "changes": [
               {
-                "property": "texture",
-                "oldValue": {
-                  "guid": "be34204a-d1bc-d87d-d0f2-e1b4447a45e1"
-                },
-                "newValue": {
-                  "guid": "00000000-0000-0000-0000-00000000006b"
-                }
+                "property": "input",
+                "oldValue": "Pedido #354\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #35\n✓ Mal passado\n✓ Pimenta"
               }
             ]
           }
@@ -14556,14 +16829,448 @@
           {
             "type": "guid",
             "sourceId": "GetScene",
-            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[1].components[1].guid.data",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[10].children[0].components[1].guid.data",
             "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "86e89ee5-c05a-b498-e772-5461a303a837",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #3\n✓ Mal passado\n✓ Pimenta"
+                }
+              }
+            ]
           },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #35\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #3\n✓ Mal passado\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
           {
             "type": "guid",
-            "sourceId": "GetScene",
-            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[1].children[0].components[1].texture.data.guid",
-            "target": "commands.data.input.properties[0].value.data.guid"
+            "sourceId": "7a77b16b-a8bb-cc93-49df-77c340dc88bf",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "7c4ebbb6-a6f3-ffcf-1e0f-ff2f8bd69c94",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #\n✓ Mal passado\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #3\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #\n✓ Mal passado\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "86e89ee5-c05a-b498-e772-5461a303a837",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "c2853139-4b35-0f7f-fb79-f3b8efab4a7d",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #0\n✓ Mal passado\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #0\n✓ Mal passado\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "7c4ebbb6-a6f3-ffcf-1e0f-ff2f8bd69c94",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "20592135-8e95-c1b2-ade8-cc42ac02e71a",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #00\n✓ Mal passado\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #0\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #00\n✓ Mal passado\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "c2853139-4b35-0f7f-fb79-f3b8efab4a7d",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "a6cc8853-b6b2-f155-0757-82b3653a4fa9",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ Mal passado\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #00\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ Mal passado\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "20592135-8e95-c1b2-ade8-cc42ac02e71a",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "2894c758-8d15-b84b-6b24-36e3072e478c",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ P\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #000\n✓ Mal passado\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ P\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "a6cc8853-b6b2-f155-0757-82b3653a4fa9",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "f4b6f86d-1af8-3b94-a600-df8cfa426c12",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ Po\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #000\n✓ P\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ Po\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "2894c758-8d15-b84b-6b24-36e3072e478c",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "82273c54-ee19-aa6d-f84d-9ddf26d0c2ed",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ Pon\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #000\n✓ Po\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ Pon\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "f4b6f86d-1af8-3b94-a600-df8cfa426c12",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "16ab70e0-ecf7-a8c5-eac3-4ef62b6d5c80",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ Pont\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #000\n✓ Pon\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ Pont\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "82273c54-ee19-aa6d-f84d-9ddf26d0c2ed",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "ab6367b5-4889-2f0c-fa75-d34964c6e79e",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "properties": [
+              {
+                "property": "input",
+                "value": {
+                  "type": "String",
+                  "data": "Pedido #000\n✓ Ponto\n✓ Pimenta"
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Text2D",
+            "guid": "84a9ef8a-6ea1-991f-20b5-38722c76eff6",
+            "changes": [
+              {
+                "property": "input",
+                "oldValue": "Pedido #000\n✓ Pont\n✓ Pimenta",
+                "newValue": "Pedido #000\n✓ Ponto\n✓ Pimenta"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "16ab70e0-ecf7-a8c5-eac3-4ef62b6d5c80",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
           }
         ]
       }

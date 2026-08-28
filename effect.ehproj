@@ -1,6 +1,6 @@
 {
   "name": "Untitled",
-  "lastModified": "Thu, 27 Aug 2026 21:28:39 GMT",
+  "lastModified": "Fri, 28 Aug 2026 23:07:02 GMT",
   "version": "5.14.0",
   "renderNames": {
     "0": "Default Layer",
@@ -68,9 +68,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 17547242562,
-  "durationCreation": 1286745908,
-  "durationBackground": 1023486110,
+  "durationToCreate": 17639545677,
+  "durationCreation": 1322993168,
+  "durationBackground": 1049207000,
   "effectHint": "",
   "templateID": "templateID_none",
   "overwriteBuiltinGAN": 1,
@@ -89,24 +89,22 @@
   "isNewCreatedProject": true,
   "preUpgradeVersion": "5.14.0",
   "LastVideoInput": {
-    "type": "preview_face",
-    "name": "preview_face_idle||3",
-    "index": 2,
-    "resourceUrl": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Shared\\Resources\\ToolResources\\7478075527736066049\\1person_faceidle_3.mp4"
+    "type": "preview_hand",
+    "name": "preview_hand_thumbup",
+    "index": 49,
+    "resourceUrl": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Shared\\Resources\\ToolResources\\7486986011537424401\\gesture_thumb_up.png"
   },
   "fromNewUserGuide": false,
   "soundStartTime": 0,
-  "selectedIdList": [
-    "amz:Guid(5224867712697151724, 15220995987035487620)"
-  ],
+  "selectedIdList": [],
   "lastSceneView": 0,
   "autoResetEffect": true,
-  "effectSize": 2063767,
+  "effectSize": 2031576,
   "effectPackagePath": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\submit\\package\\effect.zip",
   "perfTested": true,
   "effectUploadResult": {
-    "uri": "/obj/tiktok-effect-public-us/effects/effect/NoMkd9XLFjRfQs2EtAUkcj_32220a71121f882f89d8ed008984dbed",
-    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/NoMkd9XLFjRfQs2EtAUkcj_32220a71121f882f89d8ed008984dbed"
+    "uri": "/obj/tiktok-effect-public-us/effects/effect/jE7nLGvap89HDrZGwZzeSm_cca93b36df1e7fc38ff92359e2b0c3bd",
+    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/jE7nLGvap89HDrZGwZzeSm_cca93b36df1e7fc38ff92359e2b0c3bd"
   },
   "soundSelectedDuration": 0,
   "exportPerformance": {

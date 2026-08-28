@@ -129,6 +129,7 @@ let Game = class Game extends APJS.BasicScriptComponent {
             this.accumulator = 0;
             exports.conect.name = 'conect';
             this.gameRunning.name = 'gameRunning';
+            console.log('reset game');
         };
         this.touchCallback = (event) => {
             const touchInfo = event.args[0];

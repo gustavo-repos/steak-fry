@@ -123,13 +123,13 @@ export class Game extends APJS.BasicScriptComponent {
   platform2: any
   pan: any
 
-
   onRecordStart = (_event: APJS.IEvent) => {
       gameState = 0
       substate = 3
       this.accumulator = 0
       conect.name = 'conect'
       this.gameRunning.name = 'gameRunning'
+      console.log('reset game')
   }
 
   screenTouchToUnits (touchPoint: any) {
