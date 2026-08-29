@@ -129,7 +129,6 @@ export class Game extends APJS.BasicScriptComponent {
       this.accumulator = 0
       conect.name = 'conect'
       this.gameRunning.name = 'gameRunning'
-      console.log('reset game')
   }
 
   screenTouchToUnits (touchPoint: any) {
@@ -243,6 +242,12 @@ export class Game extends APJS.BasicScriptComponent {
   }
 
   onStart() {
+
+    APJS.EventManager.getGlobalEmitter().on(
+      APJS.EventType.RecordStart,
+      this.onRecordStart
+    )
+
     this.gameRunning = this.getSceneObject().scene.findSceneObject('gameRunning')
     this.buttonActionRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonAction'), 0)
     this.buttonLeftRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonLeft'), 0)
@@ -261,11 +266,6 @@ export class Game extends APJS.BasicScriptComponent {
     grounds = [this.ground1]
     APJS.EventManager.getGlobalEmitter().on(APJS.EventType.Touch, this.touchCallback)
     conect = this.getSceneObject().scene.findSceneObject('conect')
-
-    APJS.EventManager.getGlobalEmitter().on(
-        APJS.EventType.RecordStart,
-        this.onRecordStart
-    )
 
   }
   

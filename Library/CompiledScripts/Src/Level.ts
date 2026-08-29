@@ -15,7 +15,6 @@ export class Level extends APJS.BasicScriptComponent {
   onRecordStart = (_event: APJS.IEvent) => {
     this.frameCounter = 0
     this.accumulator = 0
-    console.log('reset level')
   }
 
   getPlayerBodyRect () {
@@ -26,15 +25,17 @@ export class Level extends APJS.BasicScriptComponent {
   }
 
   onStart() {
-    this.playerObj = this.getSceneObject().scene.findSceneObject('player')
-    this.transform = this.playerObj.getComponent('ScreenTransform') as APJS.ScreenTransform
-    this.playerWidth = this.transform.sizeDelta.x / PPU
-    this.playerHeight = this.transform.sizeDelta.y / PPU
 
     APJS.EventManager.getGlobalEmitter().on(
       APJS.EventType.RecordStart,
       this.onRecordStart
     )
+
+    this.playerObj = this.getSceneObject().scene.findSceneObject('player')
+    this.transform = this.playerObj.getComponent('ScreenTransform') as APJS.ScreenTransform
+    this.playerWidth = this.transform.sizeDelta.x / PPU
+    this.playerHeight = this.transform.sizeDelta.y / PPU
+
 
   }
 

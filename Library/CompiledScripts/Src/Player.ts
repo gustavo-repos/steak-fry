@@ -47,13 +47,17 @@ export class Player extends APJS.BasicScriptComponent {
   // fryInterval = 2
   smokeScene: any
   isFrying = false
-  flagPole: any
+  flagText: any
   gameRunning: any
-  ponto: string = 'raw'
-  pepper: string = 'no pepper'
-  tiposPonto = ['0', '1', '2']
+  ponto: string = '0'
+  pepper: string = '0'
+  tiposPonto = ['1', '2', '3']
   tiposPimenta = ['0', '1']
   comanda: any
+  pontoPedido = ''
+  pimentaPedido = ''
+  finalMessage = ''
+  flagPole: any
 
   onRecordStart = (_event: APJS.IEvent) => {
     this.state = 1  
@@ -66,11 +70,14 @@ export class Player extends APJS.BasicScriptComponent {
     this.accumulator = 0
     this.smokeScene.name = 'smoke'
     this.fryTimer = 0
-    this.pepper = 'no pepper'
-    this.ponto = 'raw'
-    this.flagPole.name = 'flagPole'
+    this.pepper = '0'
+    this.ponto = '0'
+    this.flagText.name = 'flagText'
     this.saltArea.name = 'saltArea'
-    this.comanda.name = this.getRandomIntInclusive(100, 400) + this.getRandomItem(this.tiposPonto) + this.getRandomItem(this.tiposPimenta)
+    this.pontoPedido = this.getRandomItem(this.tiposPonto)
+    this.pimentaPedido = this.getRandomItem(this.tiposPimenta)
+    this.comanda.name = this.getRandomIntInclusive(100, 400) + this.pontoPedido + this.pimentaPedido
+    this.finalMessage = ''
   }
 
   getRandomIntInclusive(min: number, max: number) {
@@ -144,6 +151,7 @@ export class Player extends APJS.BasicScriptComponent {
 }
 
   onStart() {
+
     APJS.EventManager.getGlobalEmitter().on(
       APJS.EventType.RecordStart,
       this.onRecordStart
@@ -158,10 +166,14 @@ export class Player extends APJS.BasicScriptComponent {
     this.horizontalArea = this.getSceneObject().scene.findSceneObject('horizontalArea')
     this.saltArea = this.getSceneObject().scene.findSceneObject('saltArea')
     this.smokeScene = this.getSceneObject().scene.findSceneObject('smoke')
-    this.flagPole = this.getSceneObject().scene.findSceneObject('flagPole')
+    this.flagText = this.getSceneObject().scene.findSceneObject('flagText')
     this.gameRunning = this.getSceneObject().scene.findSceneObject('gameRunning')
     this.comanda = this.getSceneObject().scene.findSceneObject('comanda')
-    this.comanda.name = this.getRandomIntInclusive(100, 400) + this.getRandomItem(this.tiposPonto) + this.getRandomItem(this.tiposPimenta)
+    this.pontoPedido = this.getRandomItem(this.tiposPonto)
+    this.pimentaPedido = this.getRandomItem(this.tiposPimenta)
+    this.comanda.name = this.getRandomIntInclusive(100, 400) + this.pontoPedido + this.pimentaPedido
+    this.flagPole = this.getSceneObject().scene.findSceneObject('flagPole')
+
   }
 
   onUpdate(deltaTime: number) {
@@ -226,7 +238,7 @@ export class Player extends APJS.BasicScriptComponent {
               break
             }
             if (this.velocityY > 0) {
-              console.log(this.playerPosY, this.halfPlayerSize, this.halfPlatSize)
+              // console.log(this.playerPosY, this.halfPlayerSize, this.halfPlatSize)
               this.state = 1
               this.velocityY = 0
               snapY('bottom', this.getSceneObject(), platforms[i])
@@ -240,16 +252,16 @@ export class Player extends APJS.BasicScriptComponent {
       if (gameState == 0 && this.isFrying) {
         if (this.fryTimer >= 11) {
           this.smokeScene.name = 'burnt'
-          this.ponto = 'burnt'
+          this.ponto = '4'
         } else if (this.fryTimer >= 8) {
           this.smokeScene.name = 'welldone'
-          this.ponto = 'welldone'
+          this.ponto = '3'
         } else if (this.fryTimer >= 5) {
           this.smokeScene.name = 'medium'
-          this.ponto = 'medium'
+          this.ponto = '2'
         } else if (this.fryTimer >= 2) {
           this.smokeScene.name = 'rare'
-          this.ponto = 'rare'
+          this.ponto = '1'
         }
       }
       
@@ -264,14 +276,45 @@ export class Player extends APJS.BasicScriptComponent {
 
       if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.saltArea, 0))) {
         this.saltArea.name = 'salted'
-        this.pepper = 'pepper'
+        this.pepper = '1'
       }
 
-      if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.flagPole, 0))) {
-        console.log("terminou")
+      if (checkRectOverlap(this.getPlayerCoreRect(this.getSceneObject().getTransform().localPosition.y), getElementRect(this.flagPole, 0))
+      && gameState == 0) {
+        console.log("=== FINAL DO JOGO ===")
         setGameState(1)
         this.gameRunning.name = 'gameover'
-        this.flagPole.name = this.ponto + "," +this.pepper
+        // console.log('Ponto entregue: ' + this.ponto)
+        // console.log('Pimenta entregue: ' + this.pepper)
+        // console.log('Ponto pedido: ' + this.pontoPedido)
+        // console.log('Pimenta pedido: ' + this.pimentaPedido)
+        // this.flagPole.name = this.ponto + "," +this.pepper
+
+        if (this.ponto == this.pontoPedido && this.pepper == this.pimentaPedido) {
+          this.finalMessage = 'Perfeito!!!'
+        } else {
+          if (this.ponto == '0') {
+            this.finalMessage += 'Ficou cru!'
+          } else if (this.ponto == '4') {
+            this.finalMessage += 'Queimou!'
+          } else if (this.ponto != this.pontoPedido) {
+            this.finalMessage += 'Errou o tempo!'
+          }
+          if (this.pepper != this.pimentaPedido) {
+            if (this.finalMessage != '') {
+              this.finalMessage += '\n'
+            }
+            if (this.pepper == '0') {
+              this.finalMessage += 'Era com pimenta!'
+            } else {
+              this.finalMessage += 'Era sem pimenta!'
+            }
+          }
+        }
+
+        console.log(this.finalMessage)
+        this.flagText.name = this.finalMessage
+
       }
 
 

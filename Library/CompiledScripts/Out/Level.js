@@ -29,7 +29,6 @@ let Level = class Level extends APJS.BasicScriptComponent {
         this.onRecordStart = (_event) => {
             this.frameCounter = 0;
             this.accumulator = 0;
-            console.log('reset level');
         };
     }
     getPlayerBodyRect() {
@@ -39,11 +38,11 @@ let Level = class Level extends APJS.BasicScriptComponent {
         }
     }
     onStart() {
+        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
         this.playerObj = this.getSceneObject().scene.findSceneObject('player');
         this.transform = this.playerObj.getComponent('ScreenTransform');
         this.playerWidth = this.transform.sizeDelta.x / Game_1.PPU;
         this.playerHeight = this.transform.sizeDelta.y / Game_1.PPU;
-        APJS.EventManager.getGlobalEmitter().on(APJS.EventType.RecordStart, this.onRecordStart);
     }
     onUpdate(deltaTime) {
         if (this.frameCounter < 30) {
