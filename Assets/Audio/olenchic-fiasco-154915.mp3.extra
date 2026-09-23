@@ -12,7 +12,7 @@
     "extendedInfo": {
       "isVisibleInInspector": true,
       "hideInPanel": false,
-      "expandInPanel": false
+      "expandInPanel": true
     },
     "mccState": "SUCCESS",
     "objGuid": "",

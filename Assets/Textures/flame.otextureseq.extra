@@ -1,13 +1,13 @@
 [
   {
     "guid": {
-      "a": "e22bd6cd-5932-fac0-a892-6065df37426f",
+      "a": "19189eee-3dc0-8343-a06e-b60ec08d3c14",
       "b": ""
     },
-    "extraType": "ResItemPNGImage",
-    "name": "comanda",
+    "extraType": "ResItemTextureSequence",
+    "name": "flame",
     "version": "0.2.0",
-    "rttiType": "Texture",
+    "rttiType": "TextureSequence",
     "authorizationInfo": "",
     "extendedInfo": {
       "isVisibleInInspector": true,
@@ -17,16 +17,9 @@
     "compressionType": 0,
     "compressQuality": 0,
     "compressMaxResolution": 512,
-    "enableMipmap": false,
-    "filterMin": 1,
-    "filterMag": 1,
-    "filterMipmap": 0,
-    "wrapModeS": 0,
-    "wrapModeT": 0,
-    "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\comanda.png",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\flame.otextureseq",
     "references": []
   }
 ]

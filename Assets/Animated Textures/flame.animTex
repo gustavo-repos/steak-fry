@@ -1,20 +1,20 @@
 %YAML 1.1
 --- !TextureDelegate &1
-name: !<str> fire
-guid: {a: 5481253914320171941, b: 13382167303091907972}
+name: !<str> flame
+guid: {a: 5524303681779071230, b: 11538712473758991490}
 serializedProperty:
   __class: ScriptSerializedProperty
   name: !<str> ""
-  guid: {a: 5611120728603557768, b: 12962212751628670374}
+  guid: {a: 4745794105746058605, b: 15907662667390124179}
   properties:
     __class: Map
     JSClassName: !<str> AnimatedTextureProvider
-    duration: 0.6666666666666666
-    fps: 3
+    duration: 0.5
+    fps: 8
     loopCount: -1
     playMode: 0
     reverse: false
-    textureSequence: {localId: 1, path: 00000000-0000-0000-0000-0000000000c4--00000000-0000-0000-0000-0000000000c4.seq}
+    textureSequence: {localId: 1, path: 19189eee-3dc0-8343-a06e-b60ec08d3c14--19189eee-3dc0-8343-a06e-b60ec08d3c14.seq}
 width: 0
 height: 0
 depth: 0

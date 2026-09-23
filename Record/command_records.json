@@ -3,10 +3,10 @@
   "context": {
     "snapshot": {
       "start": {
-        "startTime": 1790119256397
+        "startTime": 1790185448409
       },
       "end": {
-        "endTime": 1790122245461
+        "endTime": 1790192188833
       }
     }
   },
@@ -734,22 +734,22 @@
                                       "data": {
                                         "x": -490.709,
                                         "y": 1818.947,
-                                        "z": -179.416,
-                                        "w": -49.416
+                                        "z": -186.216,
+                                        "w": -52.216
                                       }
                                     },
                                     "anchoredPosition": {
                                       "type": "Vector2f",
                                       "data": {
                                         "x": 664.119,
-                                        "y": -114.416
+                                        "y": -119.216
                                       }
                                     },
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
                                         "x": 2309.656,
-                                        "y": 130
+                                        "y": 134
                                       }
                                     },
                                     "pivot": {
@@ -818,7 +818,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb"
+                                        "guid": "64a30133-86ec-d293-0de8-3a34f458bc80"
                                       }
                                     },
                                     "segTex": {
@@ -4259,23 +4259,23 @@
                                           "type": "Vector4f",
                                           "data": {
                                             "x": 16.687,
-                                            "y": 24.494,
+                                            "y": 43.202,
                                             "z": -186.5,
-                                            "w": -11.68
+                                            "w": 534.757
                                           }
                                         },
                                         "anchoredPosition": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 20.591,
-                                            "y": -99.09
+                                            "x": 29.944,
+                                            "y": 174.129
                                           }
                                         },
                                         "sizeDelta": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 7.808,
-                                            "y": 174.82
+                                            "x": 26.515,
+                                            "y": 721.257
                                           }
                                         },
                                         "pivot": {
@@ -6635,6 +6635,75 @@
                                       "type": "Number",
                                       "data": 1
                                     }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "AudioComponent",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "a5d85d07-2f61-3741-05e0-2d564f3d9882",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Audio Player",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.2.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "resourcePath": {
+                                      "type": "String",
+                                      "data": "audio/0c9ba051-68fc-1bb3-44de-7042a72b8494.mp3"
+                                    },
+                                    "audioRef": {
+                                      "type": "AudioAsset",
+                                      "data": {
+                                        "guid": "0c9ba051-68fc-1bb3-44de-7042a72b8494"
+                                      }
+                                    },
+                                    "playMode": {
+                                      "type": "Enum",
+                                      "data": "ONCE",
+                                      "options": [
+                                        "ONCE",
+                                        "LOOP",
+                                        "INFINITE"
+                                      ]
+                                    },
+                                    "audioType": {
+                                      "type": "undefined",
+                                      "data": "undefined"
+                                    },
+                                    "loopCount": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "autoPlay": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "mute": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "volume": {
+                                      "type": "Number",
+                                      "data": 54.01
+                                    },
+                                    "isMobilePreview": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    }
                                   }
                                 ]
                               },
@@ -7857,7 +7926,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "2c5c628f-24d7-3f49-6a67-7d2f25df0ab0"
+                                        "guid": "e22bd6cd-5932-fac0-a892-6065df37426f"
                                       }
                                     },
                                     "segTex": {
@@ -8702,6 +8771,357 @@
                                   "type": "Texture",
                                   "data": {
                                     "guid": "ec70f88c-7f7b-abbf-d469-805ce7ca267a"
+                                  }
+                                },
+                                "segTex": {
+                                  "type": "Texture",
+                                  "data": {
+                                    "guid": "undefined"
+                                  }
+                                },
+                                "segBlendMode": {
+                                  "type": "Enum",
+                                  "data": "NORMAL",
+                                  "options": [
+                                    "DISABLED",
+                                    "NORMAL",
+                                    "MULTIPLY",
+                                    "SCREEN",
+                                    "AVERAGE",
+                                    "LINEAR_DODGE_HARD",
+                                    "ALPHA_PREMULTIPLY",
+                                    "GLASS",
+                                    "TRANSMISSION",
+                                    "COLOR_BURN",
+                                    "LINEAR_BURN",
+                                    "COLOR_DODGE",
+                                    "OVERLAY",
+                                    "SOFT_LIGHT",
+                                    "HARD_LIGHT",
+                                    "VIVID_LIGHT",
+                                    "LINEAR_LIGHT",
+                                    "PIN_LIGHT",
+                                    "HARD_MIX",
+                                    "DIFFERENCE",
+                                    "EXCLUSION",
+                                    "DISSOLVE",
+                                    "DARKER_COLOR",
+                                    "LIGHTER_COLOR",
+                                    "SUBTRACT",
+                                    "DIVIDE",
+                                    "HUE",
+                                    "SATURATION",
+                                    "COLOR",
+                                    "LUMINOSITY",
+                                    "COLORED_GLASS",
+                                    "ALPHA_TEST",
+                                    "LINEAR_DODGE",
+                                    "DARKEN",
+                                    "LIGHTEN",
+                                    "MULTIPLY_SOFT",
+                                    "SCREEN_SOFT",
+                                    "AVERAGE_SOFT",
+                                    "FROM_SHADER",
+                                    "NORMAL_LEGACY",
+                                    "TRANSPARENT_LEGACY",
+                                    "COLORED_GLASS_LEGACY",
+                                    "GLASS_LEGACY",
+                                    "DARKEN_LEGACY",
+                                    "MULTIPLY_LEGACY",
+                                    "COLOR_BURN_LEGACY",
+                                    "LIGHTEN_LEGACY",
+                                    "SCREEN_LEGACY",
+                                    "COLOR_DODGE_LEGACY",
+                                    "LINEAR_DODGE_LEGACY",
+                                    "OVERLAY_LEGACY",
+                                    "SOFT_LIGHT_LEGACY",
+                                    "DIFFERENCE_LEGACY",
+                                    "EXCLUSION_LEGACY",
+                                    "PARTICLE_ADD_LEGACY",
+                                    "PARTICLE_NORMAL_LEGACY",
+                                    "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                    "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                    "GAN_TRANSPARENT_LEGACY",
+                                    "PREMULTIPLY_ALPHA_LEGACY",
+                                    "FACEMASK_ADD"
+                                  ]
+                                },
+                                "segRadius": {
+                                  "type": "Number",
+                                  "data": 0.5
+                                },
+                                "segSoftness": {
+                                  "type": "Number",
+                                  "data": 0.5
+                                },
+                                "blendMode": {
+                                  "type": "Enum",
+                                  "data": "Normal",
+                                  "options": [
+                                    "Normal",
+                                    "Darken",
+                                    "Multiply",
+                                    "ColorBurn",
+                                    "LinearBurn",
+                                    "Lighten",
+                                    "Screen",
+                                    "ColorDodge",
+                                    "LinearDodge",
+                                    "Overlay",
+                                    "SoftLight",
+                                    "HardLight",
+                                    "VividLight",
+                                    "LinearLight",
+                                    "PinLight",
+                                    "HardMix",
+                                    "Difference",
+                                    "Exclusion"
+                                  ]
+                                },
+                                "opacity": {
+                                  "type": "Number",
+                                  "data": 1
+                                },
+                                "color": {
+                                  "type": "Color",
+                                  "data": {
+                                    "r": 1,
+                                    "g": 1,
+                                    "b": 1,
+                                    "a": 1
+                                  }
+                                },
+                                "size": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 10,
+                                    "y": 10
+                                  }
+                                },
+                                "pivot": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 0.5,
+                                    "y": 0.5
+                                  }
+                                },
+                                "flipX": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "flipY": {
+                                  "type": "Boolean",
+                                  "data": false
+                                },
+                                "drawMode": {
+                                  "type": "Enum",
+                                  "data": "Normal",
+                                  "options": [
+                                    "Normal",
+                                    "Tiled",
+                                    "Filled",
+                                    "Ellipse"
+                                  ]
+                                },
+                                "stretchMode": {
+                                  "type": "Enum",
+                                  "data": "Fit",
+                                  "options": [
+                                    "Fit",
+                                    "FitWidth",
+                                    "FitHeight",
+                                    "Stretch",
+                                    "Fill",
+                                    "FillAndCut"
+                                  ]
+                                },
+                                "filledType": {
+                                  "type": "Enum",
+                                  "data": "Horizontal",
+                                  "options": [
+                                    "Horizontal",
+                                    "Vertical",
+                                    "Radial"
+                                  ]
+                                },
+                                "startPoint": {
+                                  "type": "Number",
+                                  "data": 0
+                                },
+                                "filledRange": {
+                                  "type": "Number",
+                                  "data": 1
+                                },
+                                "ellipseX": {
+                                  "type": "Number",
+                                  "data": 1
+                                },
+                                "ellipseY": {
+                                  "type": "Number",
+                                  "data": 1
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "guid": {
+                              "type": "Guid",
+                              "data": "5f0003f2-4576-3feb-fb60-90b8b2a92be1",
+                              "readonly": true
+                            },
+                            "name": {
+                              "type": "String",
+                              "data": "buttonAction"
+                            },
+                            "visible": {
+                              "type": "Boolean",
+                              "data": true
+                            },
+                            "children": [],
+                            "components": [
+                              {
+                                "type": {
+                                  "type": "String",
+                                  "data": "ScreenTransform",
+                                  "readonly": true
+                                },
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "71c96c61-8d80-41fb-ea72-b1b027910a40",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "Screen Transform",
+                                  "readonly": true
+                                },
+                                "version": {
+                                  "type": "Version",
+                                  "data": "0.1.0",
+                                  "readonly": true
+                                },
+                                "enabled": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "horizontalConstraint": {
+                                  "type": "Enum",
+                                  "data": "FIXED",
+                                  "options": [
+                                    "STRETCH",
+                                    "FIXED",
+                                    "LEFT",
+                                    "RIGHT",
+                                    "LEFT_AND_FIXED",
+                                    "RIGHT_AND_FIXED",
+                                    "LEFT_AND_RIGHT",
+                                    "INVALID"
+                                  ]
+                                },
+                                "verticalConstraint": {
+                                  "type": "Enum",
+                                  "data": "FIXED",
+                                  "options": [
+                                    "STRETCH",
+                                    "FIXED",
+                                    "BOTTOM",
+                                    "TOP",
+                                    "BOTTOM_AND_FIXED",
+                                    "TOP_AND_FIXED",
+                                    "BOTTOM_AND_TOP",
+                                    "INVALID"
+                                  ]
+                                },
+                                "offsets": {
+                                  "type": "Vector4f",
+                                  "data": {
+                                    "x": 144,
+                                    "y": 240,
+                                    "z": -274,
+                                    "w": -178
+                                  }
+                                },
+                                "anchoredPosition": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 192,
+                                    "y": -226
+                                  }
+                                },
+                                "sizeDelta": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 96,
+                                    "y": 96
+                                  }
+                                },
+                                "pivot": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 0.5,
+                                    "y": 0.5
+                                  }
+                                },
+                                "rotation": {
+                                  "type": "Number",
+                                  "data": 0
+                                },
+                                "scale": {
+                                  "type": "Vector2f",
+                                  "data": {
+                                    "x": 1,
+                                    "y": 1
+                                  }
+                                },
+                                "pixelsPerUnit": {
+                                  "type": "Number",
+                                  "data": 32
+                                },
+                                "anchors": {
+                                  "type": "Vector4f",
+                                  "data": {
+                                    "x": 0.5,
+                                    "y": 0.5,
+                                    "z": 0.5,
+                                    "w": 0.5
+                                  }
+                                }
+                              },
+                              {
+                                "type": {
+                                  "type": "String",
+                                  "data": "Image",
+                                  "readonly": true
+                                },
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "9e5cc451-0919-6e19-183a-7bad84aaebf0",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "Image",
+                                  "readonly": true
+                                },
+                                "version": {
+                                  "type": "Version",
+                                  "data": "0.1.0",
+                                  "readonly": true
+                                },
+                                "enabled": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "sharedMaterial": {
+                                  "type": "Material",
+                                  "data": {
+                                    "guid": "00000000-0000-0000-0000-000000000132"
+                                  }
+                                },
+                                "texture": {
+                                  "type": "Texture",
+                                  "data": {
+                                    "guid": "52531ec2-f4e9-405f-6895-6c58142185b2"
                                   }
                                 },
                                 "segTex": {
@@ -10788,6 +11208,75 @@
                                       "type": "Number",
                                       "data": 1
                                     }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "AudioComponent",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Audio Player",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.2.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "resourcePath": {
+                                      "type": "String",
+                                      "data": "audio/c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6.mp3"
+                                    },
+                                    "audioRef": {
+                                      "type": "AudioAsset",
+                                      "data": {
+                                        "guid": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
+                                      }
+                                    },
+                                    "playMode": {
+                                      "type": "Enum",
+                                      "data": "ONCE",
+                                      "options": [
+                                        "ONCE",
+                                        "LOOP",
+                                        "INFINITE"
+                                      ]
+                                    },
+                                    "audioType": {
+                                      "type": "undefined",
+                                      "data": "undefined"
+                                    },
+                                    "loopCount": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "autoPlay": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "mute": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "volume": {
+                                      "type": "Number",
+                                      "data": 50
+                                    },
+                                    "isMobilePreview": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    }
                                   }
                                 ]
                               },
@@ -10942,12 +11431,12 @@
                                     },
                                     "resourcePath": {
                                       "type": "String",
-                                      "data": "audio/aa503c18-1d65-72db-7090-5222e3d8c55b.mp3"
+                                      "data": "audio/c027609d-4a17-07aa-bc29-5f1035637c66.mp3"
                                     },
                                     "audioRef": {
                                       "type": "AudioAsset",
                                       "data": {
-                                        "guid": "aa503c18-1d65-72db-7090-5222e3d8c55b"
+                                        "guid": "c027609d-4a17-07aa-bc29-5f1035637c66"
                                       }
                                     },
                                     "playMode": {
@@ -12332,7 +12821,7 @@
                         },
                         "name": {
                           "type": "String",
-                          "data": "conect"
+                          "data": "defeatSound"
                         },
                         "visible": {
                           "type": "Boolean",
@@ -12446,6 +12935,75 @@
                                 "z": 0.5,
                                 "w": 0.5
                               }
+                            }
+                          },
+                          {
+                            "type": {
+                              "type": "String",
+                              "data": "AudioComponent",
+                              "readonly": true
+                            },
+                            "guid": {
+                              "type": "Guid",
+                              "data": "9c1520a0-9028-348f-99f5-2a9938771602",
+                              "readonly": true
+                            },
+                            "name": {
+                              "type": "String",
+                              "data": "Audio Player",
+                              "readonly": true
+                            },
+                            "version": {
+                              "type": "Version",
+                              "data": "0.2.0",
+                              "readonly": true
+                            },
+                            "enabled": {
+                              "type": "Boolean",
+                              "data": true
+                            },
+                            "resourcePath": {
+                              "type": "String",
+                              "data": "audio/1648c56d-33e8-1ecf-08d5-fa910f865d52.mp3"
+                            },
+                            "audioRef": {
+                              "type": "AudioAsset",
+                              "data": {
+                                "guid": "1648c56d-33e8-1ecf-08d5-fa910f865d52"
+                              }
+                            },
+                            "playMode": {
+                              "type": "Enum",
+                              "data": "ONCE",
+                              "options": [
+                                "ONCE",
+                                "LOOP",
+                                "INFINITE"
+                              ]
+                            },
+                            "audioType": {
+                              "type": "undefined",
+                              "data": "undefined"
+                            },
+                            "loopCount": {
+                              "type": "Number",
+                              "data": 1
+                            },
+                            "autoPlay": {
+                              "type": "Boolean",
+                              "data": false
+                            },
+                            "mute": {
+                              "type": "Boolean",
+                              "data": false
+                            },
+                            "volume": {
+                              "type": "Number",
+                              "data": 48.18
+                            },
+                            "isMobilePreview": {
+                              "type": "Boolean",
+                              "data": false
                             }
                           }
                         ]
@@ -13293,365 +13851,13 @@
                         },
                         "name": {
                           "type": "String",
-                          "data": "finalSound"
+                          "data": "victorySound"
                         },
                         "visible": {
                           "type": "Boolean",
                           "data": true
                         },
-                        "children": [
-                          {
-                            "guid": {
-                              "type": "Guid",
-                              "data": "5f0003f2-4576-3feb-fb60-90b8b2a92be1",
-                              "readonly": true
-                            },
-                            "name": {
-                              "type": "String",
-                              "data": "buttonAction"
-                            },
-                            "visible": {
-                              "type": "Boolean",
-                              "data": true
-                            },
-                            "children": [],
-                            "components": [
-                              {
-                                "type": {
-                                  "type": "String",
-                                  "data": "ScreenTransform",
-                                  "readonly": true
-                                },
-                                "guid": {
-                                  "type": "Guid",
-                                  "data": "71c96c61-8d80-41fb-ea72-b1b027910a40",
-                                  "readonly": true
-                                },
-                                "name": {
-                                  "type": "String",
-                                  "data": "Screen Transform",
-                                  "readonly": true
-                                },
-                                "version": {
-                                  "type": "Version",
-                                  "data": "0.1.0",
-                                  "readonly": true
-                                },
-                                "enabled": {
-                                  "type": "Boolean",
-                                  "data": true
-                                },
-                                "horizontalConstraint": {
-                                  "type": "Enum",
-                                  "data": "FIXED",
-                                  "options": [
-                                    "STRETCH",
-                                    "FIXED",
-                                    "LEFT",
-                                    "RIGHT",
-                                    "LEFT_AND_FIXED",
-                                    "RIGHT_AND_FIXED",
-                                    "LEFT_AND_RIGHT",
-                                    "INVALID"
-                                  ]
-                                },
-                                "verticalConstraint": {
-                                  "type": "Enum",
-                                  "data": "FIXED",
-                                  "options": [
-                                    "STRETCH",
-                                    "FIXED",
-                                    "BOTTOM",
-                                    "TOP",
-                                    "BOTTOM_AND_FIXED",
-                                    "TOP_AND_FIXED",
-                                    "BOTTOM_AND_TOP",
-                                    "INVALID"
-                                  ]
-                                },
-                                "offsets": {
-                                  "type": "Vector4f",
-                                  "data": {
-                                    "x": 144,
-                                    "y": 240,
-                                    "z": -274,
-                                    "w": -178
-                                  }
-                                },
-                                "anchoredPosition": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 192,
-                                    "y": -226
-                                  }
-                                },
-                                "sizeDelta": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 96,
-                                    "y": 96
-                                  }
-                                },
-                                "pivot": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 0.5,
-                                    "y": 0.5
-                                  }
-                                },
-                                "rotation": {
-                                  "type": "Number",
-                                  "data": 0
-                                },
-                                "scale": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 1,
-                                    "y": 1
-                                  }
-                                },
-                                "pixelsPerUnit": {
-                                  "type": "Number",
-                                  "data": 32
-                                },
-                                "anchors": {
-                                  "type": "Vector4f",
-                                  "data": {
-                                    "x": 0.5,
-                                    "y": 0.5,
-                                    "z": 0.5,
-                                    "w": 0.5
-                                  }
-                                }
-                              },
-                              {
-                                "type": {
-                                  "type": "String",
-                                  "data": "Image",
-                                  "readonly": true
-                                },
-                                "guid": {
-                                  "type": "Guid",
-                                  "data": "9e5cc451-0919-6e19-183a-7bad84aaebf0",
-                                  "readonly": true
-                                },
-                                "name": {
-                                  "type": "String",
-                                  "data": "Image",
-                                  "readonly": true
-                                },
-                                "version": {
-                                  "type": "Version",
-                                  "data": "0.1.0",
-                                  "readonly": true
-                                },
-                                "enabled": {
-                                  "type": "Boolean",
-                                  "data": true
-                                },
-                                "sharedMaterial": {
-                                  "type": "Material",
-                                  "data": {
-                                    "guid": "00000000-0000-0000-0000-000000000132"
-                                  }
-                                },
-                                "texture": {
-                                  "type": "Texture",
-                                  "data": {
-                                    "guid": "52531ec2-f4e9-405f-6895-6c58142185b2"
-                                  }
-                                },
-                                "segTex": {
-                                  "type": "Texture",
-                                  "data": {
-                                    "guid": "undefined"
-                                  }
-                                },
-                                "segBlendMode": {
-                                  "type": "Enum",
-                                  "data": "NORMAL",
-                                  "options": [
-                                    "DISABLED",
-                                    "NORMAL",
-                                    "MULTIPLY",
-                                    "SCREEN",
-                                    "AVERAGE",
-                                    "LINEAR_DODGE_HARD",
-                                    "ALPHA_PREMULTIPLY",
-                                    "GLASS",
-                                    "TRANSMISSION",
-                                    "COLOR_BURN",
-                                    "LINEAR_BURN",
-                                    "COLOR_DODGE",
-                                    "OVERLAY",
-                                    "SOFT_LIGHT",
-                                    "HARD_LIGHT",
-                                    "VIVID_LIGHT",
-                                    "LINEAR_LIGHT",
-                                    "PIN_LIGHT",
-                                    "HARD_MIX",
-                                    "DIFFERENCE",
-                                    "EXCLUSION",
-                                    "DISSOLVE",
-                                    "DARKER_COLOR",
-                                    "LIGHTER_COLOR",
-                                    "SUBTRACT",
-                                    "DIVIDE",
-                                    "HUE",
-                                    "SATURATION",
-                                    "COLOR",
-                                    "LUMINOSITY",
-                                    "COLORED_GLASS",
-                                    "ALPHA_TEST",
-                                    "LINEAR_DODGE",
-                                    "DARKEN",
-                                    "LIGHTEN",
-                                    "MULTIPLY_SOFT",
-                                    "SCREEN_SOFT",
-                                    "AVERAGE_SOFT",
-                                    "FROM_SHADER",
-                                    "NORMAL_LEGACY",
-                                    "TRANSPARENT_LEGACY",
-                                    "COLORED_GLASS_LEGACY",
-                                    "GLASS_LEGACY",
-                                    "DARKEN_LEGACY",
-                                    "MULTIPLY_LEGACY",
-                                    "COLOR_BURN_LEGACY",
-                                    "LIGHTEN_LEGACY",
-                                    "SCREEN_LEGACY",
-                                    "COLOR_DODGE_LEGACY",
-                                    "LINEAR_DODGE_LEGACY",
-                                    "OVERLAY_LEGACY",
-                                    "SOFT_LIGHT_LEGACY",
-                                    "DIFFERENCE_LEGACY",
-                                    "EXCLUSION_LEGACY",
-                                    "PARTICLE_ADD_LEGACY",
-                                    "PARTICLE_NORMAL_LEGACY",
-                                    "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
-                                    "PARTICLE_PREMULTIPLY_ADD_LEGACY",
-                                    "GAN_TRANSPARENT_LEGACY",
-                                    "PREMULTIPLY_ALPHA_LEGACY",
-                                    "FACEMASK_ADD"
-                                  ]
-                                },
-                                "segRadius": {
-                                  "type": "Number",
-                                  "data": 0.5
-                                },
-                                "segSoftness": {
-                                  "type": "Number",
-                                  "data": 0.5
-                                },
-                                "blendMode": {
-                                  "type": "Enum",
-                                  "data": "Normal",
-                                  "options": [
-                                    "Normal",
-                                    "Darken",
-                                    "Multiply",
-                                    "ColorBurn",
-                                    "LinearBurn",
-                                    "Lighten",
-                                    "Screen",
-                                    "ColorDodge",
-                                    "LinearDodge",
-                                    "Overlay",
-                                    "SoftLight",
-                                    "HardLight",
-                                    "VividLight",
-                                    "LinearLight",
-                                    "PinLight",
-                                    "HardMix",
-                                    "Difference",
-                                    "Exclusion"
-                                  ]
-                                },
-                                "opacity": {
-                                  "type": "Number",
-                                  "data": 1
-                                },
-                                "color": {
-                                  "type": "Color",
-                                  "data": {
-                                    "r": 1,
-                                    "g": 1,
-                                    "b": 1,
-                                    "a": 1
-                                  }
-                                },
-                                "size": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 10,
-                                    "y": 10
-                                  }
-                                },
-                                "pivot": {
-                                  "type": "Vector2f",
-                                  "data": {
-                                    "x": 0.5,
-                                    "y": 0.5
-                                  }
-                                },
-                                "flipX": {
-                                  "type": "Boolean",
-                                  "data": true
-                                },
-                                "flipY": {
-                                  "type": "Boolean",
-                                  "data": false
-                                },
-                                "drawMode": {
-                                  "type": "Enum",
-                                  "data": "Normal",
-                                  "options": [
-                                    "Normal",
-                                    "Tiled",
-                                    "Filled",
-                                    "Ellipse"
-                                  ]
-                                },
-                                "stretchMode": {
-                                  "type": "Enum",
-                                  "data": "Fit",
-                                  "options": [
-                                    "Fit",
-                                    "FitWidth",
-                                    "FitHeight",
-                                    "Stretch",
-                                    "Fill",
-                                    "FillAndCut"
-                                  ]
-                                },
-                                "filledType": {
-                                  "type": "Enum",
-                                  "data": "Horizontal",
-                                  "options": [
-                                    "Horizontal",
-                                    "Vertical",
-                                    "Radial"
-                                  ]
-                                },
-                                "startPoint": {
-                                  "type": "Number",
-                                  "data": 0
-                                },
-                                "filledRange": {
-                                  "type": "Number",
-                                  "data": 1
-                                },
-                                "ellipseX": {
-                                  "type": "Number",
-                                  "data": 1
-                                },
-                                "ellipseY": {
-                                  "type": "Number",
-                                  "data": 1
-                                }
-                              }
-                            ]
-                          }
-                        ],
+                        "children": [],
                         "components": [
                           {
                             "type": {
@@ -13788,12 +13994,12 @@
                             },
                             "resourcePath": {
                               "type": "String",
-                              "data": "audio/42a570cf-1d54-4cad-3cd7-494822226c27.mp3"
+                              "data": "audio/4b6fd73e-d9e5-5b19-1918-661340057af9.mp3"
                             },
                             "audioRef": {
                               "type": "AudioAsset",
                               "data": {
-                                "guid": "42a570cf-1d54-4cad-3cd7-494822226c27"
+                                "guid": "4b6fd73e-d9e5-5b19-1918-661340057af9"
                               }
                             },
                             "playMode": {
@@ -13823,7 +14029,7 @@
                             },
                             "volume": {
                               "type": "Number",
-                              "data": 20
+                              "data": 37.23
                             },
                             "isMobilePreview": {
                               "type": "Boolean",
@@ -14208,12 +14414,12 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "852e6d56-23ee-b338-95e4-f3778dc8a0c8",
+                "data": "5c83785b-9ea0-e2fb-e9ec-ac1373c8d068",
                 "readonly": true
               },
               "name": {
                 "type": "String",
-                "data": "fire"
+                "data": "flame"
               },
               "type": {
                 "type": "String",
@@ -14222,7 +14428,7 @@
               },
               "filePath": {
                 "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Animated Textures\\fire.animTex",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Animated Textures\\flame.animTex",
                 "readonly": true
               },
               "version": {
@@ -14234,7 +14440,7 @@
               "textureSequence": {
                 "type": "TextureSequence",
                 "data": {
-                  "guid": "00000000-0000-0000-0000-0000000000c4"
+                  "guid": "19189eee-3dc0-8343-a06e-b60ec08d3c14"
                 }
               },
               "loopCount": {
@@ -14257,11 +14463,11 @@
               },
               "fps": {
                 "type": "Number",
-                "data": 3
+                "data": 8
               },
               "duration": {
                 "type": "Number",
-                "data": 0.667
+                "data": 0.5
               }
             },
             {
@@ -14687,7 +14893,113 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "aa503c18-1d65-72db-7090-5222e3d8c55b",
+                "data": "4b6fd73e-d9e5-5b19-1918-661340057af9",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "emand_edroff-victory-bell-success-fanfare-576275"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\emand_edroff-victory-bell-success-fanfare-576275.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 6720,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 210,
+                "readonly": true
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "freesound_community-sizzle-100449"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\freesound_community-sizzle-100449.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 672,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 13.125,
+                "readonly": true
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "c027609d-4a17-07aa-bc29-5f1035637c66",
                 "readonly": true
               },
               "name": {
@@ -14734,6 +15046,112 @@
               "size": {
                 "type": "Number",
                 "data": 4.754,
+                "readonly": true
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "1648c56d-33e8-1ecf-08d5-fa910f865d52",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "olenchic-fiasco-154915"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\olenchic-fiasco-154915.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 3343,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 104.489,
+                "readonly": true
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "0c9ba051-68fc-1bb3-44de-7042a72b8494",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "universfield-cartoon-blinking-487897"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\universfield-cartoon-blinking-487897.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 1056,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 33,
                 "readonly": true
               }
             },
@@ -15520,7 +15938,7 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb",
+                "data": "64a30133-86ec-d293-0de8-3a34f458bc80",
                 "readonly": true
               },
               "name": {
@@ -15549,11 +15967,11 @@
               },
               "height": {
                 "type": "Number",
-                "data": 130
+                "data": 134
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 260
+                "data": 225
               },
               "assetType": {
                 "type": "String",
@@ -16568,7 +16986,7 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "2c5c628f-24d7-3f49-6a67-7d2f25df0ab0",
+                "data": "e22bd6cd-5932-fac0-a892-6065df37426f",
                 "readonly": true
               },
               "name": {
@@ -16601,7 +17019,7 @@
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 2557
+                "data": 3061
               },
               "assetType": {
                 "type": "String",
@@ -18627,6 +19045,81 @@
             {
               "guid": {
                 "type": "Guid",
+                "data": "19189eee-3dc0-8343-a06e-b60ec08d3c14",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "flame"
+              },
+              "type": {
+                "type": "String",
+                "data": "TextureSequence",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\flame.otextureseq",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 256
+              },
+              "height": {
+                "type": "Number",
+                "data": 256
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 11377
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
                 "data": "6384f156-ad4a-3a52-a04a-8488c28db4b1",
                 "readonly": true
               },
@@ -19115,937 +19608,86 @@
       }
     },
     {
-      "actionId": "a0c6f9f8-a751-ec02-797f-58f56b700208",
+      "actionId": "f03361c8-ecb6-580a-7a9e-d04e518f56aa",
       "actionType": "do",
       "source": "API",
       "commands": {
-        "name": "AddComponentByConfig",
+        "name": "SetSceneObject",
         "data": {
           "input": {
-            "id": "AudioComponent",
-            "guid": "28f81be3-369f-14ba-163e-5f1a830778d1"
+            "guid": "cb9c6d5d-6d31-13b3-36f0-e9a103aa9e2a",
+            "properties": [
+              {
+                "property": "enabled",
+                "value": {
+                  "type": "Boolean",
+                  "data": false
+                }
+              }
+            ]
           },
           "output": {
-            "type": {
-              "type": "String",
-              "data": "AudioComponent",
-              "readonly": true
-            },
-            "guid": {
-              "type": "Guid",
-              "data": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-              "readonly": true
-            },
-            "name": {
-              "type": "String",
-              "data": "Audio Player",
-              "readonly": true
-            },
-            "version": {
-              "type": "Version",
-              "data": "0.2.0",
-              "readonly": true
-            },
-            "enabled": {
-              "type": "Boolean",
-              "data": true
-            },
-            "resourcePath": {
-              "type": "String",
-              "data": ""
-            },
-            "audioRef": {
-              "type": "AudioAsset",
-              "data": {
-                "guid": "00000000-0000-0000-0000-000000000080"
-              }
-            },
-            "playMode": {
-              "type": "Enum",
-              "data": "ONCE",
-              "options": [
-                "ONCE",
-                "LOOP",
-                "INFINITE"
-              ]
-            },
-            "audioType": {
-              "type": "Enum",
-              "data": "BGM",
-              "options": [
-                "BGM",
-                "AUDIO_EFFECT"
-              ]
-            },
-            "loopCount": {
-              "type": "Number",
-              "data": 1
-            },
-            "autoPlay": {
-              "type": "Boolean",
-              "data": false
-            },
-            "mute": {
-              "type": "Boolean",
-              "data": false
-            },
-            "volume": {
-              "type": "Number",
-              "data": 100
-            },
-            "isMobilePreview": {
-              "type": "Boolean",
-              "data": false
-            }
-          }
-        },
-        "subCommands": [
-          {
-            "name": "AddComponent",
-            "data": {
-              "input": {
-                "sceneObject": "28f81be3-369f-14ba-163e-5f1a830778d1",
-                "type": "AudioComponent"
-              }
-            },
-            "subCommands": [
+            "guid": "cb9c6d5d-6d31-13b3-36f0-e9a103aa9e2a",
+            "changes": [
               {
-                "name": "SetComponent",
-                "data": {
-                  "input": {
-                    "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-                    "properties": [
-                      {
-                        "property": "audioType",
-                        "value": {
-                          "type": "Enum",
-                          "data": "BGM",
-                          "options": [
-                            "BGM",
-                            "AUDIO_EFFECT"
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                "subCommands": []
+                "property": "enabled",
+                "oldValue": true,
+                "newValue": false
               }
             ]
           }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[3].guid.data",
+            "target": "commands.data.input.guid"
+          }
         ]
+      }
+    },
+    {
+      "actionId": "56e4a31c-0e51-602f-248c-722a5f7ff9ee",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "4ccb74b2-6873-8e89-b390-c285b0abf03a",
+            "properties": [
+              {
+                "property": "enabled",
+                "value": {
+                  "type": "Boolean",
+                  "data": false
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "4ccb74b2-6873-8e89-b390-c285b0abf03a",
+            "changes": [
+              {
+                "property": "enabled",
+                "oldValue": true,
+                "newValue": false
+              }
+            ]
+          }
+        },
+        "subCommands": []
       },
       "context": {
         "dependencies": [
           {
             "type": "guid",
             "sourceId": "GetScene",
-            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[1].guid.data",
-            "target": "commands.data.input.guid"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "151ca515-55b3-0919-7adc-3ac0def7bb34",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "audioRef",
-                "value": {
-                  "type": "AudioAsset",
-                  "data": {
-                    "guid": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
-                  }
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "audioRef",
-                "oldValue": {
-                  "guid": "00000000-0000-0000-0000-000000000080"
-                },
-                "newValue": {
-                  "guid": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
-                }
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "guid",
-            "sourceId": "a0c6f9f8-a751-ec02-797f-58f56b700208",
-            "source": "commands.data.output.guid.data",
-            "target": "commands.data.input.guid"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 94.89
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 100,
-                "newValue": 94.89
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "guid",
-            "sourceId": "151ca515-55b3-0919-7adc-3ac0def7bb34",
-            "source": "commands.data.output.guid",
-            "target": "commands.data.input.guid"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 90.51
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 94.89,
-                "newValue": 90.51
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 89.78
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 90.51,
-                "newValue": 89.78
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 77.37
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 89.78,
-                "newValue": 77.37
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 75.91
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 77.37,
-                "newValue": 75.91
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 73.72
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 75.91,
-                "newValue": 73.72
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 72.99
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 73.72,
-                "newValue": 72.99
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 72.26
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 72.99,
-                "newValue": 72.26
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 68.61
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 72.26,
-                "newValue": 68.61
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 64.96
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 68.61,
-                "newValue": 64.96
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 62.04
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 64.96,
-                "newValue": 62.04
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "guid",
-            "sourceId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
-            "source": "commands.data.output.guid",
-            "target": "commands.data.input.guid"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 60.58
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 62.04,
-                "newValue": 60.58
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 56.93
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 60.58,
-                "newValue": 56.93
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 55.47
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 56.93,
-                "newValue": 55.47
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 53.28
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 55.47,
-                "newValue": 53.28
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 51.82
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 53.28,
-                "newValue": 51.82
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 51.09
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 51.82,
-                "newValue": 51.09
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 50.36
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 51.09,
-                "newValue": 50.36
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "7a00fb39-76fe-7d78-1276-eb1736ce6770",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "properties": [
-              {
-                "property": "volume",
-                "value": {
-                  "type": "Number",
-                  "data": 50
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "AudioComponent",
-            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
-            "changes": [
-              {
-                "property": "volume",
-                "oldValue": 50.36,
-                "newValue": 50
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "guid",
-            "sourceId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
-            "source": "commands.data.output.guid",
-            "target": "commands.data.input.guid"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "none",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "DeleteAsset",
-        "data": {
-          "input": {
-            "guid": "aa503c18-1d65-72db-7090-5222e3d8c55b"
-          },
-          "output": {
-            "deletedAssetInfo": {
-              "guid": {
-                "type": "Guid",
-                "data": "aa503c18-1d65-72db-7090-5222e3d8c55b",
-                "readonly": true
-              },
-              "name": {
-                "type": "String",
-                "data": "jump"
-              },
-              "type": {
-                "type": "String",
-                "data": "AudioAsset",
-                "readonly": true
-              },
-              "filePath": {
-                "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\jump.mp3",
-                "readonly": true
-              },
-              "version": {
-                "type": "Version",
-                "data": "0.1.0",
-                "readonly": true
-              },
-              "subAssets": [],
-              "mccState": {
-                "type": "Enum",
-                "data": "SUCCESS",
-                "options": [
-                  "NONE",
-                  "TIMEOUT",
-                  "DETECTING",
-                  "FAILURE",
-                  "SUCCESS"
-                ]
-              },
-              "audioType": {
-                "type": "String",
-                "data": "mp3",
-                "readonly": true
-              },
-              "duration": {
-                "type": "Number",
-                "data": 261,
-                "readonly": true
-              },
-              "size": {
-                "type": "Number",
-                "data": 4.754,
-                "readonly": true
-              }
-            }
-          }
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "guid",
-            "sourceId": "GetAllAssets",
-            "source": "commands.data.output[10].guid.data",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[7].guid.data",
             "target": "commands.data.input.guid"
           }
         ]
@@ -20059,18 +19701,18 @@
         "name": "AddAsset",
         "data": {
           "input": {
-            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
+            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\wooden_plat.png"
           },
           "output": [
             {
               "guid": {
                 "type": "Guid",
-                "data": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b",
+                "data": "47aec532-c472-ac8e-d079-63ffd7ee89db",
                 "readonly": true
               },
               "name": {
                 "type": "String",
-                "data": "balcony"
+                "data": "wooden_plat"
               },
               "type": {
                 "type": "String",
@@ -20079,7 +19721,7 @@
               },
               "filePath": {
                 "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony\\balcony.png",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\wooden_plat\\wooden_plat.png",
                 "readonly": true
               },
               "version": {
@@ -20090,15 +19732,15 @@
               "subAssets": [],
               "width": {
                 "type": "Number",
-                "data": 100
+                "data": 180
               },
               "height": {
                 "type": "Number",
-                "data": 130
+                "data": 40
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 192
+                "data": 471
               },
               "assetType": {
                 "type": "String",
@@ -20202,7 +19844,7 @@
           {
             "type": "asset",
             "sourceId": "none",
-            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
+            "source": "%External%C:/Documentos/Tiktok/project steak/images/wooden_plat.png",
             "target": "commands.data.input.path"
           }
         ]
@@ -20216,14 +19858,14 @@
         "name": "SetComponent",
         "data": {
           "input": {
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "guid": "f294a02f-1686-5d1a-163f-831f170f6bb8",
             "properties": [
               {
                 "property": "texture",
                 "value": {
                   "type": "Texture",
                   "data": {
-                    "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
+                    "guid": "47aec532-c472-ac8e-d079-63ffd7ee89db"
                   }
                 }
               }
@@ -20231,15 +19873,15 @@
           },
           "output": {
             "componentType": "Image",
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "guid": "f294a02f-1686-5d1a-163f-831f170f6bb8",
             "changes": [
               {
                 "property": "texture",
                 "oldValue": {
-                  "guid": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb"
+                  "guid": "efce1ea2-56a1-e9cf-609b-57328e79c3b4"
                 },
                 "newValue": {
-                  "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
+                  "guid": "47aec532-c472-ac8e-d079-63ffd7ee89db"
                 }
               }
             ]
@@ -20252,404 +19894,10 @@
           {
             "type": "guid",
             "sourceId": "GetScene",
-            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[1].components[1].guid.data",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[8].components[1].guid.data",
             "target": "commands.data.input.guid"
           }
         ]
-      }
-    },
-    {
-      "actionId": "none",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "AddAsset",
-        "data": {
-          "input": {
-            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
-          },
-          "output": [
-            {
-              "guid": {
-                "type": "Guid",
-                "data": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c",
-                "readonly": true
-              },
-              "name": {
-                "type": "String",
-                "data": "balcony"
-              },
-              "type": {
-                "type": "String",
-                "data": "Texture2D",
-                "readonly": true
-              },
-              "filePath": {
-                "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony (1)\\balcony.png",
-                "readonly": true
-              },
-              "version": {
-                "type": "Version",
-                "data": "0.2.0",
-                "readonly": true
-              },
-              "subAssets": [],
-              "width": {
-                "type": "Number",
-                "data": 100
-              },
-              "height": {
-                "type": "Number",
-                "data": 126
-              },
-              "artifactFileSize": {
-                "type": "Number",
-                "data": 169
-              },
-              "assetType": {
-                "type": "String",
-                "data": "PNG"
-              },
-              "compressionType": {
-                "type": "Enum",
-                "data": "Automatic",
-                "options": [
-                  "Automatic",
-                  "Manual",
-                  "None"
-                ]
-              },
-              "compressQuality": {
-                "type": "Enum",
-                "data": "High",
-                "options": [
-                  "High",
-                  "Medium",
-                  "Low"
-                ]
-              },
-              "compressMaxResolution": {
-                "type": "Enum",
-                "data": "Size512",
-                "options": [
-                  "Size1024",
-                  "Size512",
-                  "Size256",
-                  "Size128"
-                ]
-              },
-              "enableMipmap": {
-                "type": "Boolean",
-                "data": false
-              },
-              "filterMin": {
-                "type": "Enum",
-                "data": "Linear",
-                "options": [
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "filterMag": {
-                "type": "Enum",
-                "data": "Linear",
-                "options": [
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "filterMipmap": {
-                "type": "Enum",
-                "data": "None",
-                "options": [
-                  "None",
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "wrapModeS": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "wrapModeT": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "wrapModeR": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "premultiplyAlpha": {
-                "type": "Boolean",
-                "data": false
-              }
-            }
-          ]
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "asset",
-            "sourceId": "none",
-            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
-            "target": "commands.data.input.path"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "none",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
-            "properties": [
-              {
-                "property": "texture",
-                "value": {
-                  "type": "Texture",
-                  "data": {
-                    "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
-                  }
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "Image",
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
-            "changes": [
-              {
-                "property": "texture",
-                "oldValue": {
-                  "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
-                },
-                "newValue": {
-                  "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
-                }
-              }
-            ]
-          }
-        },
-        "subCommands": []
-      }
-    },
-    {
-      "actionId": "none",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "AddAsset",
-        "data": {
-          "input": {
-            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
-          },
-          "output": [
-            {
-              "guid": {
-                "type": "Guid",
-                "data": "64a30133-86ec-d293-0de8-3a34f458bc80",
-                "readonly": true
-              },
-              "name": {
-                "type": "String",
-                "data": "balcony"
-              },
-              "type": {
-                "type": "String",
-                "data": "Texture2D",
-                "readonly": true
-              },
-              "filePath": {
-                "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony (2)\\balcony.png",
-                "readonly": true
-              },
-              "version": {
-                "type": "Version",
-                "data": "0.2.0",
-                "readonly": true
-              },
-              "subAssets": [],
-              "width": {
-                "type": "Number",
-                "data": 100
-              },
-              "height": {
-                "type": "Number",
-                "data": 134
-              },
-              "artifactFileSize": {
-                "type": "Number",
-                "data": 225
-              },
-              "assetType": {
-                "type": "String",
-                "data": "PNG"
-              },
-              "compressionType": {
-                "type": "Enum",
-                "data": "Automatic",
-                "options": [
-                  "Automatic",
-                  "Manual",
-                  "None"
-                ]
-              },
-              "compressQuality": {
-                "type": "Enum",
-                "data": "High",
-                "options": [
-                  "High",
-                  "Medium",
-                  "Low"
-                ]
-              },
-              "compressMaxResolution": {
-                "type": "Enum",
-                "data": "Size512",
-                "options": [
-                  "Size1024",
-                  "Size512",
-                  "Size256",
-                  "Size128"
-                ]
-              },
-              "enableMipmap": {
-                "type": "Boolean",
-                "data": false
-              },
-              "filterMin": {
-                "type": "Enum",
-                "data": "Linear",
-                "options": [
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "filterMag": {
-                "type": "Enum",
-                "data": "Linear",
-                "options": [
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "filterMipmap": {
-                "type": "Enum",
-                "data": "None",
-                "options": [
-                  "None",
-                  "Nearest",
-                  "Linear"
-                ]
-              },
-              "wrapModeS": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "wrapModeT": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "wrapModeR": {
-                "type": "Enum",
-                "data": "Repeat",
-                "options": [
-                  "Repeat",
-                  "Clamp",
-                  "Mirror"
-                ]
-              },
-              "premultiplyAlpha": {
-                "type": "Boolean",
-                "data": false
-              }
-            }
-          ]
-        },
-        "subCommands": []
-      },
-      "context": {
-        "dependencies": [
-          {
-            "type": "asset",
-            "sourceId": "none",
-            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
-            "target": "commands.data.input.path"
-          }
-        ]
-      }
-    },
-    {
-      "actionId": "none",
-      "actionType": "do",
-      "source": "API",
-      "commands": {
-        "name": "SetComponent",
-        "data": {
-          "input": {
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
-            "properties": [
-              {
-                "property": "texture",
-                "value": {
-                  "type": "Texture",
-                  "data": {
-                    "guid": "64a30133-86ec-d293-0de8-3a34f458bc80"
-                  }
-                }
-              }
-            ]
-          },
-          "output": {
-            "componentType": "Image",
-            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
-            "changes": [
-              {
-                "property": "texture",
-                "oldValue": {
-                  "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
-                },
-                "newValue": {
-                  "guid": "64a30133-86ec-d293-0de8-3a34f458bc80"
-                }
-              }
-            ]
-          }
-        },
-        "subCommands": []
       }
     }
   ]

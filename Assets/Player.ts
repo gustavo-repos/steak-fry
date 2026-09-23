@@ -90,12 +90,12 @@ export class Player extends APJS.BasicScriptComponent {
     return el[Math.floor(Math.random() * el.length)]
   }
 
-  getPlayerRect() {
-    var center = this.playerObj.getTransform().getWorldPosition()
-    if (center) {
-      return [center.x, center.y, this.playerWidth * 0.75, this.playerHeight]
-    }
-  }
+  // getPlayerRect() {
+  //   var center = this.playerObj.getTransform().getWorldPosition()
+  //   if (center) {
+  //     return [center.x, center.y, this.playerWidth * 0.75, this.playerHeight]
+  //   }
+  // }
 
   getPlayerCoreRect (nextValue: number) {
     var centerX = this.getSceneObject().getTransform().getWorldPosition().x

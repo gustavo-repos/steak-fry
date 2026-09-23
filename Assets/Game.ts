@@ -16,7 +16,7 @@ export var platforms: any
 export var solids: any
 export var grounds: any
 export const fixedTime = 0.02
-export var conect: any
+// export var conect: any
 var isTimeRunning = false
 export var time = 35
 export var substate = 3
@@ -127,7 +127,7 @@ export class Game extends APJS.BasicScriptComponent {
       gameState = 0
       substate = 3
       this.accumulator = 0
-      conect.name = 'conect'
+      // conect.name = 'conect'
       this.gameRunning.name = 'gameRunning'
   }
 
@@ -265,7 +265,7 @@ export class Game extends APJS.BasicScriptComponent {
     // solids = [this.ground1, this.rightWall, this.leftWall]
     grounds = [this.ground1]
     APJS.EventManager.getGlobalEmitter().on(APJS.EventType.Touch, this.touchCallback)
-    conect = this.getSceneObject().scene.findSceneObject('conect')
+    // conect = this.getSceneObject().scene.findSceneObject('conect')
 
   }
   

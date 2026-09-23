@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "852e6d56-23ee-b338-95e4-f3778dc8a0c8",
+      "a": "5c83785b-9ea0-e2fb-e9ec-ac1373c8d068",
       "b": ""
     },
     "extraType": "ResItemAnimatedTexture",
-    "name": "fire",
+    "name": "flame",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -18,7 +18,7 @@
     "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",
     "references": [
       {
-        "guid": "00000000-0000-0000-0000-0000000000c4",
+        "guid": "19189eee-3dc0-8343-a06e-b60ec08d3c14",
         "propertyName": "textureSequence"
       }
     ]

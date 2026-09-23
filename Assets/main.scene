@@ -154,7 +154,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 34}
+      - {localId: 35}
       - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 5308798257118479979, b: 5540792121267704742}
@@ -224,7 +224,7 @@ entities:
     name: !<str> rightWall
     guid: {a: 5225006035057423487, b: 14121627132242703806}
     scene: {localId: 1}
-    selfvisible: true
+    selfvisible: false
     components:
       - {localId: 11}
       - __class: ImageRenderer
@@ -410,7 +410,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 45}
+      - {localId: 30}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4918149476501256780, b: 12266725931849093292}
@@ -456,7 +456,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 35}
+      - {localId: 36}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4661349979996608857, b: 10046916648553032359}
@@ -502,7 +502,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 41}
+      - {localId: 42}
       - __class: DynamicComponent
         name: !<str> AudioComponent
         guid: {a: 4687411002804839721, b: 16377755045937023364}
@@ -513,7 +513,7 @@ entities:
           properties:
             __class: Map
             autoPlay: false
-            isMobilePreview: true
+            isMobilePreview: false
             loopCount: 1
             mute: false
             playMode: !<str> Once
@@ -528,7 +528,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 37}
+      - {localId: 38}
       - __class: DynamicComponent
         name: !<str> AudioComponent
         guid: {a: 5568520672470226878, b: 17523560649993808277}
@@ -539,7 +539,7 @@ entities:
           properties:
             __class: Map
             autoPlay: false
-            isMobilePreview: true
+            isMobilePreview: false
             loopCount: 1
             mute: false
             playMode: !<str> Once
@@ -613,7 +613,7 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        texture: {localId: 1, path: efce1ea2-56a1-e9cf-609b-57328e79c3b4--efce1ea2-56a1-e9cf-609b-57328e79c3b4.png}
+        texture: {localId: 1, path: 47aec532-c472-ac8e-d079-63ffd7ee89db--47aec532-c472-ac8e-d079-63ffd7ee89db.png}
         opacity: 1
         color: {r: 1, g: 1, b: 1, a: 1}
         size: {x: 10, y: 10}
@@ -644,7 +644,7 @@ entities:
     name: !<str> platform2
     guid: {a: 4976143659882755693, b: 16837365951994062754}
     scene: {localId: 1}
-    selfvisible: true
+    selfvisible: false
     components:
       - {localId: 17}
       - __class: ImageRenderer
@@ -692,7 +692,7 @@ entities:
     scene: {localId: 1}
     selfvisible: false
     components:
-      - {localId: 42}
+      - {localId: 43}
       - __class: Text
         name: !<str> ""
         guid: {a: 5631401115819563297, b: 15929641405994617011}
@@ -795,7 +795,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 33}
+      - {localId: 34}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4717355574986828590, b: 5688131794368666034}
@@ -841,7 +841,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 32}
+      - {localId: 33}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 5350784694469052996, b: 5979683142594392222}
@@ -887,7 +887,7 @@ entities:
     scene: {localId: 1}
     selfvisible: false
     components:
-      - {localId: 31}
+      - {localId: 32}
     layer: 0
   - __class: Entity
     name: !<str> cam
@@ -895,7 +895,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 30}
+      - {localId: 31}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4849406549288422430, b: 7830495877210444938}
@@ -941,7 +941,7 @@ entities:
     scene: {localId: 1}
     selfvisible: false
     components:
-      - {localId: 39}
+      - {localId: 40}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4895443903464913198, b: 7744235206997090690}
@@ -987,7 +987,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 43}
+      - {localId: 44}
     layer: 0
   - __class: Entity
     name: !<str> victorySound
@@ -995,7 +995,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 44}
+      - {localId: 45}
       - __class: DynamicComponent
         name: !<str> AudioComponent
         guid: {a: 4768568089581543333, b: 3362390751812461239}
@@ -1006,7 +1006,7 @@ entities:
           properties:
             __class: Map
             autoPlay: false
-            isMobilePreview: true
+            isMobilePreview: false
             loopCount: 1
             mute: false
             playMode: !<str> Once
@@ -1021,7 +1021,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 40}
+      - {localId: 41}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 5013610094890216261, b: 14881479944359752334}
@@ -1300,7 +1300,7 @@ entities:
           properties:
             __class: Map
             autoPlay: false
-            isMobilePreview: true
+            isMobilePreview: false
             loopCount: 1
             mute: false
             playMode: !<str> Once
@@ -1361,7 +1361,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 36}
+      - {localId: 37}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 5409974645243085391, b: 5340263638127959168}
@@ -1410,7 +1410,7 @@ entities:
           properties:
             __class: Map
             autoPlay: false
-            isMobilePreview: true
+            isMobilePreview: false
             loopCount: 1
             mute: false
             playMode: !<str> Once
@@ -1471,7 +1471,7 @@ entities:
     scene: {localId: 1}
     selfvisible: false
     components:
-      - {localId: 38}
+      - {localId: 39}
       - __class: ImageRenderer
         name: !<str> ""
         guid: {a: 4915580136880906530, b: 11840442310652269497}
@@ -1576,7 +1576,7 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        texture: {localId: 1, path: 2c5c628f-24d7-3f49-6a67-7d2f25df0ab0--2c5c628f-24d7-3f49-6a67-7d2f25df0ab0.png}
+        texture: {localId: 1, path: e22bd6cd-5932-fac0-a892-6065df37426f--e22bd6cd-5932-fac0-a892-6065df37426f.png}
         opacity: 1
         color: {r: 1, g: 1, b: 1, a: 1}
         size: {x: 10, y: 10}
@@ -1927,7 +1927,7 @@ config:
   RTInputDeferredCopy: true
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/AmazingProRuntime.js
   - !<str> js/Graph/GraphSystem.js
@@ -1985,11 +1985,11 @@ localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 4}
 children:
   - {localId: 6}
-  - {localId: 39}
-  - {localId: 41}
+  - {localId: 40}
   - {localId: 42}
   - {localId: 43}
   - {localId: 44}
+  - {localId: 45}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2005,10 +2005,10 @@ children:
   - {localId: 7}
   - {localId: 28}
   - {localId: 29}
-  - {localId: 45}
   - {localId: 30}
   - {localId: 31}
-  - {localId: 34}
+  - {localId: 32}
+  - {localId: 35}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2437,6 +2437,23 @@ pixelsPerUnit: 32
 enablePivotMatrix: false
 --- !ScreenTransform &30
 name: !<str> ""
+guid: {a: 5205520391376246475, b: 14186192760954813081}
+enabled: true
+localPosition: {x: 6, y: -7.0625, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 192, y: -226}
+sizeDelta: {x: 96, y: 96}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: false
+--- !ScreenTransform &31
+name: !<str> ""
 guid: {a: 5713292443169965352, b: 4688785060223696799}
 enabled: true
 localPosition: {x: -8.4375, y: 14.0625, z: 0}
@@ -2452,7 +2469,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &31
+--- !ScreenTransform &32
 name: !<str> ""
 guid: {a: 5323532722689542960, b: 14718680470946271145}
 enabled: true
@@ -2461,8 +2478,8 @@ localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 6}
 children:
-  - {localId: 32}
   - {localId: 33}
+  - {localId: 34}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2472,14 +2489,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &32
+--- !ScreenTransform &33
 name: !<str> ""
 guid: {a: 4812643453015923699, b: 9765874319884062853}
 enabled: true
 localPosition: {x: 3.75, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 31}
+parent: {localId: 32}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2489,14 +2506,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &33
+--- !ScreenTransform &34
 name: !<str> ""
 guid: {a: 5307098743476926400, b: 3385474400084929671}
 enabled: true
 localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 31}
+parent: {localId: 32}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2506,7 +2523,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &34
+--- !ScreenTransform &35
 name: !<str> ""
 guid: {a: 5319447856542598811, b: 7973654975223511206}
 enabled: true
@@ -2515,10 +2532,10 @@ localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 6}
 children:
-  - {localId: 35}
   - {localId: 36}
   - {localId: 37}
   - {localId: 38}
+  - {localId: 39}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2528,14 +2545,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &35
+--- !ScreenTransform &36
 name: !<str> ""
 guid: {a: 5492106056015460617, b: 5736305920398105501}
 enabled: true
 localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 34}
+parent: {localId: 35}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2545,14 +2562,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &36
+--- !ScreenTransform &37
 name: !<str> ""
 guid: {a: 5497184312243588112, b: 11665590808401903525}
 enabled: true
 localPosition: {x: 0, y: 1.875, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 34}
+parent: {localId: 35}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2562,14 +2579,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &37
+--- !ScreenTransform &38
 name: !<str> ""
 guid: {a: 5070580427024147332, b: 7800322828993583273}
 enabled: true
 localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 34}
+parent: {localId: 35}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2579,14 +2596,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &38
+--- !ScreenTransform &39
 name: !<str> ""
 guid: {a: 4818720126565169150, b: 10954979051394595497}
 enabled: true
 localPosition: {x: 2.282191, y: 2.595692, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 34}
+parent: {localId: 35}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2596,7 +2613,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &39
+--- !ScreenTransform &40
 name: !<str> ""
 guid: {a: 5348452261135251232, b: 8732269021296147356}
 enabled: true
@@ -2605,7 +2622,7 @@ localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 5}
 children:
-  - {localId: 40}
+  - {localId: 41}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2615,14 +2632,14 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &40
+--- !ScreenTransform &41
 name: !<str> ""
 guid: {a: 5546558221575485082, b: 8351138351934472122}
 enabled: true
 localPosition: {x: 8.75, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 39}
+parent: {localId: 40}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2632,7 +2649,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &41
+--- !ScreenTransform &42
 name: !<str> ""
 guid: {a: 5244102127024588290, b: 12436489592359835788}
 enabled: true
@@ -2649,7 +2666,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &42
+--- !ScreenTransform &43
 name: !<str> ""
 guid: {a: 5560088415377956593, b: 1779829870700826295}
 enabled: true
@@ -2666,7 +2683,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: true
---- !ScreenTransform &43
+--- !ScreenTransform &44
 name: !<str> ""
 guid: {a: 4806579170370908017, b: 2194633807562466209}
 enabled: true
@@ -2683,7 +2700,7 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: false
---- !ScreenTransform &44
+--- !ScreenTransform &45
 name: !<str> ""
 guid: {a: 5747430467043162573, b: 11661322190035239597}
 enabled: true
@@ -2696,23 +2713,6 @@ mobility:
   value: Dynamic
 anchoredPosition: {x: 0, y: 0}
 sizeDelta: {x: 720, y: 1280}
-pivot: {x: 0.5, y: 0.5}
-anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-pixelsPerUnit: 32
-enablePivotMatrix: false
---- !ScreenTransform &45
-name: !<str> ""
-guid: {a: 5205520391376246475, b: 14186192760954813081}
-enabled: true
-localPosition: {x: 6, y: -7.0625, z: 0}
-localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 6}
-mobility:
-  __class: Mobility
-  value: Dynamic
-anchoredPosition: {x: 192, y: -226}
-sizeDelta: {x: 96, y: 96}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
