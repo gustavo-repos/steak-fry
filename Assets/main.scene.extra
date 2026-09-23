@@ -452,6 +452,75 @@
   },
   {
     "guid": {
+      "a": "ffa2fb5a-29a4-9885-baad-972d9ac23328",
+      "b": ""
+    },
+    "objGuid": "Guid(5016123398293242192, 12842609333246183071)",
+    "extraType": "Entity",
+    "name": "balcony",
+    "version": "0.1.0",
+    "rttiType": "SceneObject",
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "disableSelection": false,
+    "hiddenInHierarchy": false,
+    "editorTags": []
+  },
+  {
+    "guid": {
+      "a": "24ccbcad-b31b-828e-d0c4-30ecebcff46c",
+      "b": ""
+    },
+    "objGuid": "Guid(4800622918688078210, 7873816523354111881)",
+    "extraType": "ScreenTransform",
+    "name": "Screen Transform",
+    "version": "0.1.0",
+    "rttiType": "ScreenTransform",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "horizontalConstraint": 2,
+    "verticalConstraint": 2,
+    "linkageScale": 0,
+    "linkageSize": 0
+  },
+  {
+    "guid": {
+      "a": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+      "b": ""
+    },
+    "objGuid": "Guid(5081704632809679480, 6359567154285646492)",
+    "extraType": "Image",
+    "name": "Image",
+    "version": "0.1.0",
+    "rttiType": "Image",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "sharedMaterial": "00000000-0000-0000-0000-000000000132",
+    "segBlendMode": "Normal_v2",
+    "segRadius": 0.5,
+    "segSoftness": 0.5,
+    "blendMode": "Normal",
+    "drawMode": "Tiled",
+    "filledType": 0,
+    "startPoint": 0,
+    "filledRange": 1,
+    "ellipseX": 1,
+    "ellipseY": 1,
+    "alphaNOPM": true
+  },
+  {
+    "guid": {
       "a": "bce0573c-4aee-584a-6ed8-91822aba8186",
       "b": ""
     },
@@ -659,6 +728,75 @@
   },
   {
     "guid": {
+      "a": "8de20bcd-3a89-97d4-3675-3400584b21d0",
+      "b": ""
+    },
+    "objGuid": "Guid(5742306406990099133, 5579700661325379489)",
+    "extraType": "Entity",
+    "name": "fire",
+    "version": "0.1.0",
+    "rttiType": "SceneObject",
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "disableSelection": false,
+    "hiddenInHierarchy": false,
+    "editorTags": []
+  },
+  {
+    "guid": {
+      "a": "aa6e4daf-5fb0-3d6e-69e1-6c4970c32eec",
+      "b": ""
+    },
+    "objGuid": "Guid(4910856870826314738, 14521527361018268072)",
+    "extraType": "ScreenTransform",
+    "name": "Screen Transform",
+    "version": "0.1.0",
+    "rttiType": "ScreenTransform",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "horizontalConstraint": 2,
+    "verticalConstraint": 2,
+    "linkageScale": 0,
+    "linkageSize": 0
+  },
+  {
+    "guid": {
+      "a": "0f4afd36-503c-c36c-db86-b72eff181e5e",
+      "b": ""
+    },
+    "objGuid": "Guid(5294105892500386580, 9850648797953618358)",
+    "extraType": "Image",
+    "name": "Image",
+    "version": "0.1.0",
+    "rttiType": "Image",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "sharedMaterial": "00000000-0000-0000-0000-000000000132",
+    "segBlendMode": "Normal_v2",
+    "segRadius": 0.5,
+    "segSoftness": 0.5,
+    "blendMode": "Normal",
+    "drawMode": "Normal",
+    "filledType": 0,
+    "startPoint": 0,
+    "filledRange": 1,
+    "ellipseX": 1,
+    "ellipseY": 1,
+    "alphaNOPM": true
+  },
+  {
+    "guid": {
       "a": "9b71b134-083a-26a5-7539-9c04882779fd",
       "b": ""
     },
@@ -667,7 +805,7 @@
     "name": "pan",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": true,
+    "expanded": false,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -1495,7 +1633,7 @@
     "name": "comanda",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": true,
+    "expanded": false,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -2260,7 +2398,7 @@
       "isVisibleInInspector": true,
       "expanded": true
     },
-    "audioRef": "aa503c18-1d65-72db-7090-5222e3d8c55b"
+    "audioRef": "c027609d-4a17-07aa-bc29-5f1035637c66"
   },
   {
     "guid": {
@@ -2300,7 +2438,7 @@
     "horizontalConstraint": 2,
     "verticalConstraint": 2,
     "linkageScale": 0,
-    "linkageSize": 1
+    "linkageSize": 0
   },
   {
     "guid": {
@@ -2476,7 +2614,7 @@
     },
     "objGuid": "Guid(5618888252014358666, 18007706104684181916)",
     "extraType": "Entity",
-    "name": "conect",
+    "name": "defeatSound",
     "version": "0.1.0",
     "rttiType": "SceneObject",
     "expanded": true,
@@ -2625,7 +2763,7 @@
     },
     "objGuid": "Guid(4876956744227187420, 15500252627720280253)",
     "extraType": "Entity",
-    "name": "finalSound",
+    "name": "victorySound",
     "version": "0.1.0",
     "rttiType": "SceneObject",
     "expanded": true,
@@ -2674,7 +2812,7 @@
       "isVisibleInInspector": true,
       "expanded": true
     },
-    "audioRef": "42a570cf-1d54-4cad-3cd7-494822226c27"
+    "audioRef": "4b6fd73e-d9e5-5b19-1918-661340057af9"
   },
   {
     "guid": {
@@ -2744,5 +2882,59 @@
     "ellipseX": 1,
     "ellipseY": 1,
     "alphaNOPM": true
+  },
+  {
+    "guid": {
+      "a": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+      "b": ""
+    },
+    "objGuid": "Guid(5707701601943752355, 5760417249512461461)",
+    "extraType": "AudioComponent",
+    "name": "Audio Player",
+    "version": "0.2.0",
+    "rttiType": "AudioComponent",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.2.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "audioRef": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
+  },
+  {
+    "guid": {
+      "a": "9c1520a0-9028-348f-99f5-2a9938771602",
+      "b": ""
+    },
+    "objGuid": "Guid(4687411002804839721, 16377755045937023364)",
+    "extraType": "AudioComponent",
+    "name": "Audio Player",
+    "version": "0.2.0",
+    "rttiType": "AudioComponent",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.2.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "audioRef": "1648c56d-33e8-1ecf-08d5-fa910f865d52"
+  },
+  {
+    "guid": {
+      "a": "a5d85d07-2f61-3741-05e0-2d564f3d9882",
+      "b": ""
+    },
+    "objGuid": "Guid(4787368263813245703, 5278971679697105047)",
+    "extraType": "AudioComponent",
+    "name": "Audio Player",
+    "version": "0.2.0",
+    "rttiType": "AudioComponent",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.2.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "audioRef": "0c9ba051-68fc-1bb3-44de-7042a72b8494"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "name": "Untitled",
-  "lastModified": "Sat, 29 Aug 2026 22:24:30 GMT",
-  "version": "5.14.0",
+  "lastModified": "Wed, 23 Sep 2026 00:10:45 GMT",
+  "version": "5.15.0",
   "renderNames": {
     "0": "Default Layer",
     "1": "Layer 1",
@@ -68,9 +68,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 17723393585,
-  "durationCreation": 1336415306,
-  "durationBackground": 1058130827,
+  "durationToCreate": 19803368235,
+  "durationCreation": 1360208238,
+  "durationBackground": 1072944902,
   "effectHint": "",
   "templateID": "templateID_none",
   "overwriteBuiltinGAN": 1,
@@ -87,7 +87,7 @@
   },
   "projectID": "bf0db16c-bcce-f288-c129-1e671384f83f",
   "isNewCreatedProject": true,
-  "preUpgradeVersion": "5.14.0",
+  "preUpgradeVersion": "5.15.0",
   "LastVideoInput": {
     "type": "preview_face",
     "name": "preview_face_idle||3",
@@ -97,16 +97,16 @@
   "fromNewUserGuide": false,
   "soundStartTime": 0,
   "selectedIdList": [
-    "amz:Guid(4709954411187835443, 12071106632653844376)"
+    "editor:64a30133-86ec-d293-0de8-3a34f458bc80"
   ],
   "lastSceneView": 0,
   "autoResetEffect": true,
-  "effectSize": 2104512,
+  "effectSize": 2165851,
   "effectPackagePath": "C:\\Users\\gbroc\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\submit\\package\\effect.zip",
   "perfTested": true,
   "effectUploadResult": {
-    "uri": "/obj/tiktok-effect-public-us/effects/effect/We9izjpzQ9TAsHasaMVn9A_958260ab6c7cbb731975139079c50289",
-    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/We9izjpzQ9TAsHasaMVn9A_958260ab6c7cbb731975139079c50289"
+    "uri": "/obj/tiktok-effect-public-us/effects/effect/XQHFqYLwMb9acABtsJ7T25_b493f5ab233f6c916c8722ae5e0b1167",
+    "url": "https://lf16-effect.tiktokcdn.com//obj/tiktok-effect-public-us/effects/effect/XQHFqYLwMb9acABtsJ7T25_b493f5ab233f6c916c8722ae5e0b1167"
   },
   "soundSelectedDuration": 0,
   "exportPerformance": {
@@ -121,5 +121,5 @@
     "vfxReplaceGuidDuration": 0,
     "writeConfigFilesDuration": 118
   },
-  "orionSDKVersion": "9.2.0"
+  "orionSDKVersion": "9.4.0"
 }

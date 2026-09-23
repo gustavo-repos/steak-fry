@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "dcf2e5a5-7a1d-69d3-50e6-3f1e1014305b",
+      "a": "efce1ea2-56a1-e9cf-609b-57328e79c3b4",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "board",
+    "name": "wooden_plat",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\board.png",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\wooden_plat.png",
     "references": []
   }
 ]

@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "c027609d-4a17-07aa-bc29-5f1035637c66",
+      "a": "1648c56d-33e8-1ecf-08d5-fa910f865d52",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "jump",
+    "name": "olenchic-fiasco-154915",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
@@ -16,7 +16,7 @@
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\jump.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\olenchic-fiasco-154915.mp3",
     "references": []
   }
 ]

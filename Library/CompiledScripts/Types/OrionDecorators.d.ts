@@ -111,6 +111,13 @@ declare function serializeSceneObjectFlag(target: any, key: string): void;
  *   @serializeProperty()
  *   public score: number = 0;
  *
+ *   // Scalar Component references are supported by TTEH with EffectSDK 22.0 or later
+ *   @serializeProperty()
+ *   public text: APJS.Text | null = null;
+ *
+ *   @serializeProperty()
+ *   public camera: APJS.Camera | null = null;
+ *
  *   // This property won't be saved
  *   public temporaryData: number = 0;
  * }

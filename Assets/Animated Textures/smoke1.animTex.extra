@@ -12,7 +12,7 @@
     "extendedInfo": {
       "isVisibleInInspector": true,
       "hideInPanel": false,
-      "expandInPanel": false
+      "expandInPanel": true
     },
     "objGuid": "",
     "resourceFilePath": "C:\\Users\\gbroc\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\assets\\jsAssets\\default.animTex",

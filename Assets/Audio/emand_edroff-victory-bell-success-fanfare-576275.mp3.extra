@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "c027609d-4a17-07aa-bc29-5f1035637c66",
+      "a": "4b6fd73e-d9e5-5b19-1918-661340057af9",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "jump",
+    "name": "emand_edroff-victory-bell-success-fanfare-576275",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
@@ -16,7 +16,7 @@
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\jump.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\emand_edroff-victory-bell-success-fanfare-576275.mp3",
     "references": []
   }
 ]

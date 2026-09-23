@@ -1681,9 +1681,10 @@ declare namespace APJS {
    * Typically it is used alongside a {@link RigidBody}.
    *
    * {@link isTangible} is the main collision-vs-trigger switch.
-   * When {@link emitCollisionEvent} is enabled, APJS checks this collider's
-   * contacts during update and emits {@link CollisionEvent.Enter},
-   * {@link CollisionEvent.Stay}, and {@link CollisionEvent.Exit}.
+   * When {@link emitCollisionEvent} is enabled, APJS collects every contact
+   * this collider had during the most recent physics update and emits
+   * {@link CollisionEvent.Enter}, {@link CollisionEvent.Stay}, and
+   * {@link CollisionEvent.Exit} on the following frame.
    * Most authored properties on this class start as local configuration values and are pushed to
    * the native collider after initialization, or immediately when an initialized collider is updated.
    *
@@ -1759,8 +1760,11 @@ declare namespace APJS {
     /**
      * @description Gets or sets whether APJS should emit collision callbacks for this collider.
      * Default: `false`.
-     * When enabled, APJS checks this collider's contacts on each update and emits
-     * {@link CollisionEvent.Enter}, {@link CollisionEvent.Stay}, and {@link CollisionEvent.Exit}.
+     * When enabled, APJS collects every contact this collider had during the
+     * most recent physics update — including contacts that begin and end
+     * between two frames — and emits {@link CollisionEvent.Enter},
+     * {@link CollisionEvent.Stay}, and {@link CollisionEvent.Exit} on the
+     * following frame.
      * The event payload is `ev.args[0]` as an array of {@link CollisionInfo}.
      * Disabling it clears the cached collision state.
      */
@@ -2169,6 +2173,7 @@ declare namespace APJS {
      *
      * @param src - The source texture or temporary render texture ID.
      * @param dest - The destination render texture or temporary render texture ID.
+     * `dest` must be a `RenderTexture`; any other texture type logs an error and the command is skipped.
      */
     blit(src: Texture | number, dest: Texture | number): void;
     /**
@@ -2177,6 +2182,7 @@ declare namespace APJS {
      *
      * @param src - The source texture or temporary render texture ID.
      * @param dest - The destination render texture or temporary render texture ID.
+     * `dest` must be a `RenderTexture`; any other texture type logs an error and the command is skipped.
      * @param material - The material to use for the blit operation.
      * @param shaderPass - The shader pass index to use; pass `-1` to apply all passes.
      * @param isCache - Whether to reuse cached render state across executions to reduce per-execution cost.
@@ -2253,6 +2259,8 @@ declare namespace APJS {
     /**
      * @description Adds a command to set the active render target. Subsequent draw and clear
      * commands in this buffer target it once it executes. A falsy `target` is a no-op.
+     * The texture must be a `RenderTexture`; any other texture type logs an error and leaves the
+     * active render target unchanged.
      *
      * @param target - The render target texture, or a temporary render texture ID obtained from {@link propertyToID}.
      */
@@ -3030,6 +3038,23 @@ declare namespace APJS {
     RecordEnd
   }
   /**
+   * @description Controls where the thickness specified by {@link Text3D.extrudeDepth} lies relative
+   * to the original flat glyph plane. It changes the placement of the generated depth, not its total
+   * thickness: for depth `d`, the resulting local-Z ranges are `[-d/2, d/2]`, `[0, d]`, and `[-d, 0]`.
+   * @enum
+   * @example
+   * text3D.extrudeDepth = 0.2;
+   * text3D.extrudeDirection = APJS.ExtrudeDirection.Forward;
+   */
+  enum ExtrudeDirection {
+    /** Centers the depth on the glyph plane, extending half of extrudeDepth toward both -Z and +Z. */
+    Both,
+    /** Keeps the original glyph plane at local Z = 0 and places all generated depth toward local +Z. */
+    Forward,
+    /** Keeps the original glyph plane at local Z = 0 and places all generated depth toward local -Z. */
+    Back
+  }
+  /**
    * @interface
    * @description Snapshot of a single detected face's basic landmark and pose result.
    * Returned by {@link FaceBaseInfoInterface.getFaceBaseInfo} and contains the unique
@@ -3276,6 +3301,242 @@ declare namespace APJS {
      * `0` means no mask is available for this face.
      */
     readonly faceMaskSize: number;
+  }
+  /**
+   * @description Selects the tracked landmark loop used to generate the inset mesh. Eye, nose, mouth,
+   * and head regions are shared by human, cat, and dog topologies; brows, inner mouth, and irises are
+   * human-only, while ears are available only for cat and dog. Left and right refer to the subject's
+   * own sides. The public {@link FaceInsetRenderer.faceArea} property is read-only.
+   * @enum
+   */
+  enum FaceInsetAreaType {
+    /** Builds the mesh around the subject's right eye; available for human, cat, and dog. */
+    RightEye = "RIGHT_EYE",
+    /** Builds the mesh around the subject's left eye; available for human, cat, and dog. */
+    LeftEye = "LEFT_EYE",
+    /** Builds the mesh around the subject's right eyebrow; available only for human faces. */
+    RightBrow = "RIGHT_BROW",
+    /** Builds the mesh around the subject's left eyebrow; available only for human faces. */
+    LeftBrow = "LEFT_BROW",
+    /** Builds the mesh around the nose; available for human, cat, and dog. */
+    Nose = "NOSE",
+    /** Builds the mesh around the outer mouth contour; available for human, cat, and dog. */
+    Mouth = "MOUTH",
+    /** Builds the mesh around the inner-mouth opening; available only for human faces. */
+    InnerMouth = "INNER_MOUTH",
+    /** Builds the mesh around the outer tracked face or head contour for the selected topology. */
+    Head = "HEAD",
+    /** Builds the mesh around the subject's left iris; available only for human faces. */
+    LeftIris = "LEFT_IRIS",
+    /** Builds the mesh around the subject's right iris; available only for human faces. */
+    RightIris = "RIGHT_IRIS",
+    /** Builds the mesh around the subject's right ear; available only for cat and dog. */
+    RightEar = "RIGHT_EAR",
+    /** Builds the mesh around the subject's left ear; available only for cat and dog. */
+    LeftEar = "LEFT_EAR"
+  }
+  /**
+   * @description Controls how the face inset source color is composited with the camera framebuffer.
+   * In the member descriptions, "source" is the sampled and color-adjusted inset, while "background"
+   * is the framebuffer color already rendered at the same pixel. The selected mode is authored in the
+   * Inspector and reported by the read-only {@link FaceInsetRenderer.blendMode} property because a mode
+   * change requires rebuilding the material pass and shader variant.
+   * @enum
+   */
+  enum FaceInsetBlendMode {
+    /** Disables blending and writes the source output directly. */
+    Disabled = "Disabled_v2",
+    /** Alpha-composites the source over the background. */
+    Normal = "Normal_v2",
+    /** Keeps the darker value of each source and background color channel. */
+    Darken = "Darken_v2",
+    /** Multiplies source and background channels, usually producing a darker result. */
+    Multiply = "Multiply_v2",
+    /** Keeps the lighter value of each source and background color channel. */
+    Lighten = "Lighten_v2",
+    /** Applies inverse multiplication, usually producing a lighter result. */
+    Screen = "Screen_v2",
+    /** Adds source and background channels and clamps the result to 1. */
+    LinearDodge = "Linear_Dodge_v2",
+    /** Darkens the background by increasing contrast according to the source. */
+    ColorBurn = "Color_Burn_v2",
+    /** Computes max(background + source - 1, 0), producing a linear darkening effect. */
+    LinearBurn = "Linear_Burn_v2",
+    /** Brightens the background by decreasing contrast according to the source. */
+    ColorDodge = "Color_Dodge_v2",
+    /** Multiplies dark background channels and screens light background channels. */
+    Overlay = "Overlay_v2",
+    /** Applies a soft contrast change according to the source. */
+    SoftLight = "Soft_Light_v2",
+    /** Multiplies or screens according to whether each source channel is below 0.5. */
+    HardLight = "Hard_Light_v2",
+    /** Applies color burn below source 0.5 and color dodge above source 0.5. */
+    VividLight = "Vivid_Light_v2",
+    /** Applies linear burn below source 0.5 and linear dodge above source 0.5. */
+    LinearLight = "Linear_Light_v2",
+    /** Replaces only source-driven dark or light channel extremes. */
+    PinLight = "Pin_Light_v2",
+    /** Thresholds vivid-light output to 0 or 1 for a posterized result. */
+    HardMix = "Hard_Mix_v2",
+    /** Uses the absolute difference between source and background channels. */
+    Difference = "Difference_v2",
+    /** Produces a lower-contrast difference using background + source - 2 * background * source. */
+    Exclusion = "Exclusion_v2",
+    /** Uses deterministic per-pixel noise and source alpha to create speckled coverage. */
+    Dissolve = "Dissolve_v2",
+    /** Compares luminance and keeps the entire darker color. */
+    DarkerColor = "Darker_Color_v2",
+    /** Compares luminance and keeps the entire lighter color. */
+    LighterColor = "Lighter_Color_v2",
+    /** Computes max(background + source - 1, 0), matching the current shader implementation. */
+    Subtract = "Subtract_v2",
+    /** Divides source RGB by background RGB in the current shader implementation. */
+    Divide = "Divide_v2",
+    /** Uses source hue with background saturation and lightness. */
+    Hue = "Hue_v2",
+    /** Uses source saturation with background hue and lightness. */
+    Saturation = "Saturation_v2",
+    /** Uses source hue and saturation with background lightness. */
+    Color = "Color_v2",
+    /** Uses source lightness with background hue and saturation. */
+    Luminosity = "Luminosity_v2",
+    /** Halves source alpha before normal compositing, producing a half-strength blend. */
+    Average = "Average_v2"
+  }
+  /**
+   * @class FaceInsetRenderer
+   * @extends Renderer
+   * @description Tracks a configured facial region, builds a mesh from its landmarks, and renders an
+   * input texture on that mesh.
+   */
+  class FaceInsetRenderer extends Renderer {
+    protected constructor();
+    /**
+     * @description The landmark model selected when the component was created. This value is read-only at runtime.
+     * @readonly
+     */
+    get faceType(): FaceInsetType;
+    /**
+     * @description The landmark region selected when the component was created. This value is read-only at runtime.
+     * @readonly
+     */
+    get faceArea(): FaceInsetAreaType;
+    /**
+     * @description The texture sampled on the generated face-region mesh. Setting null clears the
+     * source texture, so the renderer has no valid image to sample.
+     * @type {Texture}
+     */
+    get inputTexture(): Texture | null;
+    set inputTexture(value: Texture | null);
+    /**
+     * @description Scales source UVs around the tracked region center. (1, 1) is unchanged; 0 on an
+     * axis samples only the center on that axis; a larger magnitude samples farther from the center,
+     * making texture features appear smaller; a negative value also mirrors that axis. No fixed
+     * range is enforced. The getter returns a copy; assign it back after changing x or y.
+     * @type {Vector2f}
+     */
+    get inputTextureScale(): Vector2f;
+    set inputTextureScale(value: Vector2f);
+    /**
+     * @description Offsets source UVs after scaling. (0, 0) is unchanged; positive and negative
+     * values move sampling in the corresponding UV direction, and a larger absolute value moves it
+     * farther. Native code applies one tenth of this value and does not enforce a range. The getter
+     * returns a copy; assign it back after changing x or y.
+     * @type {Vector2f}
+     */
+    get inputTextureUVOffset(): Vector2f;
+    set inputTextureUVOffset(value: Vector2f);
+    /**
+     * @description Outer feather amount in the supported range [0, 1]. 0 creates no outer falloff
+     * ring; larger values extend a wider transparent falloff beyond the landmarks. At 1, the
+     * generated ring width is 10% of the tracked eye distance. Native code clamps only values below
+     * 0.
+     */
+    get outerFeather(): number;
+    set outerFeather(value: number);
+    /**
+     * @description Inner feather amount in the supported range [0, 1]. The center remains opaque; 0
+     * keeps the landmark boundary opaque, while 1 fades the boundary to transparent. Larger values
+     * therefore create a stronger inward fade. Native code clamps only values below 0.
+     */
+    get innerFeather(): number;
+    set innerFeather(value: number);
+    /**
+     * @description Overall opacity in the supported range [0, 1]. 0 makes the inset invisible, while
+     * 1 preserves the alpha produced by the texture and feathering. The value is not clamped by
+     * APJS.
+     * @type {number}
+     */
+    get opacity(): number;
+    set opacity(value: number);
+    /**
+     * @description The blend mode authored in the Inspector, which determines how the inset source
+     * color is composited with the camera framebuffer. This value is read-only at runtime because
+     * changing modes requires rebuilding the material pass and its shader variant.
+     * @readonly
+     * @type {FaceInsetBlendMode}
+     */
+    get blendMode(): FaceInsetBlendMode;
+    /**
+     * @description Mixes the sampled texture RGB toward this color. Color channels use the supported
+     * range [0, 1]; alpha 0 leaves texture RGB unchanged, while alpha 1 replaces it completely with
+     * this color's RGB. The getter returns a copy; assign it back after changing a channel.
+     * @type {Color}
+     */
+    get fillColor(): Color;
+    set fillColor(value: Color);
+    /**
+     * @description Whether to draw an outline inside the outer feather ring. The outline is
+     * suppressed when outerFeather is below 0.001 because no usable outer ring exists.
+     */
+    get outlineEnabled(): boolean;
+    set outlineEnabled(value: boolean);
+    /**
+     * @description Outline RGBA color. Channels use the supported range [0, 1]; alpha 0 is
+     * transparent and alpha 1 is fully opaque before overall opacity and feathering are applied. The
+     * getter returns a copy; assign it back after changing a channel.
+     * @type {Color}
+     */
+    get outlineColor(): Color;
+    set outlineColor(value: Color);
+    /**
+     * @description Outline thickness in the supported range [0, 1]. 0 confines the outline to the
+     * outer edge; larger values extend it farther inward, and values near 1 produce the widest
+     * outline. The native shader threshold is capped at 0.99.
+     * @type {number}
+     */
+    get outlineThickness(): number;
+    set outlineThickness(value: number);
+    /**
+     * @description Enables both depth testing and depth writing for the inset pass. When true,
+     * nearer depth-tested geometry can occlude the inset and the inset also contributes to the depth
+     * buffer.
+     * @type {boolean}
+     */
+    get depthTest(): boolean;
+    set depthTest(value: boolean);
+    /**
+     * @description Boundary subdivision quality in the supported integer range [0, 10]. 0 and 1
+     * keep the original landmark polygon; values above 1 generate that many Catmull-Rom samples per
+     * boundary segment. Higher values produce a smoother contour with more geometry and processing
+     * cost.
+     */
+    get quality(): number;
+    set quality(value: number);
+  }
+  /**
+   * @description Selects the landmark topology used to build a {@link FaceInsetRenderer} mesh. It also
+   * determines which {@link FaceInsetAreaType} values are valid. The public
+   * {@link FaceInsetRenderer.faceType} property reports the authoring-time selection and is read-only.
+   * @enum
+   */
+  enum FaceInsetType {
+    /** Uses human-face landmarks and supports human-only brows, inner mouth, and iris regions. */
+    Human = "HUMAN",
+    /** Uses cat-face landmarks and supports pet ear regions in addition to shared facial regions. */
+    Cat = "CAT",
+    /** Uses dog-face landmarks and supports pet ear regions in addition to shared facial regions. */
+    Dog = "DOG"
   }
   /**
    * @class FaceMakeup
@@ -3602,6 +3863,42 @@ declare namespace APJS {
     setFeatureWeight(feature: string | number, weight: number): void;
   }
   /**
+   * @class FaceStretchComponent
+   * @extends Component
+   * @description Applies an authored landmark displacement to a tracked human, cat, or dog face.
+   */
+  class FaceStretchComponent extends Component {
+    protected constructor();
+    /**
+     * @description The landmark and deformation template selected when the component was created.
+     * This value is read-only at runtime.
+     * @readonly
+     */
+    get faceType(): FaceStretchType;
+    /**
+     * @description Stretch intensity in the supported range [0, 100]. 0 keeps every tracked point
+     * at its original position; 100 applies the full authored displacement; intermediate values
+     * linearly interpolate between them. Higher values therefore produce stronger deformation.
+     * APJS forwards values outside this range without clamping.
+     */
+    get intensity(): number;
+    set intensity(value: number);
+  }
+  /**
+   * @description Identifies the landmark topology and authored displacement-point set used by a
+   * {@link FaceStretchComponent}. The selected template must match the tracked subject; the public
+   * {@link FaceStretchComponent.faceType} property reports the authoring-time choice and is read-only.
+   * @enum
+   */
+  enum FaceStretchType {
+    /** Applies the authored human deformation points to the human-face landmark topology. */
+    Human,
+    /** Applies the authored dog deformation points to the dog-face landmark topology. */
+    Dog,
+    /** Applies the authored cat deformation points to the cat-face landmark topology. */
+    Cat
+  }
+  /**
    * @interface
    * FaceTeethMaskInterface
    * @description Per-face teeth mask result produced by the native face-warp algorithm.
@@ -3798,12 +4095,14 @@ declare namespace APJS {
   /**
    * @description GestureType
    * @enum
+   * @property Invalid - An invalid / unrecognized gesture.
    * @property Tap - A tap gesture.
    * @property LongTap - A long tap gesture.
    * @property Drag - A drag gesture.
    * @property Drop - A drop gesture.
    */
   enum GestureType {
+    Invalid = -1,
     Tap,
     LongTap,
     Drag,
@@ -3913,6 +4212,15 @@ declare namespace APJS {
     seek(frameIndex: number): void;
   }
   /**
+   * @class GSplat
+   * @description An opaque 3D Gaussian Splatting dataset containing position, covariance, color,
+   * opacity, and optional spherical-harmonic data. Public scripts can assign this resource to a
+   * GSplatRenderer but cannot edit its packed records directly.
+   */
+  class GSplat extends AObject {
+    protected constructor();
+  }
+  /**
    * @class GSplatCollider
    * @description A generated 3D compound collider built from GSplat sample data.
    * Internally it creates multiple sphere colliders, so it behaves like a
@@ -3946,6 +4254,95 @@ declare namespace APJS {
      */
     get interactable(): boolean;
     set interactable(value: boolean);
+  }
+  /**
+   * @class GSplatRenderer
+   * @description Renders a 3D Gaussian Splatting resource.
+   * The built-in GSplat material exposes its tint through the `u_TintColor` color property. Materials
+   * returned by {@link Renderer.materials} are shared references, so changing this property affects
+   * every renderer that uses the same material. Custom materials are not required to provide it.
+   * @example
+   * const renderer = sceneObject.getComponent('GSplatRenderer') as APJS.GSplatRenderer;
+   * const material = renderer.materials[0];
+   * if (material) {
+   *   material.setColor('u_TintColor', new APJS.Color(1, 0, 0, 1));
+   * }
+   */
+  class GSplatRenderer extends Renderer {
+    protected constructor();
+    /**
+     * @description The Gaussian Splatting dataset to render, or null when no dataset has been
+     * assigned. Assigning another resource replaces the positions, covariance, color, opacity, and
+     * optional SH data used by this renderer.
+     */
+    get gsplat(): GSplat | null;
+    /**
+     * @description Assigns a Gaussian Splatting dataset to render. A non-null dataset is required.
+     * Passing `null` is not supported as a way to clear the assignment: native logs a warning and
+     * leaves the current dataset unchanged.
+     * @param value - The GSplat dataset to render.
+     */
+    set gsplat(value: GSplat);
+    /**
+     * @description Whether to skip depth sorting before rendering. false sorts splats for more correct
+     * alpha compositing; true avoids the sorting work but can produce visible ordering and
+     * transparency artifacts, especially when splats overlap.
+     */
+    get disableSort(): boolean;
+    set disableSort(value: boolean);
+    /**
+     * @description Selects covariance-based Gaussian splats or fixed-size screen-space points.
+     * pointSize affects only Point mode.
+     */
+    get renderMode(): GSplatRenderMode;
+    set renderMode(value: GSplatRenderMode);
+    /**
+     * @description Screen-space point size used only in Point mode. The Inspector-supported integer
+     * range is [1, 20]; larger values draw larger points. Native rendering floors values below 0.1
+     * but APJS otherwise does not clamp the value.
+     */
+    get pointSize(): number;
+    set pointSize(value: number);
+    /**
+     * @description Controls view-dependent spherical-harmonic color. Enabled sets maximum SH order to
+     * 2, Disabled sets it to 0, and SHOnly sets it to 2 while suppressing base RGB. The effective order
+     * is also limited by the assigned resource's SH data.
+     */
+    get shLightingMode(): GSplatSHLightingMode;
+    set shLightingMode(value: GSplatSHLightingMode);
+  }
+  /**
+   * @description Selects how each record in a GSplat resource is rasterized. Splat uses the record's
+   * projected covariance and opacity for the normal Gaussian appearance; Point is a fixed-size
+   * diagnostic or stylized representation controlled by GSplatRenderer.pointSize.
+   * @enum
+   * @property {number} Splat Draws covariance-oriented screen-space ellipses with Gaussian alpha falloff and source opacity.
+   * @property {number} Point Draws fixed-size circular screen-space points, ignores each record's covariance, uses GSplatRenderer.pointSize, and forces the rendered point alpha to 1.
+   */
+  enum GSplatRenderMode {
+    Splat,
+    Point,
+  }
+  /**
+   * @description Controls whether view-dependent spherical-harmonic (SH) color contributes to a
+   * {@link GSplatRenderer}. This convenience enum maps to the renderer's internal maximum SH order and
+   * base-color multiplier; the effective SH order cannot exceed the data stored in the assigned
+   * {@link GSplat} resource.
+   * @enum
+   */
+  enum GSplatSHLightingMode {
+    /**
+     * Renders base color plus view-dependent SH color, requests maximum SH order 2, and falls back to
+     * the highest order available in the resource.
+     */
+    Enabled = 0,
+    /** Sets maximum SH order to 0, rendering only the resource's view-independent base color. */
+    Disabled = 1,
+    /**
+     * Suppresses base RGB and requests only view-dependent SH color up to order 2. A resource without
+     * SH coefficients therefore contributes no directional RGB color in this mode.
+     */
+    SHOnly = 2
   }
   /**
    * @description Hand gesture classifications returned by {@link HandInfo.action}.
@@ -4448,7 +4845,9 @@ declare namespace APJS {
      */
     getMaterialProperty(key: string): number | Vector2f | Vector3f | Vector4f | Texture | Matrix4x4f;
     /**
-     * @description Sets a material property for the current Image.
+     * @description Dynamically sets a material property for the current Image at runtime.
+     * For an Image configured with Filled DrawMode, use this API to update `_startPoint` and
+     * `_filledRange` at runtime, thereby controlling the portion of the image that is displayed.
      * Stores the exact `key` and `value` pair in this Image's material property map.
      * For general material properties, keys typically come from properties exposed by the Image's current material.
      * This APJS layer does not validate the key name before storing it.
@@ -6292,6 +6691,31 @@ declare namespace APJS {
     set cullMode(value: CullMode);
   }
   /**
+   * @class PetFaceCapture
+   * @description Provides script access to the pet landmark target configured by a Pet Face Capture component.
+   */
+  class PetFaceCapture extends Component {
+    protected constructor();
+    /**
+     * @description The cat or dog landmark detector selected when this component was created. This
+     * value is read-only at runtime and does not identify a face index.
+     * @readonly
+     */
+    get trackingTarget(): PetFaceTrackingType;
+  }
+  /**
+   * @description Identifies the pet landmark detector wrapped by a {@link PetFaceCapture}. This value
+   * describes the tracked species, not a face index, and reports the component's authoring-time
+   * configuration through {@link PetFaceCapture.trackingTarget}.
+   * @enum
+   */
+  enum PetFaceTrackingType {
+    /** Indicates that the wrapped native component is configured to track cat faces. */
+    Cat = 2,
+    /** Indicates that the wrapped native component is configured to track dog faces. */
+    Dog = 3
+  }
+  /**
    * 2D physics world manager (singleton). Provides global physics settings,
    * raycasting, and controls the 2D physics simulation.
    *
@@ -6485,6 +6909,97 @@ declare namespace APJS {
      * @param value - The bounciness value.
      */
     set bounciness(value: number);
+  }
+  /**
+   * @description Controls which target-space data drives the entity containing {@link PinToMesh}.
+   * `Local` follows the target transform origin and does not resolve {@link PinToMesh.uv}; the two
+   * position modes resolve the UV0 surface point, while only `PositionAndDirection` also replaces the
+   * entity rotation with a mesh-derived surface frame.
+   * @enum
+   */
+  enum PinOrientation {
+    /**
+     * Uses the target transform origin plus position offset, ignores the UV surface point, and
+     * preserves the pinned entity's existing rotation.
+     */
+    Local,
+    /** Moves the entity to the resolved UV surface point plus offset while preserving its rotation. */
+    Position,
+    /**
+     * Moves the entity to the resolved UV surface point and aligns it to the mesh-derived frame;
+     * {@link PinToMesh.useVertexNormal} selects smooth vertex normals or the triangle face normal.
+     */
+    PositionAndDirection
+  }
+  /**
+   * @class PinToMesh
+   * @description Pins an entity to a target Renderer mesh at a UV0 coordinate. Position-based modes
+   * require a target mesh with triangle indices and UV0 data; an unresolved UV leaves the pin invalid.
+   */
+  class PinToMesh extends Component {
+    protected constructor();
+    /**
+     * @description The target Transform whose entity supplies the Renderer mesh. MeshRenderer and
+     * SkinMeshRenderer targets are supported when their mesh has triangles and UV0 data. null or an
+     * invalid mesh prevents the pin from resolving.
+     */
+    get target(): Transform | null;
+    /**
+     * @description Sets the target mesh to pin to.
+     */
+    set target(value: Transform | null);
+    /**
+     * @description UV0 coordinate used to find a triangle and interpolate its 3D surface point. The
+     * supported range for each component is [0, 1]; increasing U or V moves according to the mesh's
+     * authored UV layout. APJS does not clamp the value, and a coordinate outside all UV triangles
+     * leaves the pin unresolved.
+     */
+    get uv(): Vector2f;
+    /**
+     * @description Sets the UV coordinate on the target mesh to pin to.
+     */
+    set uv(value: Vector2f);
+    /**
+     * @description Position offset applied from the resolved pin frame. (0, 0, 0) stays on the
+     * computed point; a larger vector magnitude moves the entity farther away in scene units. No
+     * fixed range is enforced.
+     */
+    get offsetPosition(): Vector3f;
+    /**
+     * @description Sets the position offset from the pinned point.
+     */
+    set offsetPosition(value: Vector3f);
+    /**
+     * @description Additional XYZ Euler rotation in degrees. It is applied only in
+     * PositionAndDirection mode; (0, 0, 0) keeps the computed surface orientation, and larger
+     * absolute angles rotate farther, with each axis repeating every 360 degrees. No fixed range is
+     * enforced.
+     */
+    get offsetRotation(): Vector3f;
+    /**
+     * @description Sets the rotation offset from the pinned point.
+     */
+    set offsetRotation(value: Vector3f);
+    /**
+     * @description Selects whether the target origin, UV-derived position, or UV-derived position and
+     * surface frame drive the pinned entity.
+     */
+    get orientation(): PinOrientation;
+    /**
+     * @description Sets the orientation mode of the pinned object.
+     */
+    set orientation(value: PinOrientation);
+    /**
+     * @description Controls the surface normal used by PositionAndDirection. true interpolates vertex
+     * normals for smooth orientation across triangles; false uses the current triangle's face normal
+     * for a faceted result. If the mesh has no normal stream, the implementation falls back to the
+     * face normal.
+     */
+    get useVertexNormal(): boolean;
+    /**
+     * @description Sets whether to use the vertex normal for orientation.
+     */
+    set useVertexNormal(value: boolean);
   }
   /**
    * @class PitchDetector
@@ -8854,6 +9369,119 @@ declare namespace APJS {
     FillAndCut = 5,
     /** The content is not scaled and its original size is used. */
     TextureSize = 6
+  }
+  /**
+   * @class Text3D
+   * @extends BaseText
+   * @description Generates an individual 3D mesh and MeshRenderer for each supported glyph in a text string.
+   */
+  class Text3D extends Component {
+    protected constructor();
+    /**
+     * @description The displayed text. Newline characters create additional lines. The engine
+     * processes at most the first 50 characters for 3D glyph generation; spaces and newlines
+     * participate in layout but do not create glyph meshes.
+     */
+    get text(): string;
+    set text(value: string);
+    /**
+     * @description Font size in Inspector units, with supported range [1, 1000]. 1 produces the
+     * smallest supported glyph scale, while larger values proportionally enlarge the text; the
+     * default is 72. APJS converts this value to the native font-size scale but does not clamp it.
+     */
+    get fontSize(): number;
+    set fontSize(value: number);
+    /**
+     * @description Additional spacing between adjacent characters, measured in multiples of the
+     * text row height. The supported range is [0, 1]: 0 adds no extra gap, while 1 adds one row
+     * height; larger values produce wider spacing. APJS does not clamp the value.
+     * @type {number}
+     */
+    get letterSpacing(): number;
+    set letterSpacing(value: number);
+    /**
+     * @description Additional spacing between lines, measured in multiples of the text row height.
+     * The supported range is [0, 2]: 0 adds no extra gap, while 2 adds two row heights; larger values
+     * move lines farther apart. APJS does not clamp the value.
+     * @return float
+     */
+    get lineSpacing(): number;
+    set lineSpacing(value: number);
+    /**
+     * @description Horizontal alignment of each laid-out line relative to the Text3D origin.
+     * @type {TextAlign}
+     */
+    get horizontalAlignment(): Text3DHorizontalAlignment;
+    set horizontalAlignment(value: Text3DHorizontalAlignment);
+    /**
+     * @description Vertical alignment of the complete laid-out text block relative to the Text3D origin.
+     * @type {TextAlign}
+     */
+    get verticalAlignment(): Text3DVerticalAlignment;
+    set verticalAlignment(value: Text3DVerticalAlignment);
+    /**
+     * @description Glyph extrusion depth in the supported range [0, 1]. 0 produces flat glyph
+     * geometry; larger values produce thicker geometry, with 1 being the maximum
+     * Inspector-supported depth. APJS does not clamp the value.
+     * @type {number}
+     */
+    get extrudeDepth(): number;
+    set extrudeDepth(value: number);
+    /**
+     * @description Direction of extrusion along the glyph's local Z axis. Both straddles the
+     * original glyph plane, Forward extends toward +Z, and Back extends toward -Z.
+     */
+    get extrudeDirection(): ExtrudeDirection;
+    set extrudeDirection(value: ExtrudeDirection);
+    /**
+     * @description Whether each generated glyph MeshRenderer casts shadows. A visible result also
+     * requires a shadow-capable light and receiving geometry.
+     * @type {boolean}
+     */
+    get castShadow(): boolean;
+    set castShadow(value: boolean);
+    /**
+     * @description Material assigned to every generated glyph MeshRenderer. Setting null clears the
+     * material assignment, so generated glyph meshes normally produce no visible surface.
+     * @type {Material}
+     */
+    get textMaterial(): Material | null;
+    set textMaterial(value: Material | null);
+    /**
+     * @description Synchronously processes pending character, layout, 3D cache, and mesh changes.
+     * Use it when updated geometry or bounds must be read before the next frame; render-entity and
+     * material refresh still occurs in the normal system update.
+     * @returns {void}
+     */
+    forceTypeSetting(): void;
+  }
+  /**
+   * @description Controls the horizontal anchor used to position each laid-out line relative to the
+   * Text3D origin. For multiline text, the engine applies the selected mode to each line independently;
+   * it does not change character spacing, line spacing, or line breaks.
+   * @enum
+   */
+  enum Text3DHorizontalAlignment {
+    /** Places each line's left edge at the origin, so the line width extends away from that edge. */
+    Left,
+    /** Places the horizontal midpoint of each line at the origin, distributing its width on both sides. */
+    Center,
+    /** Places each line's right edge at the origin, so the line width extends back from that edge. */
+    Right
+  }
+  /**
+   * @description Controls the vertical anchor of the complete laid-out text block relative to the
+   * Text3D origin. Unlike horizontal alignment, this mode positions all lines as one block, including
+   * the gaps introduced by {@link Text3D.lineSpacing}; it does not change the layout itself.
+   * @enum
+   */
+  enum Text3DVerticalAlignment {
+    /** Places the top edge of the complete text block at the origin. */
+    Top = 5,
+    /** Places the vertical midpoint of the complete text block at the origin. */
+    Center = 6,
+    /** Places the bottom edge of the complete text block at the origin. */
+    Bottom = 7
   }
   /**
    * @class Text

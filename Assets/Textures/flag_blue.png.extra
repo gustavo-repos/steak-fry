@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "01e5c377-1d95-43e9-5225-da97ffe12a77",
+      "a": "f832dba2-354e-c1d1-2fac-416bb4e6692e",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "wall",
+    "name": "flag_blue",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\projeto tokusatso\\images\\wall.png",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\flag_blue.png",
     "references": []
   }
 ]

@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "dcf2e5a5-7a1d-69d3-50e6-3f1e1014305b",
+      "a": "e7acd063-430d-a32b-f18b-23df2fa37b6c",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "board",
+    "name": "exclamacao",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\board.png",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\images\\exclamacao.png",
     "references": []
   }
 ]

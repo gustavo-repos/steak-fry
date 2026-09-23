@@ -3,10 +3,10 @@
   "context": {
     "snapshot": {
       "start": {
-        "startTime": 1788037330319
+        "startTime": 1790119256397
       },
       "end": {
-        "endTime": 1788042270804
+        "endTime": 1790122245461
       }
     }
   },
@@ -467,7 +467,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                        "guid": "7d3423c5-29ce-3e84-289e-15630865ad93"
                                       }
                                     },
                                     "segTex": {
@@ -582,9 +582,360 @@
                                     "color": {
                                       "type": "Color",
                                       "data": {
-                                        "r": 0.55,
-                                        "g": 0.55,
-                                        "b": 0.55,
+                                        "r": 1,
+                                        "g": 1,
+                                        "b": 1,
+                                        "a": 1
+                                      }
+                                    },
+                                    "size": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 10,
+                                        "y": 10
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "flipX": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "flipY": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "drawMode": {
+                                      "type": "Enum",
+                                      "data": "Tiled",
+                                      "options": [
+                                        "Normal",
+                                        "Tiled",
+                                        "Filled",
+                                        "Ellipse"
+                                      ]
+                                    },
+                                    "stretchMode": {
+                                      "type": "Enum",
+                                      "data": "Stretch",
+                                      "options": [
+                                        "Fit",
+                                        "FitWidth",
+                                        "FitHeight",
+                                        "Stretch",
+                                        "Fill",
+                                        "FillAndCut"
+                                      ]
+                                    },
+                                    "filledType": {
+                                      "type": "Enum",
+                                      "data": "Horizontal",
+                                      "options": [
+                                        "Horizontal",
+                                        "Vertical",
+                                        "Radial"
+                                      ]
+                                    },
+                                    "startPoint": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "filledRange": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseX": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseY": {
+                                      "type": "Number",
+                                      "data": 1
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "ffa2fb5a-29a4-9885-baad-972d9ac23328",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "balcony"
+                                },
+                                "visible": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "children": [],
+                                "components": [
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "ScreenTransform",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "24ccbcad-b31b-828e-d0c4-30ecebcff46c",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Screen Transform",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "horizontalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "LEFT",
+                                        "RIGHT",
+                                        "LEFT_AND_FIXED",
+                                        "RIGHT_AND_FIXED",
+                                        "LEFT_AND_RIGHT",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "verticalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "BOTTOM",
+                                        "TOP",
+                                        "BOTTOM_AND_FIXED",
+                                        "TOP_AND_FIXED",
+                                        "BOTTOM_AND_TOP",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "offsets": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": -490.709,
+                                        "y": 1818.947,
+                                        "z": -179.416,
+                                        "w": -49.416
+                                      }
+                                    },
+                                    "anchoredPosition": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 664.119,
+                                        "y": -114.416
+                                      }
+                                    },
+                                    "sizeDelta": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 2309.656,
+                                        "y": 130
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "rotation": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "scale": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 1,
+                                        "y": 1
+                                      }
+                                    },
+                                    "pixelsPerUnit": {
+                                      "type": "Number",
+                                      "data": 32
+                                    },
+                                    "anchors": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5,
+                                        "z": 0.5,
+                                        "w": 0.5
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "sharedMaterial": {
+                                      "type": "Material",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000000132"
+                                      }
+                                    },
+                                    "texture": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb"
+                                      }
+                                    },
+                                    "segTex": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "undefined"
+                                      }
+                                    },
+                                    "segBlendMode": {
+                                      "type": "Enum",
+                                      "data": "NORMAL",
+                                      "options": [
+                                        "DISABLED",
+                                        "NORMAL",
+                                        "MULTIPLY",
+                                        "SCREEN",
+                                        "AVERAGE",
+                                        "LINEAR_DODGE_HARD",
+                                        "ALPHA_PREMULTIPLY",
+                                        "GLASS",
+                                        "TRANSMISSION",
+                                        "COLOR_BURN",
+                                        "LINEAR_BURN",
+                                        "COLOR_DODGE",
+                                        "OVERLAY",
+                                        "SOFT_LIGHT",
+                                        "HARD_LIGHT",
+                                        "VIVID_LIGHT",
+                                        "LINEAR_LIGHT",
+                                        "PIN_LIGHT",
+                                        "HARD_MIX",
+                                        "DIFFERENCE",
+                                        "EXCLUSION",
+                                        "DISSOLVE",
+                                        "DARKER_COLOR",
+                                        "LIGHTER_COLOR",
+                                        "SUBTRACT",
+                                        "DIVIDE",
+                                        "HUE",
+                                        "SATURATION",
+                                        "COLOR",
+                                        "LUMINOSITY",
+                                        "COLORED_GLASS",
+                                        "ALPHA_TEST",
+                                        "LINEAR_DODGE",
+                                        "DARKEN",
+                                        "LIGHTEN",
+                                        "MULTIPLY_SOFT",
+                                        "SCREEN_SOFT",
+                                        "AVERAGE_SOFT",
+                                        "FROM_SHADER",
+                                        "NORMAL_LEGACY",
+                                        "TRANSPARENT_LEGACY",
+                                        "COLORED_GLASS_LEGACY",
+                                        "GLASS_LEGACY",
+                                        "DARKEN_LEGACY",
+                                        "MULTIPLY_LEGACY",
+                                        "COLOR_BURN_LEGACY",
+                                        "LIGHTEN_LEGACY",
+                                        "SCREEN_LEGACY",
+                                        "COLOR_DODGE_LEGACY",
+                                        "LINEAR_DODGE_LEGACY",
+                                        "OVERLAY_LEGACY",
+                                        "SOFT_LIGHT_LEGACY",
+                                        "DIFFERENCE_LEGACY",
+                                        "EXCLUSION_LEGACY",
+                                        "PARTICLE_ADD_LEGACY",
+                                        "PARTICLE_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                        "GAN_TRANSPARENT_LEGACY",
+                                        "PREMULTIPLY_ALPHA_LEGACY",
+                                        "FACEMASK_ADD"
+                                      ]
+                                    },
+                                    "segRadius": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "segSoftness": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "blendMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Darken",
+                                        "Multiply",
+                                        "ColorBurn",
+                                        "LinearBurn",
+                                        "Lighten",
+                                        "Screen",
+                                        "ColorDodge",
+                                        "LinearDodge",
+                                        "Overlay",
+                                        "SoftLight",
+                                        "HardLight",
+                                        "VividLight",
+                                        "LinearLight",
+                                        "PinLight",
+                                        "HardMix",
+                                        "Difference",
+                                        "Exclusion"
+                                      ]
+                                    },
+                                    "opacity": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "color": {
+                                      "type": "Color",
+                                      "data": {
+                                        "r": 1,
+                                        "g": 1,
+                                        "b": 1,
                                         "a": 1
                                       }
                                     },
@@ -672,7 +1023,7 @@
                                 },
                                 "visible": {
                                   "type": "Boolean",
-                                  "data": true
+                                  "data": false
                                 },
                                 "children": [],
                                 "components": [
@@ -1169,7 +1520,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "01e5c377-1d95-43e9-5225-da97ffe12a77"
+                                        "guid": "00000000-0000-0000-0000-00000000001e"
                                       }
                                     },
                                     "segTex": {
@@ -1520,7 +1871,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "01e5c377-1d95-43e9-5225-da97ffe12a77"
+                                        "guid": "00000000-0000-0000-0000-00000000001e"
                                       }
                                     },
                                     "segTex": {
@@ -1676,6 +2027,357 @@
                                     "stretchMode": {
                                       "type": "Enum",
                                       "data": "Stretch",
+                                      "options": [
+                                        "Fit",
+                                        "FitWidth",
+                                        "FitHeight",
+                                        "Stretch",
+                                        "Fill",
+                                        "FillAndCut"
+                                      ]
+                                    },
+                                    "filledType": {
+                                      "type": "Enum",
+                                      "data": "Horizontal",
+                                      "options": [
+                                        "Horizontal",
+                                        "Vertical",
+                                        "Radial"
+                                      ]
+                                    },
+                                    "startPoint": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "filledRange": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseX": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "ellipseY": {
+                                      "type": "Number",
+                                      "data": 1
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "guid": {
+                                  "type": "Guid",
+                                  "data": "8de20bcd-3a89-97d4-3675-3400584b21d0",
+                                  "readonly": true
+                                },
+                                "name": {
+                                  "type": "String",
+                                  "data": "fire"
+                                },
+                                "visible": {
+                                  "type": "Boolean",
+                                  "data": true
+                                },
+                                "children": [],
+                                "components": [
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "ScreenTransform",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "aa6e4daf-5fb0-3d6e-69e1-6c4970c32eec",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Screen Transform",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "horizontalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "LEFT",
+                                        "RIGHT",
+                                        "LEFT_AND_FIXED",
+                                        "RIGHT_AND_FIXED",
+                                        "LEFT_AND_RIGHT",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "verticalConstraint": {
+                                      "type": "Enum",
+                                      "data": "FIXED",
+                                      "options": [
+                                        "STRETCH",
+                                        "FIXED",
+                                        "BOTTOM",
+                                        "TOP",
+                                        "BOTTOM_AND_FIXED",
+                                        "TOP_AND_FIXED",
+                                        "BOTTOM_AND_TOP",
+                                        "INVALID"
+                                      ]
+                                    },
+                                    "offsets": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 217.331,
+                                        "y": 697.331,
+                                        "z": -157,
+                                        "w": -3
+                                      }
+                                    },
+                                    "anchoredPosition": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 457.331,
+                                        "y": -80
+                                      }
+                                    },
+                                    "sizeDelta": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 480,
+                                        "y": 154
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "rotation": {
+                                      "type": "Number",
+                                      "data": 0
+                                    },
+                                    "scale": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 1,
+                                        "y": 1
+                                      }
+                                    },
+                                    "pixelsPerUnit": {
+                                      "type": "Number",
+                                      "data": 32
+                                    },
+                                    "anchors": {
+                                      "type": "Vector4f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5,
+                                        "z": 0.5,
+                                        "w": 0.5
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "guid": {
+                                      "type": "Guid",
+                                      "data": "0f4afd36-503c-c36c-db86-b72eff181e5e",
+                                      "readonly": true
+                                    },
+                                    "name": {
+                                      "type": "String",
+                                      "data": "Image",
+                                      "readonly": true
+                                    },
+                                    "version": {
+                                      "type": "Version",
+                                      "data": "0.1.0",
+                                      "readonly": true
+                                    },
+                                    "enabled": {
+                                      "type": "Boolean",
+                                      "data": true
+                                    },
+                                    "sharedMaterial": {
+                                      "type": "Material",
+                                      "data": {
+                                        "guid": "00000000-0000-0000-0000-000000000132"
+                                      }
+                                    },
+                                    "texture": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "099e1b1e-5cca-4a4b-fd8d-7e28cfcf5306"
+                                      }
+                                    },
+                                    "segTex": {
+                                      "type": "Texture",
+                                      "data": {
+                                        "guid": "undefined"
+                                      }
+                                    },
+                                    "segBlendMode": {
+                                      "type": "Enum",
+                                      "data": "NORMAL",
+                                      "options": [
+                                        "DISABLED",
+                                        "NORMAL",
+                                        "MULTIPLY",
+                                        "SCREEN",
+                                        "AVERAGE",
+                                        "LINEAR_DODGE_HARD",
+                                        "ALPHA_PREMULTIPLY",
+                                        "GLASS",
+                                        "TRANSMISSION",
+                                        "COLOR_BURN",
+                                        "LINEAR_BURN",
+                                        "COLOR_DODGE",
+                                        "OVERLAY",
+                                        "SOFT_LIGHT",
+                                        "HARD_LIGHT",
+                                        "VIVID_LIGHT",
+                                        "LINEAR_LIGHT",
+                                        "PIN_LIGHT",
+                                        "HARD_MIX",
+                                        "DIFFERENCE",
+                                        "EXCLUSION",
+                                        "DISSOLVE",
+                                        "DARKER_COLOR",
+                                        "LIGHTER_COLOR",
+                                        "SUBTRACT",
+                                        "DIVIDE",
+                                        "HUE",
+                                        "SATURATION",
+                                        "COLOR",
+                                        "LUMINOSITY",
+                                        "COLORED_GLASS",
+                                        "ALPHA_TEST",
+                                        "LINEAR_DODGE",
+                                        "DARKEN",
+                                        "LIGHTEN",
+                                        "MULTIPLY_SOFT",
+                                        "SCREEN_SOFT",
+                                        "AVERAGE_SOFT",
+                                        "FROM_SHADER",
+                                        "NORMAL_LEGACY",
+                                        "TRANSPARENT_LEGACY",
+                                        "COLORED_GLASS_LEGACY",
+                                        "GLASS_LEGACY",
+                                        "DARKEN_LEGACY",
+                                        "MULTIPLY_LEGACY",
+                                        "COLOR_BURN_LEGACY",
+                                        "LIGHTEN_LEGACY",
+                                        "SCREEN_LEGACY",
+                                        "COLOR_DODGE_LEGACY",
+                                        "LINEAR_DODGE_LEGACY",
+                                        "OVERLAY_LEGACY",
+                                        "SOFT_LIGHT_LEGACY",
+                                        "DIFFERENCE_LEGACY",
+                                        "EXCLUSION_LEGACY",
+                                        "PARTICLE_ADD_LEGACY",
+                                        "PARTICLE_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                                        "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                                        "GAN_TRANSPARENT_LEGACY",
+                                        "PREMULTIPLY_ALPHA_LEGACY",
+                                        "FACEMASK_ADD"
+                                      ]
+                                    },
+                                    "segRadius": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "segSoftness": {
+                                      "type": "Number",
+                                      "data": 0.5
+                                    },
+                                    "blendMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Darken",
+                                        "Multiply",
+                                        "ColorBurn",
+                                        "LinearBurn",
+                                        "Lighten",
+                                        "Screen",
+                                        "ColorDodge",
+                                        "LinearDodge",
+                                        "Overlay",
+                                        "SoftLight",
+                                        "HardLight",
+                                        "VividLight",
+                                        "LinearLight",
+                                        "PinLight",
+                                        "HardMix",
+                                        "Difference",
+                                        "Exclusion"
+                                      ]
+                                    },
+                                    "opacity": {
+                                      "type": "Number",
+                                      "data": 1
+                                    },
+                                    "color": {
+                                      "type": "Color",
+                                      "data": {
+                                        "r": 1,
+                                        "g": 1,
+                                        "b": 1,
+                                        "a": 1
+                                      }
+                                    },
+                                    "size": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 10,
+                                        "y": 10
+                                      }
+                                    },
+                                    "pivot": {
+                                      "type": "Vector2f",
+                                      "data": {
+                                        "x": 0.5,
+                                        "y": 0.5
+                                      }
+                                    },
+                                    "flipX": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "flipY": {
+                                      "type": "Boolean",
+                                      "data": false
+                                    },
+                                    "drawMode": {
+                                      "type": "Enum",
+                                      "data": "Normal",
+                                      "options": [
+                                        "Normal",
+                                        "Tiled",
+                                        "Filled",
+                                        "Ellipse"
+                                      ]
+                                    },
+                                    "stretchMode": {
+                                      "type": "Enum",
+                                      "data": "Fit",
                                       "options": [
                                         "Fit",
                                         "FitWidth",
@@ -3190,8 +3892,8 @@
                                     "offsets": {
                                       "type": "Vector4f",
                                       "data": {
-                                        "x": 742.107,
-                                        "y": 920.682,
+                                        "x": 741.394,
+                                        "y": 921.394,
                                         "z": 60.839,
                                         "w": 100.839
                                       }
@@ -3206,7 +3908,7 @@
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 178.575,
+                                        "x": 180,
                                         "y": 40
                                       }
                                     },
@@ -3276,7 +3978,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                        "guid": "efce1ea2-56a1-e9cf-609b-57328e79c3b4"
                                       }
                                     },
                                     "segTex": {
@@ -3386,7 +4088,7 @@
                                     },
                                     "opacity": {
                                       "type": "Number",
-                                      "data": 0.5
+                                      "data": 1
                                     },
                                     "color": {
                                       "type": "Color",
@@ -3557,7 +4259,7 @@
                                           "type": "Vector4f",
                                           "data": {
                                             "x": 16.687,
-                                            "y": 38.372,
+                                            "y": 24.494,
                                             "z": -186.5,
                                             "w": -11.68
                                           }
@@ -3565,14 +4267,14 @@
                                         "anchoredPosition": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 27.529,
+                                            "x": 20.591,
                                             "y": -99.09
                                           }
                                         },
                                         "sizeDelta": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 21.685,
+                                            "x": 7.808,
                                             "y": 174.82
                                           }
                                         },
@@ -3847,7 +4549,7 @@
                                     },
                                     "visible": {
                                       "type": "Boolean",
-                                      "data": true
+                                      "data": false
                                     },
                                     "children": [
                                       {
@@ -3924,15 +4626,15 @@
                                               "data": {
                                                 "x": -140,
                                                 "y": 140,
-                                                "z": -50,
-                                                "w": 50
+                                                "z": 25,
+                                                "w": 125
                                               }
                                             },
                                             "anchoredPosition": {
                                               "type": "Vector2f",
                                               "data": {
                                                 "x": 0,
-                                                "y": 0
+                                                "y": 75
                                               }
                                             },
                                             "sizeDelta": {
@@ -4001,7 +4703,7 @@
                                             },
                                             "input": {
                                               "type": "String",
-                                              "data": "Flag!"
+                                              "data": ""
                                             },
                                             "textAdaptiveCanvasEnabled": {
                                               "type": "Boolean",
@@ -4017,7 +4719,7 @@
                                             },
                                             "bold": {
                                               "type": "Boolean",
-                                              "data": false
+                                              "data": true
                                             },
                                             "italic": {
                                               "type": "Boolean",
@@ -4098,9 +4800,9 @@
                                             "color": {
                                               "type": "Color",
                                               "data": {
-                                                "r": 0,
-                                                "g": 0,
-                                                "b": 0,
+                                                "r": 1,
+                                                "g": 1,
+                                                "b": 1,
                                                 "a": 1
                                               }
                                             },
@@ -4548,41 +5250,9 @@
                                                 "FixedSize"
                                               ]
                                             },
-                                            "inAnimationAssetID": {
-                                              "type": "String",
-                                              "data": ""
-                                            },
-                                            "loopAnimationAssetID": {
-                                              "type": "String",
-                                              "data": ""
-                                            },
-                                            "outAnimationAssetID": {
-                                              "type": "String",
-                                              "data": ""
-                                            },
-                                            "inAnimationDuration": {
-                                              "type": "Number",
-                                              "data": 1
-                                            },
-                                            "loopAnimationDuration": {
-                                              "type": "Number",
-                                              "data": 1
-                                            },
-                                            "outAnimationDuration": {
-                                              "type": "Number",
-                                              "data": 1
-                                            },
-                                            "userEditable": {
-                                              "type": "Boolean",
-                                              "data": false
-                                            },
-                                            "maxInputWords": {
-                                              "type": "Number",
-                                              "data": 0
-                                            },
                                             "richStr": {
                                               "type": "String",
-                                              "data": "Flag!"
+                                              "data": ""
                                             },
                                             "templateId": {
                                               "type": "String",
@@ -4649,24 +5319,24 @@
                                         "offsets": {
                                           "type": "Vector4f",
                                           "data": {
-                                            "x": -336.917,
-                                            "y": -56.917,
-                                            "z": -40.619,
-                                            "w": 59.381
+                                            "x": -396.917,
+                                            "y": 3.083,
+                                            "z": -215,
+                                            "w": 105
                                           }
                                         },
                                         "anchoredPosition": {
                                           "type": "Vector2f",
                                           "data": {
                                             "x": -196.917,
-                                            "y": 9.381
+                                            "y": -55
                                           }
                                         },
                                         "sizeDelta": {
                                           "type": "Vector2f",
                                           "data": {
-                                            "x": 280,
-                                            "y": 100
+                                            "x": 400,
+                                            "y": 320
                                           }
                                         },
                                         "pivot": {
@@ -4735,7 +5405,7 @@
                                         "texture": {
                                           "type": "Texture",
                                           "data": {
-                                            "guid": "00000000-0000-0000-0000-000000001543"
+                                            "guid": "609cadce-0394-a1bd-faa1-db8eb1826ad2"
                                           }
                                         },
                                         "segTex": {
@@ -4850,9 +5520,9 @@
                                         "color": {
                                           "type": "Color",
                                           "data": {
-                                            "r": 0.792,
-                                            "g": 0.792,
-                                            "b": 0.792,
+                                            "r": 1,
+                                            "g": 1,
+                                            "b": 1,
                                             "a": 1
                                           }
                                         },
@@ -4986,23 +5656,23 @@
                                     "offsets": {
                                       "type": "Vector4f",
                                       "data": {
-                                        "x": 1085.442,
-                                        "y": 1562.442,
-                                        "z": -145.881,
-                                        "w": 227.119
+                                        "x": 923.94,
+                                        "y": 1723.94,
+                                        "z": -171.5,
+                                        "w": 201.5
                                       }
                                     },
                                     "anchoredPosition": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 1323.942,
-                                        "y": 40.619
+                                        "x": 1323.94,
+                                        "y": 15
                                       }
                                     },
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 477,
+                                        "x": 800,
                                         "y": 373
                                       }
                                     },
@@ -5072,7 +5742,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "3ec4756e-955c-d5b3-4922-544535e39a15"
+                                        "guid": "39d289f9-3f36-e772-592b-7e948cdeabee"
                                       }
                                     },
                                     "segTex": {
@@ -5689,17 +6359,17 @@
                                     "offsets": {
                                       "type": "Vector4f",
                                       "data": {
-                                        "x": 701.368,
-                                        "y": 951.368,
-                                        "z": 99.138,
-                                        "w": 352.138
+                                        "x": 710,
+                                        "y": 960,
+                                        "z": 99.5,
+                                        "w": 352.5
                                       }
                                     },
                                     "anchoredPosition": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 826.368,
-                                        "y": 225.638
+                                        "x": 835,
+                                        "y": 226
                                       }
                                     },
                                     "sizeDelta": {
@@ -6043,21 +6713,21 @@
                                         "x": -360,
                                         "y": 108,
                                         "z": -163.961,
-                                        "w": -49.961
+                                        "w": -59.381
                                       }
                                     },
                                     "anchoredPosition": {
                                       "type": "Vector2f",
                                       "data": {
                                         "x": -126,
-                                        "y": -106.961
+                                        "y": -111.671
                                       }
                                     },
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
                                         "x": 468,
-                                        "y": 114
+                                        "y": 104.581
                                       }
                                     },
                                     "pivot": {
@@ -7032,38 +7702,6 @@
                                             "FixedSize"
                                           ]
                                         },
-                                        "inAnimationAssetID": {
-                                          "type": "String",
-                                          "data": ""
-                                        },
-                                        "loopAnimationAssetID": {
-                                          "type": "String",
-                                          "data": ""
-                                        },
-                                        "outAnimationAssetID": {
-                                          "type": "String",
-                                          "data": ""
-                                        },
-                                        "inAnimationDuration": {
-                                          "type": "Number",
-                                          "data": 1
-                                        },
-                                        "loopAnimationDuration": {
-                                          "type": "Number",
-                                          "data": 1
-                                        },
-                                        "outAnimationDuration": {
-                                          "type": "Number",
-                                          "data": 1
-                                        },
-                                        "userEditable": {
-                                          "type": "Boolean",
-                                          "data": false
-                                        },
-                                        "maxInputWords": {
-                                          "type": "Number",
-                                          "data": 0
-                                        },
                                         "richStr": {
                                           "type": "String",
                                           "data": ""
@@ -7219,7 +7857,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                        "guid": "2c5c628f-24d7-3f49-6a67-7d2f25df0ab0"
                                       }
                                     },
                                     "segTex": {
@@ -7334,9 +7972,9 @@
                                     "color": {
                                       "type": "Color",
                                       "data": {
-                                        "r": 0.792,
-                                        "g": 0.792,
-                                        "b": 0.792,
+                                        "r": 1,
+                                        "g": 1,
+                                        "b": 1,
                                         "a": 1
                                       }
                                     },
@@ -10420,10 +11058,10 @@
                                     "offsets": {
                                       "type": "Vector4f",
                                       "data": {
-                                        "x": 46.247,
-                                        "y": 99.813,
-                                        "z": 54.998,
-                                        "w": 111.126
+                                        "x": 45.53,
+                                        "y": 100.53,
+                                        "z": 55.562,
+                                        "w": 110.562
                                       }
                                     },
                                     "anchoredPosition": {
@@ -10436,8 +11074,8 @@
                                     "sizeDelta": {
                                       "type": "Vector2f",
                                       "data": {
-                                        "x": 53.566,
-                                        "y": 56.128
+                                        "x": 55,
+                                        "y": 55
                                       }
                                     },
                                     "pivot": {
@@ -10506,7 +11144,7 @@
                                     "texture": {
                                       "type": "Texture",
                                       "data": {
-                                        "guid": "00000000-0000-0000-0000-000000001543"
+                                        "guid": "e7acd063-430d-a32b-f18b-23df2fa37b6c"
                                       }
                                     },
                                     "segTex": {
@@ -12510,38 +13148,6 @@
                                 "FixedSize"
                               ]
                             },
-                            "inAnimationAssetID": {
-                              "type": "String",
-                              "data": ""
-                            },
-                            "loopAnimationAssetID": {
-                              "type": "String",
-                              "data": ""
-                            },
-                            "outAnimationAssetID": {
-                              "type": "String",
-                              "data": ""
-                            },
-                            "inAnimationDuration": {
-                              "type": "Number",
-                              "data": 1
-                            },
-                            "loopAnimationDuration": {
-                              "type": "Number",
-                              "data": 1
-                            },
-                            "outAnimationDuration": {
-                              "type": "Number",
-                              "data": 1
-                            },
-                            "userEditable": {
-                              "type": "Boolean",
-                              "data": false
-                            },
-                            "maxInputWords": {
-                              "type": "Number",
-                              "data": 0
-                            },
                             "richStr": {
                               "type": "String",
                               "data": "0"
@@ -13597,6 +14203,65 @@
               "duration": {
                 "type": "Number",
                 "data": 0.286
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "852e6d56-23ee-b338-95e4-f3778dc8a0c8",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "fire"
+              },
+              "type": {
+                "type": "String",
+                "data": "AnimatedTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Animated Textures\\fire.animTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "textureSequence": {
+                "type": "TextureSequence",
+                "data": {
+                  "guid": "00000000-0000-0000-0000-0000000000c4"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "playMode": {
+                "type": "Enum",
+                "data": "Forward",
+                "options": [
+                  "Forward",
+                  "PingPong",
+                  "Randomize",
+                  "Shuffle"
+                ]
+              },
+              "reverse": {
+                "type": "Boolean",
+                "data": false
+              },
+              "fps": {
+                "type": "Number",
+                "data": 3
+              },
+              "duration": {
+                "type": "Number",
+                "data": 0.667
               }
             },
             {
@@ -14855,6 +15520,137 @@
             {
               "guid": {
                 "type": "Guid",
+                "data": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "balcony"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\balcony.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 100
+              },
+              "height": {
+                "type": "Number",
+                "data": 130
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 260
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
                 "data": "b4e57f4a-b06d-36bb-3ff4-3336223de1bd",
                 "readonly": true
               },
@@ -15772,6 +16568,661 @@
             {
               "guid": {
                 "type": "Guid",
+                "data": "2c5c628f-24d7-3f49-6a67-7d2f25df0ab0",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "comanda"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\comanda.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 300
+              },
+              "height": {
+                "type": "Number",
+                "data": 133
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 2557
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "e7acd063-430d-a32b-f18b-23df2fa37b6c",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "exclamacao"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\exclamacao.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 55
+              },
+              "height": {
+                "type": "Number",
+                "data": 55
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 328
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "099e1b1e-5cca-4a4b-fd8d-7e28cfcf5306",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "fire"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\fire.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 480
+              },
+              "height": {
+                "type": "Number",
+                "data": 154
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 6183
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "609cadce-0394-a1bd-faa1-db8eb1826ad2",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "flag"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\flag.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 400
+              },
+              "height": {
+                "type": "Number",
+                "data": 320
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 1934
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "f832dba2-354e-c1d1-2fac-416bb4e6692e",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "flag_blue"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\flag_blue.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 400
+              },
+              "height": {
+                "type": "Number",
+                "data": 320
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 1912
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
                 "data": "7bbb372f-1122-0108-157e-d35596f0e1b5",
                 "readonly": true
               },
@@ -16165,7 +17616,7 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "3ec4756e-955c-d5b3-4922-544535e39a15",
+                "data": "39d289f9-3f36-e772-592b-7e948cdeabee",
                 "readonly": true
               },
               "name": {
@@ -16190,15 +17641,15 @@
               "subAssets": [],
               "width": {
                 "type": "Number",
-                "data": 477
+                "data": 512
               },
               "height": {
                 "type": "Number",
-                "data": 373
+                "data": 239
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 20559
+                "data": 16212
               },
               "assetType": {
                 "type": "String",
@@ -16296,7 +17747,7 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "2dd1c155-f3c6-d363-3b60-9f4f42a8e0da",
+                "data": "6b1a0099-27b4-e98b-bdfc-16e4e763bef9",
                 "readonly": true
               },
               "name": {
@@ -16321,15 +17772,15 @@
               "subAssets": [],
               "width": {
                 "type": "Number",
-                "data": 477
+                "data": 512
               },
               "height": {
                 "type": "Number",
-                "data": 373
+                "data": 239
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 23558
+                "data": 16372
               },
               "assetType": {
                 "type": "String",
@@ -16689,12 +18140,12 @@
             {
               "guid": {
                 "type": "Guid",
-                "data": "01e5c377-1d95-43e9-5225-da97ffe12a77",
+                "data": "7d3423c5-29ce-3e84-289e-15630865ad93",
                 "readonly": true
               },
               "name": {
                 "type": "String",
-                "data": "wall"
+                "data": "wall (1)"
               },
               "type": {
                 "type": "String",
@@ -16703,7 +18154,7 @@
               },
               "filePath": {
                 "type": "String",
-                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\wall.png",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\wall (1).png",
                 "readonly": true
               },
               "version": {
@@ -16714,15 +18165,146 @@
               "subAssets": [],
               "width": {
                 "type": "Number",
-                "data": 66
+                "data": 100
               },
               "height": {
                 "type": "Number",
-                "data": 48
+                "data": 100
               },
               "artifactFileSize": {
                 "type": "Number",
-                "data": 154
+                "data": 205
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            },
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "efce1ea2-56a1-e9cf-609b-57328e79c3b4",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "wooden_plat"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\wooden_plat.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 180
+              },
+              "height": {
+                "type": "Number",
+                "data": 40
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 360
               },
               "assetType": {
                 "type": "String",
@@ -17533,32 +19115,1132 @@
       }
     },
     {
-      "actionId": "0846eb92-39f7-fc15-7b45-66b89ebd3800",
+      "actionId": "a0c6f9f8-a751-ec02-797f-58f56b700208",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "AddComponentByConfig",
+        "data": {
+          "input": {
+            "id": "AudioComponent",
+            "guid": "28f81be3-369f-14ba-163e-5f1a830778d1"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "AudioComponent",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Audio Player",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.2.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "resourcePath": {
+              "type": "String",
+              "data": ""
+            },
+            "audioRef": {
+              "type": "AudioAsset",
+              "data": {
+                "guid": "00000000-0000-0000-0000-000000000080"
+              }
+            },
+            "playMode": {
+              "type": "Enum",
+              "data": "ONCE",
+              "options": [
+                "ONCE",
+                "LOOP",
+                "INFINITE"
+              ]
+            },
+            "audioType": {
+              "type": "Enum",
+              "data": "BGM",
+              "options": [
+                "BGM",
+                "AUDIO_EFFECT"
+              ]
+            },
+            "loopCount": {
+              "type": "Number",
+              "data": 1
+            },
+            "autoPlay": {
+              "type": "Boolean",
+              "data": false
+            },
+            "mute": {
+              "type": "Boolean",
+              "data": false
+            },
+            "volume": {
+              "type": "Number",
+              "data": 100
+            },
+            "isMobilePreview": {
+              "type": "Boolean",
+              "data": false
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "AddComponent",
+            "data": {
+              "input": {
+                "sceneObject": "28f81be3-369f-14ba-163e-5f1a830778d1",
+                "type": "AudioComponent"
+              }
+            },
+            "subCommands": [
+              {
+                "name": "SetComponent",
+                "data": {
+                  "input": {
+                    "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+                    "properties": [
+                      {
+                        "property": "audioType",
+                        "value": {
+                          "type": "Enum",
+                          "data": "BGM",
+                          "options": [
+                            "BGM",
+                            "AUDIO_EFFECT"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "subCommands": []
+              }
+            ]
+          }
+        ]
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[1].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "151ca515-55b3-0919-7adc-3ac0def7bb34",
       "actionType": "do",
       "source": "API",
       "commands": {
         "name": "SetComponent",
         "data": {
           "input": {
-            "guid": "58a3243c-d77d-5189-1fe9-707d51e60833",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
             "properties": [
               {
-                "property": "input",
+                "property": "audioRef",
                 "value": {
-                  "type": "String",
-                  "data": ""
+                  "type": "AudioAsset",
+                  "data": {
+                    "guid": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
+                  }
                 }
               }
             ]
           },
           "output": {
-            "componentType": "Text2D",
-            "guid": "58a3243c-d77d-5189-1fe9-707d51e60833",
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
             "changes": [
               {
-                "property": "input",
-                "oldValue": "Flag!",
-                "newValue": ""
+                "property": "audioRef",
+                "oldValue": {
+                  "guid": "00000000-0000-0000-0000-000000000080"
+                },
+                "newValue": {
+                  "guid": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
+                }
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "a0c6f9f8-a751-ec02-797f-58f56b700208",
+            "source": "commands.data.output.guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 94.89
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 100,
+                "newValue": 94.89
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "151ca515-55b3-0919-7adc-3ac0def7bb34",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 90.51
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 94.89,
+                "newValue": 90.51
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 89.78
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 90.51,
+                "newValue": 89.78
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 77.37
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 89.78,
+                "newValue": 77.37
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 75.91
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 77.37,
+                "newValue": 75.91
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 73.72
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 75.91,
+                "newValue": 73.72
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 72.99
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 73.72,
+                "newValue": 72.99
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 72.26
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 72.99,
+                "newValue": 72.26
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 68.61
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 72.26,
+                "newValue": 68.61
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 64.96
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 68.61,
+                "newValue": 64.96
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 62.04
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 64.96,
+                "newValue": 62.04
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "8e60e5e9-e2c5-e5d8-d950-3b6dd8c3a643",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 60.58
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 62.04,
+                "newValue": 60.58
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 56.93
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 60.58,
+                "newValue": 56.93
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 55.47
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 56.93,
+                "newValue": 55.47
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 53.28
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 55.47,
+                "newValue": 53.28
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 51.82
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 53.28,
+                "newValue": 51.82
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 51.09
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 51.82,
+                "newValue": 51.09
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 50.36
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 51.09,
+                "newValue": 50.36
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "7a00fb39-76fe-7d78-1276-eb1736ce6770",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "properties": [
+              {
+                "property": "volume",
+                "value": {
+                  "type": "Number",
+                  "data": 50
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "AudioComponent",
+            "guid": "a9708ce3-690f-48d9-fee6-481a60467b3c",
+            "changes": [
+              {
+                "property": "volume",
+                "oldValue": 50.36,
+                "newValue": 50
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "12a3250c-42a3-413c-dc19-5135b4560ec7",
+            "source": "commands.data.output.guid",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "aa503c18-1d65-72db-7090-5222e3d8c55b"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "aa503c18-1d65-72db-7090-5222e3d8c55b",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "jump"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\jump.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 261,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 4.754,
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[10].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "AddAsset",
+        "data": {
+          "input": {
+            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
+          },
+          "output": [
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "balcony"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony\\balcony.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 100
+              },
+              "height": {
+                "type": "Number",
+                "data": 130
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 192
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          ]
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "asset",
+            "sourceId": "none",
+            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
+            "target": "commands.data.input.path"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "properties": [
+              {
+                "property": "texture",
+                "value": {
+                  "type": "Texture",
+                  "data": {
+                    "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
+                  }
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Image",
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "changes": [
+              {
+                "property": "texture",
+                "oldValue": {
+                  "guid": "c5d6d0d6-758b-1e3b-068d-f347eaa136cb"
+                },
+                "newValue": {
+                  "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
+                }
               }
             ]
           }
@@ -17570,10 +20252,404 @@
           {
             "type": "guid",
             "sourceId": "GetScene",
-            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[7].children[1].children[0].components[1].guid.data",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[0].children[1].components[1].guid.data",
             "target": "commands.data.input.guid"
           }
         ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "AddAsset",
+        "data": {
+          "input": {
+            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
+          },
+          "output": [
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "balcony"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony (1)\\balcony.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 100
+              },
+              "height": {
+                "type": "Number",
+                "data": 126
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 169
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          ]
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "asset",
+            "sourceId": "none",
+            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
+            "target": "commands.data.input.path"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "properties": [
+              {
+                "property": "texture",
+                "value": {
+                  "type": "Texture",
+                  "data": {
+                    "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
+                  }
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Image",
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "changes": [
+              {
+                "property": "texture",
+                "oldValue": {
+                  "guid": "3dc97b63-7db9-23fe-0c2c-d4092bb8244b"
+                },
+                "newValue": {
+                  "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
+                }
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "AddAsset",
+        "data": {
+          "input": {
+            "path": "C:\\Documentos\\Tiktok\\project steak\\images\\balcony.png"
+          },
+          "output": [
+            {
+              "guid": {
+                "type": "Guid",
+                "data": "64a30133-86ec-d293-0de8-3a34f458bc80",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "balcony"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\temp (1).folder\\balcony (2)\\balcony.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 100
+              },
+              "height": {
+                "type": "Number",
+                "data": 134
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 225
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          ]
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "asset",
+            "sourceId": "none",
+            "source": "%External%C:/Documentos/Tiktok/project steak/images/balcony.png",
+            "target": "commands.data.input.path"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "SetComponent",
+        "data": {
+          "input": {
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "properties": [
+              {
+                "property": "texture",
+                "value": {
+                  "type": "Texture",
+                  "data": {
+                    "guid": "64a30133-86ec-d293-0de8-3a34f458bc80"
+                  }
+                }
+              }
+            ]
+          },
+          "output": {
+            "componentType": "Image",
+            "guid": "480e7ac4-3ce4-0dad-f603-4c4ecff5de0b",
+            "changes": [
+              {
+                "property": "texture",
+                "oldValue": {
+                  "guid": "7ec7a3a2-15e4-cfa4-dcea-64cb4a8b7e1c"
+                },
+                "newValue": {
+                  "guid": "64a30133-86ec-d293-0de8-3a34f458bc80"
+                }
+              }
+            ]
+          }
+        },
+        "subCommands": []
       }
     }
   ]

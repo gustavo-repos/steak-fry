@@ -1,0 +1,51 @@
+%YAML 1.1
+--- !TextureDelegate &1
+name: !<str> fire
+guid: {a: 5481253914320171941, b: 13382167303091907972}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5611120728603557768, b: 12962212751628670374}
+  properties:
+    __class: Map
+    JSClassName: !<str> AnimatedTextureProvider
+    duration: 0.6666666666666666
+    fps: 3
+    loopCount: -1
+    playMode: 0
+    reverse: false
+    textureSequence: {localId: 1, path: 00000000-0000-0000-0000-0000000000c4--00000000-0000-0000-0000-0000000000c4.seq}
+width: 0
+height: 0
+depth: 0
+internalFormat:
+  __class: InternalFormat
+  value: RGBA8
+dataType:
+  __class: DataType
+  value: U8norm
+builtinType:
+  __class: BuiltInTextureType
+  value: NORAML
+enableMipmap: true
+filterMin:
+  __class: FilterMode
+  value: LINEAR
+filterMag:
+  __class: FilterMode
+  value: LINEAR
+filterMipmap:
+  __class: FilterMipmapMode
+  value: NONE
+wrapModeS:
+  __class: WrapMode
+  value: CLAMP
+wrapModeT:
+  __class: WrapMode
+  value: CLAMP
+wrapModeR:
+  __class: WrapMode
+  value: CLAMP
+maxAnisotropy: 1
+delegateData:
+  __class: Map
