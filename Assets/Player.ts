@@ -1,5 +1,5 @@
 import { gravity, move, jumpPressed, checkRectOverlap, getElementRect, snapY, PPU, platforms, 
-leftPressed, rightPressed, fixedTime, conect, time, substate, setSubstate,  gameState, setGameState} from "Game"
+leftPressed, rightPressed, fixedTime, time, substate, setSubstate,  gameState, setGameState} from "Game"
 
 /* 
 state:

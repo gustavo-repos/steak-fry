@@ -6,7 +6,7 @@
         "startTime": 1790185448409
       },
       "end": {
-        "endTime": 1790192188833
+        "endTime": 1790193130310
       }
     }
   },
@@ -19898,6 +19898,3918 @@
             "target": "commands.data.input.guid"
           }
         ]
+      }
+    },
+    {
+      "actionId": "4e72b395-3f7d-ee50-f92f-1ee5dadb39dc",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteSceneObject",
+        "data": {
+          "input": {
+            "guid": [
+              "cb9c6d5d-6d31-13b3-36f0-e9a103aa9e2a"
+            ]
+          },
+          "output": {
+            "deletedSceneObjectInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "cb9c6d5d-6d31-13b3-36f0-e9a103aa9e2a",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "rightWall"
+              },
+              "visible": {
+                "type": "Boolean",
+                "data": false
+              },
+              "children": [],
+              "components": [
+                {
+                  "type": {
+                    "type": "String",
+                    "data": "ScreenTransform",
+                    "readonly": true
+                  },
+                  "guid": {
+                    "type": "Guid",
+                    "data": "307435c6-5144-a80c-2f8d-9913992f3e3c",
+                    "readonly": true
+                  },
+                  "name": {
+                    "type": "String",
+                    "data": "Screen Transform",
+                    "readonly": true
+                  },
+                  "version": {
+                    "type": "Version",
+                    "data": "0.1.0",
+                    "readonly": true
+                  },
+                  "enabled": {
+                    "type": "Boolean",
+                    "data": true
+                  },
+                  "horizontalConstraint": {
+                    "type": "Enum",
+                    "data": "FIXED",
+                    "options": [
+                      "STRETCH",
+                      "FIXED",
+                      "LEFT",
+                      "RIGHT",
+                      "LEFT_AND_FIXED",
+                      "RIGHT_AND_FIXED",
+                      "LEFT_AND_RIGHT",
+                      "INVALID"
+                    ]
+                  },
+                  "verticalConstraint": {
+                    "type": "Enum",
+                    "data": "FIXED",
+                    "options": [
+                      "STRETCH",
+                      "FIXED",
+                      "BOTTOM",
+                      "TOP",
+                      "BOTTOM_AND_FIXED",
+                      "TOP_AND_FIXED",
+                      "BOTTOM_AND_TOP",
+                      "INVALID"
+                    ]
+                  },
+                  "offsets": {
+                    "type": "Vector4f",
+                    "data": {
+                      "x": 1767,
+                      "y": 1833,
+                      "z": -106,
+                      "w": 662
+                    }
+                  },
+                  "anchoredPosition": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 1800,
+                      "y": 278
+                    }
+                  },
+                  "sizeDelta": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 66,
+                      "y": 768
+                    }
+                  },
+                  "pivot": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 0.5,
+                      "y": 0.5
+                    }
+                  },
+                  "rotation": {
+                    "type": "Number",
+                    "data": 0
+                  },
+                  "scale": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 1,
+                      "y": 1
+                    }
+                  },
+                  "pixelsPerUnit": {
+                    "type": "Number",
+                    "data": 32
+                  },
+                  "anchors": {
+                    "type": "Vector4f",
+                    "data": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "z": 0.5,
+                      "w": 0.5
+                    }
+                  }
+                },
+                {
+                  "type": {
+                    "type": "String",
+                    "data": "Image",
+                    "readonly": true
+                  },
+                  "guid": {
+                    "type": "Guid",
+                    "data": "c8c92e87-7b8d-7cc8-3b7b-4fc4fccd0f0d",
+                    "readonly": true
+                  },
+                  "name": {
+                    "type": "String",
+                    "data": "Image",
+                    "readonly": true
+                  },
+                  "version": {
+                    "type": "Version",
+                    "data": "0.1.0",
+                    "readonly": true
+                  },
+                  "enabled": {
+                    "type": "Boolean",
+                    "data": true
+                  },
+                  "sharedMaterial": {
+                    "type": "Material",
+                    "data": {
+                      "guid": "00000000-0000-0000-0000-000000000132"
+                    }
+                  },
+                  "texture": {
+                    "type": "Texture",
+                    "data": {
+                      "guid": "00000000-0000-0000-0000-00000000001e"
+                    }
+                  },
+                  "segTex": {
+                    "type": "Texture",
+                    "data": {
+                      "guid": "undefined"
+                    }
+                  },
+                  "segBlendMode": {
+                    "type": "Enum",
+                    "data": "NORMAL",
+                    "options": [
+                      "DISABLED",
+                      "NORMAL",
+                      "MULTIPLY",
+                      "SCREEN",
+                      "AVERAGE",
+                      "LINEAR_DODGE_HARD",
+                      "ALPHA_PREMULTIPLY",
+                      "GLASS",
+                      "TRANSMISSION",
+                      "COLOR_BURN",
+                      "LINEAR_BURN",
+                      "COLOR_DODGE",
+                      "OVERLAY",
+                      "SOFT_LIGHT",
+                      "HARD_LIGHT",
+                      "VIVID_LIGHT",
+                      "LINEAR_LIGHT",
+                      "PIN_LIGHT",
+                      "HARD_MIX",
+                      "DIFFERENCE",
+                      "EXCLUSION",
+                      "DISSOLVE",
+                      "DARKER_COLOR",
+                      "LIGHTER_COLOR",
+                      "SUBTRACT",
+                      "DIVIDE",
+                      "HUE",
+                      "SATURATION",
+                      "COLOR",
+                      "LUMINOSITY",
+                      "COLORED_GLASS",
+                      "ALPHA_TEST",
+                      "LINEAR_DODGE",
+                      "DARKEN",
+                      "LIGHTEN",
+                      "MULTIPLY_SOFT",
+                      "SCREEN_SOFT",
+                      "AVERAGE_SOFT",
+                      "FROM_SHADER",
+                      "NORMAL_LEGACY",
+                      "TRANSPARENT_LEGACY",
+                      "COLORED_GLASS_LEGACY",
+                      "GLASS_LEGACY",
+                      "DARKEN_LEGACY",
+                      "MULTIPLY_LEGACY",
+                      "COLOR_BURN_LEGACY",
+                      "LIGHTEN_LEGACY",
+                      "SCREEN_LEGACY",
+                      "COLOR_DODGE_LEGACY",
+                      "LINEAR_DODGE_LEGACY",
+                      "OVERLAY_LEGACY",
+                      "SOFT_LIGHT_LEGACY",
+                      "DIFFERENCE_LEGACY",
+                      "EXCLUSION_LEGACY",
+                      "PARTICLE_ADD_LEGACY",
+                      "PARTICLE_NORMAL_LEGACY",
+                      "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                      "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                      "GAN_TRANSPARENT_LEGACY",
+                      "PREMULTIPLY_ALPHA_LEGACY",
+                      "FACEMASK_ADD"
+                    ]
+                  },
+                  "segRadius": {
+                    "type": "Number",
+                    "data": 0.5
+                  },
+                  "segSoftness": {
+                    "type": "Number",
+                    "data": 0.5
+                  },
+                  "blendMode": {
+                    "type": "Enum",
+                    "data": "Normal",
+                    "options": [
+                      "Normal",
+                      "Darken",
+                      "Multiply",
+                      "ColorBurn",
+                      "LinearBurn",
+                      "Lighten",
+                      "Screen",
+                      "ColorDodge",
+                      "LinearDodge",
+                      "Overlay",
+                      "SoftLight",
+                      "HardLight",
+                      "VividLight",
+                      "LinearLight",
+                      "PinLight",
+                      "HardMix",
+                      "Difference",
+                      "Exclusion"
+                    ]
+                  },
+                  "opacity": {
+                    "type": "Number",
+                    "data": 1
+                  },
+                  "color": {
+                    "type": "Color",
+                    "data": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  },
+                  "size": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 10,
+                      "y": 10
+                    }
+                  },
+                  "pivot": {
+                    "type": "Vector2f",
+                    "data": {
+                      "x": 0.5,
+                      "y": 0.5
+                    }
+                  },
+                  "flipX": {
+                    "type": "Boolean",
+                    "data": false
+                  },
+                  "flipY": {
+                    "type": "Boolean",
+                    "data": false
+                  },
+                  "drawMode": {
+                    "type": "Enum",
+                    "data": "Tiled",
+                    "options": [
+                      "Normal",
+                      "Tiled",
+                      "Filled",
+                      "Ellipse"
+                    ]
+                  },
+                  "stretchMode": {
+                    "type": "Enum",
+                    "data": "Stretch",
+                    "options": [
+                      "Fit",
+                      "FitWidth",
+                      "FitHeight",
+                      "Stretch",
+                      "Fill",
+                      "FillAndCut"
+                    ]
+                  },
+                  "filledType": {
+                    "type": "Enum",
+                    "data": "Horizontal",
+                    "options": [
+                      "Horizontal",
+                      "Vertical",
+                      "Radial"
+                    ]
+                  },
+                  "startPoint": {
+                    "type": "Number",
+                    "data": 0
+                  },
+                  "filledRange": {
+                    "type": "Number",
+                    "data": 1
+                  },
+                  "ellipseX": {
+                    "type": "Number",
+                    "data": 1
+                  },
+                  "ellipseY": {
+                    "type": "Number",
+                    "data": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "DeleteSceneObject",
+            "data": {
+              "input": {
+                "guid": "cb9c6d5d-6d31-13b3-36f0-e9a103aa9e2a"
+              }
+            },
+            "subCommands": [
+              {
+                "name": "DeleteComponent",
+                "data": {
+                  "input": {
+                    "guid": "307435c6-5144-a80c-2f8d-9913992f3e3c"
+                  }
+                },
+                "subCommands": []
+              },
+              {
+                "name": "DeleteComponent",
+                "data": {
+                  "input": {
+                    "guid": "c8c92e87-7b8d-7cc8-3b7b-4fc4fccd0f0d"
+                  }
+                },
+                "subCommands": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "AddComponent",
+        "data": {
+          "input": {
+            "sceneObject": "ce8aa4df-89e4-ad7c-3a8d-2959f3fdf2f2",
+            "type": "ScreenTransform"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "ScreenTransform",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Screen Transform",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.1.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "horizontalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "LEFT",
+                "RIGHT",
+                "LEFT_AND_FIXED",
+                "RIGHT_AND_FIXED",
+                "LEFT_AND_RIGHT",
+                "INVALID"
+              ]
+            },
+            "verticalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "BOTTOM",
+                "TOP",
+                "BOTTOM_AND_FIXED",
+                "TOP_AND_FIXED",
+                "BOTTOM_AND_TOP",
+                "INVALID"
+              ]
+            },
+            "offsets": {
+              "type": "Vector4f",
+              "data": {
+                "x": -360,
+                "y": 360,
+                "z": -190,
+                "w": 1090
+              }
+            },
+            "anchoredPosition": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0,
+                "y": 450
+              }
+            },
+            "sizeDelta": {
+              "type": "Vector2f",
+              "data": {
+                "x": 720,
+                "y": 1280
+              }
+            },
+            "pivot": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "rotation": {
+              "type": "Number",
+              "data": 0
+            },
+            "scale": {
+              "type": "Vector2f",
+              "data": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "pixelsPerUnit": {
+              "type": "Number",
+              "data": 32
+            },
+            "anchors": {
+              "type": "Vector4f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5,
+                "w": 0.5
+              }
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+                "properties": [
+                  {
+                    "property": "guid",
+                    "value": {
+                      "type": "Guid",
+                      "data": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+                "properties": [
+                  {
+                    "property": "version",
+                    "value": {
+                      "type": "Version",
+                      "data": "0.1.0",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "71dc2fd5-1c43-f2f5-6b47-ff83c5aff574",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "ce8aa4df-89e4-ad7c-3a8d-2959f3fdf2f2",
+            "properties": [
+              {
+                "property": "guid",
+                "value": {
+                  "type": "Guid",
+                  "data": "b0192e09-6b30-3d98-c5e6-71150c25cd70"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "ce8aa4df-89e4-ad7c-3a8d-2959f3fdf2f2",
+            "changes": [
+              {
+                "property": "guid",
+                "oldValue": "ce8aa4df-89e4-ad7c-3a8d-2959f3fdf2f2",
+                "newValue": "b0192e09-6b30-3d98-c5e6-71150c25cd70"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].guid.data",
+            "target": "commands.data.input.properties[0].value.data"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "properties": [
+              {
+                "property": "version",
+                "value": {
+                  "type": "Version",
+                  "data": "0.1.0"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "changes": [
+              {
+                "property": "version",
+                "oldValue": "0.1.0",
+                "newValue": "0.1.0"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "properties": [
+              {
+                "property": "createdEffectNodeKey",
+                "value": {
+                  "type": "String",
+                  "data": "effect_node_2D_foreground"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "changes": [
+              {
+                "property": "createdEffectNodeKey",
+                "oldValue": "",
+                "newValue": "effect_node_2D_foreground"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "properties": [
+              {
+                "property": "enabled",
+                "value": {
+                  "type": "Boolean",
+                  "data": false
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "changes": [
+              {
+                "property": "enabled",
+                "oldValue": true,
+                "newValue": false
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "MoveSceneObject",
+        "data": {
+          "input": {
+            "guid": "b0192e09-6b30-3d98-c5e6-71150c25cd70",
+            "parent": "b8c5d406-4b6c-08dc-c78d-6c1fe694948d",
+            "aboveSceneObject": "93da5e84-79ff-4f53-5dab-cd36138ad3ed"
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "AddComponent",
+        "data": {
+          "input": {
+            "sceneObject": "305bb478-1d6f-bec3-8f65-04c19be163b2",
+            "type": "ScreenTransform"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "ScreenTransform",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Screen Transform",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.1.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "horizontalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "LEFT",
+                "RIGHT",
+                "LEFT_AND_FIXED",
+                "RIGHT_AND_FIXED",
+                "LEFT_AND_RIGHT",
+                "INVALID"
+              ]
+            },
+            "verticalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "BOTTOM",
+                "TOP",
+                "BOTTOM_AND_FIXED",
+                "TOP_AND_FIXED",
+                "BOTTOM_AND_TOP",
+                "INVALID"
+              ]
+            },
+            "offsets": {
+              "type": "Vector4f",
+              "data": {
+                "x": 92,
+                "y": 148,
+                "z": 422,
+                "w": 478
+              }
+            },
+            "anchoredPosition": {
+              "type": "Vector2f",
+              "data": {
+                "x": 120,
+                "y": 450
+              }
+            },
+            "sizeDelta": {
+              "type": "Vector2f",
+              "data": {
+                "x": 56,
+                "y": 56
+              }
+            },
+            "pivot": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "rotation": {
+              "type": "Number",
+              "data": 0
+            },
+            "scale": {
+              "type": "Vector2f",
+              "data": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "pixelsPerUnit": {
+              "type": "Number",
+              "data": 32
+            },
+            "anchors": {
+              "type": "Vector4f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5,
+                "w": 0.5
+              }
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+                "properties": [
+                  {
+                    "property": "guid",
+                    "value": {
+                      "type": "Guid",
+                      "data": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+                "properties": [
+                  {
+                    "property": "version",
+                    "value": {
+                      "type": "Version",
+                      "data": "0.1.0",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "1ae769db-8089-34cb-5faa-a8b59f69fa50",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "AddComponent",
+        "data": {
+          "input": {
+            "sceneObject": "305bb478-1d6f-bec3-8f65-04c19be163b2",
+            "type": "Image"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "Image",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "2c76b391-58de-75d6-cee8-9b97de601217",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Image",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.1.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "sharedMaterial": {
+              "type": "Material",
+              "data": {
+                "guid": "00000000-0000-0000-0000-000000000132"
+              }
+            },
+            "texture": {
+              "type": "Texture",
+              "data": {
+                "guid": "00000000-0000-0000-0000-00000000001e"
+              }
+            },
+            "segTex": {
+              "type": "Texture",
+              "data": {
+                "guid": "undefined"
+              }
+            },
+            "segBlendMode": {
+              "type": "Enum",
+              "data": "NORMAL",
+              "options": [
+                "DISABLED",
+                "NORMAL",
+                "MULTIPLY",
+                "SCREEN",
+                "AVERAGE",
+                "LINEAR_DODGE_HARD",
+                "ALPHA_PREMULTIPLY",
+                "GLASS",
+                "TRANSMISSION",
+                "COLOR_BURN",
+                "LINEAR_BURN",
+                "COLOR_DODGE",
+                "OVERLAY",
+                "SOFT_LIGHT",
+                "HARD_LIGHT",
+                "VIVID_LIGHT",
+                "LINEAR_LIGHT",
+                "PIN_LIGHT",
+                "HARD_MIX",
+                "DIFFERENCE",
+                "EXCLUSION",
+                "DISSOLVE",
+                "DARKER_COLOR",
+                "LIGHTER_COLOR",
+                "SUBTRACT",
+                "DIVIDE",
+                "HUE",
+                "SATURATION",
+                "COLOR",
+                "LUMINOSITY",
+                "COLORED_GLASS",
+                "ALPHA_TEST",
+                "LINEAR_DODGE",
+                "DARKEN",
+                "LIGHTEN",
+                "MULTIPLY_SOFT",
+                "SCREEN_SOFT",
+                "AVERAGE_SOFT",
+                "FROM_SHADER",
+                "NORMAL_LEGACY",
+                "TRANSPARENT_LEGACY",
+                "COLORED_GLASS_LEGACY",
+                "GLASS_LEGACY",
+                "DARKEN_LEGACY",
+                "MULTIPLY_LEGACY",
+                "COLOR_BURN_LEGACY",
+                "LIGHTEN_LEGACY",
+                "SCREEN_LEGACY",
+                "COLOR_DODGE_LEGACY",
+                "LINEAR_DODGE_LEGACY",
+                "OVERLAY_LEGACY",
+                "SOFT_LIGHT_LEGACY",
+                "DIFFERENCE_LEGACY",
+                "EXCLUSION_LEGACY",
+                "PARTICLE_ADD_LEGACY",
+                "PARTICLE_NORMAL_LEGACY",
+                "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                "GAN_TRANSPARENT_LEGACY",
+                "PREMULTIPLY_ALPHA_LEGACY",
+                "FACEMASK_ADD"
+              ]
+            },
+            "segRadius": {
+              "type": "Number",
+              "data": 0.5
+            },
+            "segSoftness": {
+              "type": "Number",
+              "data": 0.5
+            },
+            "blendMode": {
+              "type": "Enum",
+              "data": "Normal",
+              "options": [
+                "Normal",
+                "Darken",
+                "Multiply",
+                "ColorBurn",
+                "LinearBurn",
+                "Lighten",
+                "Screen",
+                "ColorDodge",
+                "LinearDodge",
+                "Overlay",
+                "SoftLight",
+                "HardLight",
+                "VividLight",
+                "LinearLight",
+                "PinLight",
+                "HardMix",
+                "Difference",
+                "Exclusion"
+              ]
+            },
+            "opacity": {
+              "type": "Number",
+              "data": 1
+            },
+            "color": {
+              "type": "Color",
+              "data": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            },
+            "size": {
+              "type": "Vector2f",
+              "data": {
+                "x": 10,
+                "y": 10
+              }
+            },
+            "pivot": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "flipX": {
+              "type": "Boolean",
+              "data": false
+            },
+            "flipY": {
+              "type": "Boolean",
+              "data": false
+            },
+            "drawMode": {
+              "type": "Enum",
+              "data": "Normal",
+              "options": [
+                "Normal",
+                "Tiled",
+                "Filled",
+                "Ellipse"
+              ]
+            },
+            "stretchMode": {
+              "type": "Enum",
+              "data": "Fit",
+              "options": [
+                "Fit",
+                "FitWidth",
+                "FitHeight",
+                "Stretch",
+                "Fill",
+                "FillAndCut"
+              ]
+            },
+            "filledType": {
+              "type": "Enum",
+              "data": "Horizontal",
+              "options": [
+                "Horizontal",
+                "Vertical",
+                "Radial"
+              ]
+            },
+            "startPoint": {
+              "type": "Number",
+              "data": 0
+            },
+            "filledRange": {
+              "type": "Number",
+              "data": 1
+            },
+            "ellipseX": {
+              "type": "Number",
+              "data": 1
+            },
+            "ellipseY": {
+              "type": "Number",
+              "data": 1
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "2c76b391-58de-75d6-cee8-9b97de601217",
+                "properties": [
+                  {
+                    "property": "guid",
+                    "value": {
+                      "type": "Guid",
+                      "data": "2c76b391-58de-75d6-cee8-9b97de601217",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "2c76b391-58de-75d6-cee8-9b97de601217",
+                "properties": [
+                  {
+                    "property": "version",
+                    "value": {
+                      "type": "Version",
+                      "data": "0.1.0",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "2c76b391-58de-75d6-cee8-9b97de601217",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "2c76b391-58de-75d6-cee8-9b97de601217",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "305bb478-1d6f-bec3-8f65-04c19be163b2",
+            "properties": [
+              {
+                "property": "guid",
+                "value": {
+                  "type": "Guid",
+                  "data": "a501dbbf-8609-acda-e8a2-a52606e36273"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "305bb478-1d6f-bec3-8f65-04c19be163b2",
+            "changes": [
+              {
+                "property": "guid",
+                "oldValue": "305bb478-1d6f-bec3-8f65-04c19be163b2",
+                "newValue": "a501dbbf-8609-acda-e8a2-a52606e36273"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[0].guid.data",
+            "target": "commands.data.input.properties[0].value.data"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "a501dbbf-8609-acda-e8a2-a52606e36273",
+            "properties": [
+              {
+                "property": "version",
+                "value": {
+                  "type": "Version",
+                  "data": "0.1.0"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "a501dbbf-8609-acda-e8a2-a52606e36273",
+            "changes": [
+              {
+                "property": "version",
+                "oldValue": "0.1.0",
+                "newValue": "0.1.0"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[0].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "a501dbbf-8609-acda-e8a2-a52606e36273",
+            "properties": [
+              {
+                "property": "createdEffectNodeKey",
+                "value": {
+                  "type": "String",
+                  "data": "effect_node_2D_foreground"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "a501dbbf-8609-acda-e8a2-a52606e36273",
+            "changes": [
+              {
+                "property": "createdEffectNodeKey",
+                "oldValue": "",
+                "newValue": "effect_node_2D_foreground"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "MoveSceneObject",
+        "data": {
+          "input": {
+            "guid": "a501dbbf-8609-acda-e8a2-a52606e36273",
+            "parent": "b0192e09-6b30-3d98-c5e6-71150c25cd70"
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "AddComponent",
+        "data": {
+          "input": {
+            "sceneObject": "7c7bf54b-a166-fd98-b5a2-4f879742f6ee",
+            "type": "ScreenTransform"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "ScreenTransform",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Screen Transform",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.1.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "horizontalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "LEFT",
+                "RIGHT",
+                "LEFT_AND_FIXED",
+                "RIGHT_AND_FIXED",
+                "LEFT_AND_RIGHT",
+                "INVALID"
+              ]
+            },
+            "verticalConstraint": {
+              "type": "Enum",
+              "data": "FIXED",
+              "options": [
+                "STRETCH",
+                "FIXED",
+                "BOTTOM",
+                "TOP",
+                "BOTTOM_AND_FIXED",
+                "TOP_AND_FIXED",
+                "BOTTOM_AND_TOP",
+                "INVALID"
+              ]
+            },
+            "offsets": {
+              "type": "Vector4f",
+              "data": {
+                "x": -61,
+                "y": 61,
+                "z": 434,
+                "w": 466
+              }
+            },
+            "anchoredPosition": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0,
+                "y": 450
+              }
+            },
+            "sizeDelta": {
+              "type": "Vector2f",
+              "data": {
+                "x": 122,
+                "y": 32
+              }
+            },
+            "pivot": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "rotation": {
+              "type": "Number",
+              "data": 0
+            },
+            "scale": {
+              "type": "Vector2f",
+              "data": {
+                "x": 1,
+                "y": 1
+              }
+            },
+            "pixelsPerUnit": {
+              "type": "Number",
+              "data": 32
+            },
+            "anchors": {
+              "type": "Vector4f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5,
+                "w": 0.5
+              }
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+                "properties": [
+                  {
+                    "property": "guid",
+                    "value": {
+                      "type": "Guid",
+                      "data": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+                "properties": [
+                  {
+                    "property": "version",
+                    "value": {
+                      "type": "Version",
+                      "data": "0.1.0",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "0cefffc9-833f-7d21-8a74-9f5dc0975210",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "AddComponent",
+        "data": {
+          "input": {
+            "sceneObject": "7c7bf54b-a166-fd98-b5a2-4f879742f6ee",
+            "type": "Image"
+          },
+          "output": {
+            "type": {
+              "type": "String",
+              "data": "Image",
+              "readonly": true
+            },
+            "guid": {
+              "type": "Guid",
+              "data": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+              "readonly": true
+            },
+            "name": {
+              "type": "String",
+              "data": "Image",
+              "readonly": true
+            },
+            "version": {
+              "type": "Version",
+              "data": "0.1.0",
+              "readonly": true
+            },
+            "enabled": {
+              "type": "Boolean",
+              "data": true
+            },
+            "sharedMaterial": {
+              "type": "Material",
+              "data": {
+                "guid": "00000000-0000-0000-0000-000000000132"
+              }
+            },
+            "texture": {
+              "type": "Texture",
+              "data": {
+                "guid": "00000000-0000-0000-0000-00000000001e"
+              }
+            },
+            "segTex": {
+              "type": "Texture",
+              "data": {
+                "guid": "undefined"
+              }
+            },
+            "segBlendMode": {
+              "type": "Enum",
+              "data": "NORMAL",
+              "options": [
+                "DISABLED",
+                "NORMAL",
+                "MULTIPLY",
+                "SCREEN",
+                "AVERAGE",
+                "LINEAR_DODGE_HARD",
+                "ALPHA_PREMULTIPLY",
+                "GLASS",
+                "TRANSMISSION",
+                "COLOR_BURN",
+                "LINEAR_BURN",
+                "COLOR_DODGE",
+                "OVERLAY",
+                "SOFT_LIGHT",
+                "HARD_LIGHT",
+                "VIVID_LIGHT",
+                "LINEAR_LIGHT",
+                "PIN_LIGHT",
+                "HARD_MIX",
+                "DIFFERENCE",
+                "EXCLUSION",
+                "DISSOLVE",
+                "DARKER_COLOR",
+                "LIGHTER_COLOR",
+                "SUBTRACT",
+                "DIVIDE",
+                "HUE",
+                "SATURATION",
+                "COLOR",
+                "LUMINOSITY",
+                "COLORED_GLASS",
+                "ALPHA_TEST",
+                "LINEAR_DODGE",
+                "DARKEN",
+                "LIGHTEN",
+                "MULTIPLY_SOFT",
+                "SCREEN_SOFT",
+                "AVERAGE_SOFT",
+                "FROM_SHADER",
+                "NORMAL_LEGACY",
+                "TRANSPARENT_LEGACY",
+                "COLORED_GLASS_LEGACY",
+                "GLASS_LEGACY",
+                "DARKEN_LEGACY",
+                "MULTIPLY_LEGACY",
+                "COLOR_BURN_LEGACY",
+                "LIGHTEN_LEGACY",
+                "SCREEN_LEGACY",
+                "COLOR_DODGE_LEGACY",
+                "LINEAR_DODGE_LEGACY",
+                "OVERLAY_LEGACY",
+                "SOFT_LIGHT_LEGACY",
+                "DIFFERENCE_LEGACY",
+                "EXCLUSION_LEGACY",
+                "PARTICLE_ADD_LEGACY",
+                "PARTICLE_NORMAL_LEGACY",
+                "PARTICLE_PREMULTIPLY_NORMAL_LEGACY",
+                "PARTICLE_PREMULTIPLY_ADD_LEGACY",
+                "GAN_TRANSPARENT_LEGACY",
+                "PREMULTIPLY_ALPHA_LEGACY",
+                "FACEMASK_ADD"
+              ]
+            },
+            "segRadius": {
+              "type": "Number",
+              "data": 0.5
+            },
+            "segSoftness": {
+              "type": "Number",
+              "data": 0.5
+            },
+            "blendMode": {
+              "type": "Enum",
+              "data": "Normal",
+              "options": [
+                "Normal",
+                "Darken",
+                "Multiply",
+                "ColorBurn",
+                "LinearBurn",
+                "Lighten",
+                "Screen",
+                "ColorDodge",
+                "LinearDodge",
+                "Overlay",
+                "SoftLight",
+                "HardLight",
+                "VividLight",
+                "LinearLight",
+                "PinLight",
+                "HardMix",
+                "Difference",
+                "Exclusion"
+              ]
+            },
+            "opacity": {
+              "type": "Number",
+              "data": 1
+            },
+            "color": {
+              "type": "Color",
+              "data": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            },
+            "size": {
+              "type": "Vector2f",
+              "data": {
+                "x": 10,
+                "y": 10
+              }
+            },
+            "pivot": {
+              "type": "Vector2f",
+              "data": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "flipX": {
+              "type": "Boolean",
+              "data": false
+            },
+            "flipY": {
+              "type": "Boolean",
+              "data": false
+            },
+            "drawMode": {
+              "type": "Enum",
+              "data": "Normal",
+              "options": [
+                "Normal",
+                "Tiled",
+                "Filled",
+                "Ellipse"
+              ]
+            },
+            "stretchMode": {
+              "type": "Enum",
+              "data": "Fit",
+              "options": [
+                "Fit",
+                "FitWidth",
+                "FitHeight",
+                "Stretch",
+                "Fill",
+                "FillAndCut"
+              ]
+            },
+            "filledType": {
+              "type": "Enum",
+              "data": "Horizontal",
+              "options": [
+                "Horizontal",
+                "Vertical",
+                "Radial"
+              ]
+            },
+            "startPoint": {
+              "type": "Number",
+              "data": 0
+            },
+            "filledRange": {
+              "type": "Number",
+              "data": 1
+            },
+            "ellipseX": {
+              "type": "Number",
+              "data": 1
+            },
+            "ellipseY": {
+              "type": "Number",
+              "data": 1
+            }
+          }
+        },
+        "subCommands": [
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+                "properties": [
+                  {
+                    "property": "guid",
+                    "value": {
+                      "type": "Guid",
+                      "data": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+                "properties": [
+                  {
+                    "property": "version",
+                    "value": {
+                      "type": "Version",
+                      "data": "0.1.0",
+                      "readonly": true
+                    }
+                  }
+                ]
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          },
+          {
+            "name": "SetComponent",
+            "data": {
+              "input": {
+                "guid": "b4cf57ba-f9c4-12b7-9ea3-9b8c89689792",
+                "properties": []
+              }
+            },
+            "subCommands": []
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "7c7bf54b-a166-fd98-b5a2-4f879742f6ee",
+            "properties": [
+              {
+                "property": "guid",
+                "value": {
+                  "type": "Guid",
+                  "data": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "7c7bf54b-a166-fd98-b5a2-4f879742f6ee",
+            "changes": [
+              {
+                "property": "guid",
+                "oldValue": "7c7bf54b-a166-fd98-b5a2-4f879742f6ee",
+                "newValue": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[1].guid.data",
+            "target": "commands.data.input.properties[0].value.data"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0",
+            "properties": [
+              {
+                "property": "version",
+                "value": {
+                  "type": "Version",
+                  "data": "0.1.0"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0",
+            "changes": [
+              {
+                "property": "version",
+                "oldValue": "0.1.0",
+                "newValue": "0.1.0"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetScene",
+            "source": "commands.data.output.renderGroups[1].sceneObjects[0].children[0].children[5].children[1].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "SetSceneObject",
+        "data": {
+          "input": {
+            "guid": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0",
+            "properties": [
+              {
+                "property": "createdEffectNodeKey",
+                "value": {
+                  "type": "String",
+                  "data": "effect_node_2D_foreground"
+                }
+              }
+            ]
+          },
+          "output": {
+            "guid": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0",
+            "changes": [
+              {
+                "property": "createdEffectNodeKey",
+                "oldValue": "",
+                "newValue": "effect_node_2D_foreground"
+              }
+            ]
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "5219d7d9-8128-5423-1227-c8a131ac2bc0",
+      "actionType": "undo",
+      "source": "API",
+      "commands": {
+        "name": "MoveSceneObject",
+        "data": {
+          "input": {
+            "guid": "88a9ad7d-e723-f44b-3d1f-6b49a13202e0",
+            "parent": "b0192e09-6b30-3d98-c5e6-71150c25cd70"
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "42a570cf-1d54-4cad-3cd7-494822226c27"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "42a570cf-1d54-4cad-3cd7-494822226c27",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "crack_long"
+              },
+              "type": {
+                "type": "String",
+                "data": "AudioAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Audio\\crack_long.mp3",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "mccState": {
+                "type": "Enum",
+                "data": "SUCCESS",
+                "options": [
+                  "NONE",
+                  "TIMEOUT",
+                  "DETECTING",
+                  "FAILURE",
+                  "SUCCESS"
+                ]
+              },
+              "audioType": {
+                "type": "String",
+                "data": "mp3",
+                "readonly": true
+              },
+              "duration": {
+                "type": "Number",
+                "data": 3657,
+                "readonly": true
+              },
+              "size": {
+                "type": "Number",
+                "data": 57.55,
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[9].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "0267a565-d28b-896f-8f0b-e8669f8edeaf"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "0267a565-d28b-896f-8f0b-e8669f8edeaf",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "dizzy"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF\\dizzy.gif",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "resolution": {
+                "type": "String",
+                "data": "210 x 210",
+                "readonly": true
+              },
+              "sizeStr": {
+                "type": "String",
+                "data": "14.05 KB",
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[59].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "8509795b-173c-f7c7-1965-74c6e06d22b3"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "8509795b-173c-f7c7-1965-74c6e06d22b3",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "ko_gif"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF\\ko_gif.gif",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "resolution": {
+                "type": "String",
+                "data": "416 x 110",
+                "readonly": true
+              },
+              "sizeStr": {
+                "type": "String",
+                "data": "4.01 KB",
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[60].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "59f06140-5d15-d14e-9945-8ccc74872467"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "59f06140-5d15-d14e-9945-8ccc74872467",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "ko_red"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF\\ko_red.gif",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "resolution": {
+                "type": "String",
+                "data": "416 x 110",
+                "readonly": true
+              },
+              "sizeStr": {
+                "type": "String",
+                "data": "3.58 KB",
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[61].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "3a1ba8ae-94b0-7a50-feb4-bb5ee5ee4e5d"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "3a1ba8ae-94b0-7a50-feb4-bb5ee5ee4e5d",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "restart"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF\\restart.gif",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "resolution": {
+                "type": "String",
+                "data": "74 x 68",
+                "readonly": true
+              },
+              "sizeStr": {
+                "type": "String",
+                "data": "922.00 Bytes",
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[62].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "b902a628-6dba-7090-8a70-8f11e321ec9b"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "b902a628-6dba-7090-8a70-8f11e321ec9b",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "timeup_gif"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifAsset",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF\\timeup_gif.gif",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "resolution": {
+                "type": "String",
+                "data": "332 x 110",
+                "readonly": true
+              },
+              "sizeStr": {
+                "type": "String",
+                "data": "3.79 KB",
+                "readonly": true
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[63].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "d5eb7e0a-529d-7db3-611a-cdef0cc255c7"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "d5eb7e0a-529d-7db3-611a-cdef0cc255c7",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "dizzy"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture\\dizzy.gifTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "gifAsset": {
+                "type": "GifAsset",
+                "data": {
+                  "guid": "0267a565-d28b-896f-8f0b-e8669f8edeaf"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "fps": {
+                "type": "Number",
+                "data": 7.143
+              },
+              "duration": {
+                "type": "Number",
+                "data": 1.82
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[17].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "0f0c7fae-619f-fc02-1fbc-027fe8269032"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "0f0c7fae-619f-fc02-1fbc-027fe8269032",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "ko_gif"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture\\ko_gif.gifTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "gifAsset": {
+                "type": "GifAsset",
+                "data": {
+                  "guid": "8509795b-173c-f7c7-1965-74c6e06d22b3"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "fps": {
+                "type": "Number",
+                "data": 2.5
+              },
+              "duration": {
+                "type": "Number",
+                "data": 0.8
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[18].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "28b3efe6-3863-be25-a4db-adbe64c65280"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "28b3efe6-3863-be25-a4db-adbe64c65280",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "ko_red"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture\\ko_red.gifTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "gifAsset": {
+                "type": "GifAsset",
+                "data": {
+                  "guid": "59f06140-5d15-d14e-9945-8ccc74872467"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "fps": {
+                "type": "Number",
+                "data": 3.333
+              },
+              "duration": {
+                "type": "Number",
+                "data": 0.6
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[19].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "a68540f5-914d-d82f-cf75-e244335faea7"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "a68540f5-914d-d82f-cf75-e244335faea7",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "restart"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture\\restart.gifTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "gifAsset": {
+                "type": "GifAsset",
+                "data": {
+                  "guid": "3a1ba8ae-94b0-7a50-feb4-bb5ee5ee4e5d"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "fps": {
+                "type": "Number",
+                "data": 2.5
+              },
+              "duration": {
+                "type": "Number",
+                "data": 0.8
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[20].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "abff681e-f10f-5a97-fe8e-e66e4de996d3"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "abff681e-f10f-5a97-fe8e-e66e4de996d3",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "timeup_gif"
+              },
+              "type": {
+                "type": "String",
+                "data": "GifTexture",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture\\timeup_gif.gifTex",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "gifAsset": {
+                "type": "GifAsset",
+                "data": {
+                  "guid": "b902a628-6dba-7090-8a70-8f11e321ec9b"
+                }
+              },
+              "loopCount": {
+                "type": "Number",
+                "data": -1
+              },
+              "fps": {
+                "type": "Number",
+                "data": 2.5
+              },
+              "duration": {
+                "type": "Number",
+                "data": 0.8
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[21].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "b3c4cdec-69bb-723c-70d6-a1d0af0db08b"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "b3c4cdec-69bb-723c-70d6-a1d0af0db08b",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "back2"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\back2.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 198
+              },
+              "height": {
+                "type": "Number",
+                "data": 168
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 247
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[27].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "0e4b9e66-6113-227e-23c0-787ceb78c558"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "0e4b9e66-6113-227e-23c0-787ceb78c558",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "background"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\background.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 198
+              },
+              "height": {
+                "type": "Number",
+                "data": 168
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 326
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[28].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "e5e39d13-98ef-b4ea-56e9-9c41f15bcd7d"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "e5e39d13-98ef-b4ea-56e9-9c41f15bcd7d",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "bife_teste"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\bife_teste.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 256
+              },
+              "height": {
+                "type": "Number",
+                "data": 256
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 5479
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[32].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "7bbb372f-1122-0108-157e-d35596f0e1b5"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "7bbb372f-1122-0108-157e-d35596f0e1b5",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "ground"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\ground.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 42
+              },
+              "height": {
+                "type": "Number",
+                "data": 48
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 132
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[42].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "86191dc3-2c06-a82e-a30c-d6174f44b2ec"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "86191dc3-2c06-a82e-a30c-d6174f44b2ec",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "paws"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\paws.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 96
+              },
+              "height": {
+                "type": "Number",
+                "data": 96
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 213
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[44].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "af8085af-6f4c-1f65-7470-ef9e4a7ae62a"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "af8085af-6f4c-1f65-7470-ef9e4a7ae62a",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "portal"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\portal.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 96
+              },
+              "height": {
+                "type": "Number",
+                "data": 96
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 185
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[47].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "6336345d-9b9b-2e1e-5f9b-e528ef32c5d5"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "6336345d-9b9b-2e1e-5f9b-e528ef32c5d5",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "restart2"
+              },
+              "type": {
+                "type": "String",
+                "data": "Texture2D",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\Textures\\restart2.png",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.2.0",
+                "readonly": true
+              },
+              "subAssets": [],
+              "width": {
+                "type": "Number",
+                "data": 74
+              },
+              "height": {
+                "type": "Number",
+                "data": 68
+              },
+              "artifactFileSize": {
+                "type": "Number",
+                "data": 197
+              },
+              "assetType": {
+                "type": "String",
+                "data": "PNG"
+              },
+              "compressionType": {
+                "type": "Enum",
+                "data": "Automatic",
+                "options": [
+                  "Automatic",
+                  "Manual",
+                  "None"
+                ]
+              },
+              "compressQuality": {
+                "type": "Enum",
+                "data": "High",
+                "options": [
+                  "High",
+                  "Medium",
+                  "Low"
+                ]
+              },
+              "compressMaxResolution": {
+                "type": "Enum",
+                "data": "Size512",
+                "options": [
+                  "Size1024",
+                  "Size512",
+                  "Size256",
+                  "Size128"
+                ]
+              },
+              "enableMipmap": {
+                "type": "Boolean",
+                "data": false
+              },
+              "filterMin": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMag": {
+                "type": "Enum",
+                "data": "Linear",
+                "options": [
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "filterMipmap": {
+                "type": "Enum",
+                "data": "None",
+                "options": [
+                  "None",
+                  "Nearest",
+                  "Linear"
+                ]
+              },
+              "wrapModeS": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeT": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "wrapModeR": {
+                "type": "Enum",
+                "data": "Repeat",
+                "options": [
+                  "Repeat",
+                  "Clamp",
+                  "Mirror"
+                ]
+              },
+              "premultiplyAlpha": {
+                "type": "Boolean",
+                "data": false
+              }
+            }
+          }
+        },
+        "subCommands": []
+      },
+      "context": {
+        "dependencies": [
+          {
+            "type": "guid",
+            "sourceId": "GetAllAssets",
+            "source": "commands.data.output[48].guid.data",
+            "target": "commands.data.input.guid"
+          }
+        ]
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "5fcdbbe3-2841-0418-8d77-600be8b86ca1"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "5fcdbbe3-2841-0418-8d77-600be8b86ca1",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "GIF"
+              },
+              "type": {
+                "type": "String",
+                "data": "Folder",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": []
+            }
+          }
+        },
+        "subCommands": []
+      }
+    },
+    {
+      "actionId": "none",
+      "actionType": "do",
+      "source": "API",
+      "commands": {
+        "name": "DeleteAsset",
+        "data": {
+          "input": {
+            "guid": "6806e612-5482-bb8d-323e-3e6f82e0aa9d"
+          },
+          "output": {
+            "deletedAssetInfo": {
+              "guid": {
+                "type": "Guid",
+                "data": "6806e612-5482-bb8d-323e-3e6f82e0aa9d",
+                "readonly": true
+              },
+              "name": {
+                "type": "String",
+                "data": "GIF Texture"
+              },
+              "type": {
+                "type": "String",
+                "data": "Folder",
+                "readonly": true
+              },
+              "filePath": {
+                "type": "String",
+                "data": "C:\\Documentos\\Tiktok\\project steak\\steak\\Assets\\GIF Texture",
+                "readonly": true
+              },
+              "version": {
+                "type": "Version",
+                "data": "0.1.0",
+                "readonly": true
+              },
+              "subAssets": []
+            }
+          }
+        },
+        "subCommands": []
       }
     }
   ]

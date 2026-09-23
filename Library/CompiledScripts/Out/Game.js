@@ -25,7 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Game = exports.snapX = exports.snapY = exports.checkRectOverlap = exports.getElementRect = exports.teleport = exports.move = exports.addTime = exports.startTimer = exports.setSubstate = exports.setGameState = exports.substate = exports.time = exports.fixedTime = exports.grounds = exports.solids = exports.platforms = exports.rightPressed = exports.leftPressed = exports.jumpPressed = exports.PPU = exports.gravity = exports.gameState = void 0;
+exports.Game = exports.snapX = exports.snapY = exports.checkRectOverlap = exports.getElementRect = exports.teleport = exports.move = exports.addTime = exports.setSubstate = exports.setGameState = exports.substate = exports.time = exports.fixedTime = exports.grounds = exports.solids = exports.platforms = exports.rightPressed = exports.leftPressed = exports.jumpPressed = exports.PPU = exports.gravity = exports.gameState = void 0;
 exports.gameState = 0;
 exports.gravity = -65;
 exports.PPU = 32;
@@ -34,7 +34,7 @@ exports.leftPressed = false;
 exports.rightPressed = false;
 exports.fixedTime = 0.02;
 // export var conect: any
-var isTimeRunning = false;
+// var isTimeRunning = false
 exports.time = 35;
 exports.substate = 3;
 function setGameState(x) {
@@ -45,11 +45,9 @@ function setSubstate(x) {
     exports.substate = x;
 }
 exports.setSubstate = setSubstate;
-function startTimer() {
-    if (!isTimeRunning)
-        isTimeRunning = true;
-}
-exports.startTimer = startTimer;
+// export function startTimer() {
+//   if (!isTimeRunning) isTimeRunning = true
+// }
 function addTime(x) {
     exports.time += x;
 }
@@ -239,13 +237,13 @@ let Game = class Game extends APJS.BasicScriptComponent {
         this.buttonRightRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonRight'), 0);
         // this.buttonResetRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonReset'), 0)
         this.ground1 = this.getSceneObject().scene.findSceneObject('ground1');
-        this.rightWall = this.getSceneObject().scene.findSceneObject('rightWall');
+        // this.rightWall = this.getSceneObject().scene.findSceneObject('rightWall')
         this.leftWall = this.getSceneObject().scene.findSceneObject('leftWall');
         this.platform1 = this.getSceneObject().scene.findSceneObject('platform1');
-        this.platform2 = this.getSceneObject().scene.findSceneObject('platform2');
+        // this.platform2 = this.getSceneObject().scene.findSceneObject('platform2')
         this.pan = this.getSceneObject().scene.findSceneObject('pan');
-        exports.platforms = [this.ground1, this.platform1, this.platform2, this.pan];
-        exports.solids = [this.ground1, this.platform1, this.platform2, this.rightWall, this.leftWall, this.pan];
+        exports.platforms = [this.ground1, this.platform1, this.pan];
+        exports.solids = [this.ground1, this.platform1, this.leftWall, this.pan];
         // platforms = [this.ground1]
         // solids = [this.ground1, this.rightWall, this.leftWall]
         exports.grounds = [this.ground1];

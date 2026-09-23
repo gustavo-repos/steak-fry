@@ -17,7 +17,7 @@ export var solids: any
 export var grounds: any
 export const fixedTime = 0.02
 // export var conect: any
-var isTimeRunning = false
+// var isTimeRunning = false
 export var time = 35
 export var substate = 3
 
@@ -29,9 +29,9 @@ export function setSubstate (x: number) {
   substate = x
 }
 
-export function startTimer() {
-  if (!isTimeRunning) isTimeRunning = true
-}
+// export function startTimer() {
+//   if (!isTimeRunning) isTimeRunning = true
+// }
 
 export function addTime(x: number) {
   time += x
@@ -112,7 +112,7 @@ export class Game extends APJS.BasicScriptComponent {
   // buttonResetRect: any
   ground1: any
   // tabletop: any
-  rightWall: any
+  // rightWall: any
   leftWall: any
   jumpTouchId: any
   leftTouchId: any
@@ -120,7 +120,7 @@ export class Game extends APJS.BasicScriptComponent {
   // resetButtonId: any
   // sofaSeat: any
   platform1: any
-  platform2: any
+  // platform2: any
   pan: any
 
   onRecordStart = (_event: APJS.IEvent) => {
@@ -254,13 +254,13 @@ export class Game extends APJS.BasicScriptComponent {
     this.buttonRightRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonRight'), 0)
     // this.buttonResetRect = getElementRect(this.getSceneObject().scene.findSceneObject('buttonReset'), 0)
     this.ground1 = this.getSceneObject().scene.findSceneObject('ground1')
-    this.rightWall = this.getSceneObject().scene.findSceneObject('rightWall')
+    // this.rightWall = this.getSceneObject().scene.findSceneObject('rightWall')
     this.leftWall = this.getSceneObject().scene.findSceneObject('leftWall')
     this.platform1 = this.getSceneObject().scene.findSceneObject('platform1')
-    this.platform2 = this.getSceneObject().scene.findSceneObject('platform2')
+    // this.platform2 = this.getSceneObject().scene.findSceneObject('platform2')
     this.pan = this.getSceneObject().scene.findSceneObject('pan')
-    platforms = [this.ground1, this.platform1, this.platform2, this.pan]
-    solids = [this.ground1, this.platform1, this.platform2, this.rightWall, this.leftWall, this.pan]
+    platforms = [this.ground1, this.platform1, this.pan]
+    solids = [this.ground1, this.platform1, this.leftWall, this.pan]
     // platforms = [this.ground1]
     // solids = [this.ground1, this.rightWall, this.leftWall]
     grounds = [this.ground1]
