@@ -1,0 +1,12 @@
+%YAML 1.1
+--- !ScriptCustomExternalObject &1
+name: !<str> ""
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  properties:
+    __class: Map
+    __scriptClassName: !<str> TimelineAsset
+    durationMode: 0
+    fixedDuration: 0
+    frameRate: 30

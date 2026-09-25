@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "69024d95-cb72-4294-2cdd-a3dacb0a96fa",
+      "a": "a3a44e3e-4b85-1dfb-bc54-421957384996",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "jump",
+    "name": "points-190037",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
@@ -16,7 +16,7 @@
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\jump.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\points-190037.mp3",
     "references": []
   }
 ]

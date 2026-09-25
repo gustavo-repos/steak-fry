@@ -1363,7 +1363,7 @@
       "isVisibleInInspector": true,
       "expanded": true
     },
-    "audioRef": "0c9ba051-68fc-1bb3-44de-7042a72b8494"
+    "audioRef": "a3a44e3e-4b85-1dfb-bc54-421957384996"
   },
   {
     "guid": {
@@ -2129,7 +2129,7 @@
       "isVisibleInInspector": true,
       "expanded": true
     },
-    "audioRef": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6"
+    "audioRef": "382d5b8b-59c8-8111-c780-f1769dd1e6b5"
   },
   {
     "guid": {
@@ -2173,10 +2173,10 @@
   },
   {
     "guid": {
-      "a": "d2acf7b9-e074-5296-0203-76e0c91a9d19",
+      "a": "ad7938d5-d64c-208f-ea05-2bb94a16064b",
       "b": ""
     },
-    "objGuid": "Guid(5568520672470226878, 17523560649993808277)",
+    "objGuid": "Guid(4747198183344612324, 8578326534863179447)",
     "extraType": "AudioComponent",
     "name": "Audio Player",
     "version": "0.2.0",
@@ -2187,7 +2187,7 @@
       "isVisibleInInspector": true,
       "expanded": true
     },
-    "audioRef": "c027609d-4a17-07aa-bc29-5f1035637c66"
+    "audioRef": "e42453a1-bae1-f384-b8ef-0abf7eb199ed"
   },
   {
     "guid": {
@@ -2318,46 +2318,6 @@
   },
   {
     "guid": {
-      "a": "9a661f00-5de6-bcbc-2c0f-d1d2927970ce",
-      "b": ""
-    },
-    "objGuid": "Guid(4780729436699426021, 17758761821303845540)",
-    "extraType": "Entity",
-    "name": "gameRunning",
-    "version": "0.1.0",
-    "rttiType": "SceneObject",
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "effect_node_2D_foreground",
-    "disableSelection": false,
-    "hiddenInHierarchy": false,
-    "editorTags": []
-  },
-  {
-    "guid": {
-      "a": "b2902739-e24e-3a84-a183-bf347de2dde0",
-      "b": ""
-    },
-    "objGuid": "Guid(4806579170370908017, 2194633807562466209)",
-    "extraType": "ScreenTransform",
-    "name": "Screen Transform",
-    "version": "0.1.0",
-    "rttiType": "ScreenTransform",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "horizontalConstraint": 2,
-    "verticalConstraint": 2,
-    "linkageScale": 0,
-    "linkageSize": 0
-  },
-  {
-    "guid": {
       "a": "0522c2f1-8e76-1f75-ec21-f943483e707e",
       "b": ""
     },
@@ -2413,5 +2373,45 @@
       "expanded": true
     },
     "audioRef": "4b6fd73e-d9e5-5b19-1918-661340057af9"
+  },
+  {
+    "guid": {
+      "a": "9a661f00-5de6-bcbc-2c0f-d1d2927970ce",
+      "b": ""
+    },
+    "objGuid": "Guid(4780729436699426021, 17758761821303845540)",
+    "extraType": "Entity",
+    "name": "gameRunning",
+    "version": "0.1.0",
+    "rttiType": "SceneObject",
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "disableSelection": false,
+    "hiddenInHierarchy": false,
+    "editorTags": []
+  },
+  {
+    "guid": {
+      "a": "b2902739-e24e-3a84-a183-bf347de2dde0",
+      "b": ""
+    },
+    "objGuid": "Guid(4806579170370908017, 2194633807562466209)",
+    "extraType": "ScreenTransform",
+    "name": "Screen Transform",
+    "version": "0.1.0",
+    "rttiType": "ScreenTransform",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "horizontalConstraint": 2,
+    "verticalConstraint": 2,
+    "linkageScale": 0,
+    "linkageSize": 0
   }
 ]

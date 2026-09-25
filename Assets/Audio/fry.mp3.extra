@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "69024d95-cb72-4294-2cdd-a3dacb0a96fa",
+      "a": "382d5b8b-59c8-8111-c780-f1769dd1e6b5",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "jump",
+    "name": "fry",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
@@ -16,7 +16,7 @@
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\jump.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\fry.mp3",
     "references": []
   }
 ]

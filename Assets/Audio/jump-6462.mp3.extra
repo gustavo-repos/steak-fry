@@ -1,22 +1,22 @@
 [
   {
     "guid": {
-      "a": "c1f0b5f5-aece-71a2-9f70-ae8c1a04eef6",
+      "a": "e42453a1-bae1-f384-b8ef-0abf7eb199ed",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "freesound_community-sizzle-100449",
+    "name": "jump-6462",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "hideInPanel": false,
-      "expandInPanel": true
+      "expandInPanel": false
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\freesound_community-sizzle-100449.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\jump-6462.mp3",
     "references": []
   }
 ]

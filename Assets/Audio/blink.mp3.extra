@@ -1,22 +1,22 @@
 [
   {
     "guid": {
-      "a": "0c9ba051-68fc-1bb3-44de-7042a72b8494",
+      "a": "b36ebf13-50f7-ffd9-7c41-442bfc332e3b",
       "b": ""
     },
     "extraType": "ResItemMP3",
-    "name": "universfield-cartoon-blinking-487897",
+    "name": "blink",
     "version": "0.1.0",
     "rttiType": "AudioAsset",
     "authorizationInfo": "",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "hideInPanel": false,
-      "expandInPanel": true
+      "expandInPanel": false
     },
     "mccState": "SUCCESS",
     "objGuid": "",
-    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\universfield-cartoon-blinking-487897.mp3",
+    "resourceFilePath": "C:\\Documentos\\Tiktok\\project steak\\audio\\blink.mp3",
     "references": []
   }
 ]
